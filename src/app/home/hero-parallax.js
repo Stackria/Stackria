@@ -33,7 +33,7 @@ export const HeroParallax = ({
   return (
     (<div
       ref={ref}
-      className="h-[300vh] py-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
+      className="h-[150vh] bg-[#0ca8f2] pt-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
       <Header />
       <motion.div
         style={{
@@ -67,10 +67,10 @@ export const Header = () => {
   return (
     (<div
       className="max-w-7xl relative mx-auto py-10 md:py-40 px-10 w-full  left-0 top-0 text-center">
-      <h1 className={`${museo.className} text-4xl -mt-20 md:text-5xl font-bold dark:text-white `}>
-      Web Based Solutions, <br/> To reach More Customers
+      <h1 className={`${museo.className} text-4xl -mt-20 md:text-5xl font-bold text-white dark:text-white `}>
+      Web Based Solutions, <br/> To Reach More Customers
       </h1>
-      <p className={`${outfit.className}max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200 xl:px-40 px-10`}>
+      <p className={`${outfit.className}max-w-2xl text-base md:text-xl text-white dark:text-neutral-200 xl:px-40 px-10`}>
       We craft powerful, custom web-based solutions to make your business visible and accessible.
       </p>
     </div>)

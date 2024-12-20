@@ -3,8 +3,8 @@ import React from 'react'
 
 const NavLink = ({item}) => {
   return (
-    <nav>
-      <ul className='lg:px-6 px-2 text-left text-slate-900 hover:text-slate-200 font-bold text-20'>
+    <nav className=''>
+      <ul className='lg:px-6 px-2 text-left text-white xl:text-md xl:text-slate-900 uppercase hover:underline hover:transition-all text-sm hover:text-slate-500 font-bold'>
         <Link href={item.path}>{item.title}</Link>
       </ul>
     </nav>

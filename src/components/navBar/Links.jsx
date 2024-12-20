@@ -32,8 +32,8 @@ const Links = () => {
         <header>
             
             {/* Default Menu */}
-            <div>
-                <nav className='hidden xl:flex cursor-pointer justify-between'>
+            <div className=''>
+                <nav className='hidden xl:flex cursor-pointer justify-between text-left'>
                 {links.map((link) => (
                     <Navlink 
                         item={link} 
@@ -59,7 +59,7 @@ const Links = () => {
                 </Image>
                 
                 {open && (
-                    <nav className='xl:hidden fixed top-[100px] right-0 h-[calc(100vh-100px)] leading-10 bg-[#030522] p-20 text-xl text-white w-full z-10'>
+                    <nav className='xl:hidden fixed top-[100px] left-0 h-[calc(100vh-100px)] leading-10 bg-[#032c62] py-20 px-5 text-xl text-white w-full z-10'>
                     <div className='flex flex-col space-y-4'>
                         {links.map((link) => (
                             <Navlink 

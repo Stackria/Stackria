@@ -11,20 +11,16 @@ export function Hero() {
   return <HeroParallax products={products} />;
 }
 export const products = [
-  {
-    title: "ActivEasy",
-    link: "https://zamaniluxuries.com",
-    thumbnail:  hero1,
-  },
-  {
-    title: "Zamani Luxuries",
-    link: "https://cursor.so",
-    thumbnail:
-    hero3,
-  },
+  
   {
     title: "Bill Me",
-    link: "https://userogue.com",
+    link: "https://billapps.netlify.app",
+    thumbnail:
+    hero4,
+  },
+  {
+    title: "ES Broker",
+    link: "https://realestatebroker.netlify.app/",
     thumbnail:
     hero2,
   },
@@ -36,7 +32,12 @@ export const products = [
     hero5,
   },
   
-
+  {
+    title: "Zamani Luxuries",
+    link: "https://zamaniluxuries.com/",
+    thumbnail:
+    hero3,
+  },
   
   
 ];
