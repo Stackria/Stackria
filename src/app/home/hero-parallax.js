@@ -70,11 +70,11 @@ export const Header = () => {
       <h1 className={`${museo.className} text-3xl  md:text-5xl font-bold text-white dark:text-white `}>
       Web Based Solutions, <br/> To Reach More Customers
       </h1>
-      <p className={`${outfit.className}max-w-2xl text-base md:text-xl text-white dark:text-neutral-200 xl:px-40 px-10`}>
+      <p className={`${outfit.className}  text-base md:text-xl text-white dark:text-neutral-200 xl:px-40 px-10`}>
       Crafting powerful, custom web-based solutions that highlights your business, products and services.
       </p>
       <div class="-mb-80">
-      <button className=" rounded-sm bg-white px-2 py-2 black mt-5 font-bold">Learn More</button>
+      <button className={` ${outfit.className} rounded-sm bg-white px-2 py-2 black mt-5 font-bold`}>Learn More</button>
       </div>
     </div>)
   );

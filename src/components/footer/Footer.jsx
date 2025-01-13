@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
         </div>
         <div className='mx-auto text-center align-center py-2 bg-[#0ca8f2] w-full '>
-          <h2 className='text-slate-900 text-sm'>2024 Stackria LTD</h2>
+          <h2 className='text-white font-bold text-sm'>2025 Stackria LTD</h2>
         </div>
     </footer>
   )
