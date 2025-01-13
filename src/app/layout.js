@@ -4,7 +4,7 @@ import Footer from '@/components/footer/Footer';
 import Navbar from '@/components/navBar/Navbar'
 import Head from "next/head";
 
-const outfit = localFont({
+export const outfit = localFont({
   src: "./fonts/Outfit-Thin.ttf",
   variable: "--font-outfit",
   weight: "300",
@@ -13,7 +13,7 @@ const outfit = localFont({
 export const museo = localFont({
   src: "./fonts/Museo_Slab_700.otf",
   variable: "--font-museo",
-  weight: "600",
+  weight: "700",
 });
 
 // export const metadata = {
