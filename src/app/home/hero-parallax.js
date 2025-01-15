@@ -33,7 +33,7 @@ export const HeroParallax = ({
   return (
     (<div
       ref={ref}
-      className="h-[120vh] md:h-[150vh] bg-[#0ca9f2da] pt-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
+      className="h-[120vh] md:h-[220vh] bg-[#0ca9f2da] pt-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
       <Header />
       <motion.div
         style={{
@@ -73,7 +73,7 @@ export const Header = () => {
       <p className={`${outfit.className}  text-base md:text-xl text-white dark:text-neutral-200 xl:px-40 px-10`}>
       Crafting powerful, custom web-based solutions that highlights your business, products and services.
       </p>
-      <div class="-mb-80">
+      <div className="-mb-80">
       <button className={` ${outfit.className} rounded-sm bg-white px-2 py-2 black mt-5 font-bold`}>Learn More</button>
       </div>
     </div>)
