@@ -7,15 +7,15 @@ const Navbar = () => {
     const [dropDown, setDropDown] = useState(false)
     
   return (
-    <header className='bg-white w-full flex justify-between px-50'>
-        <div className='xl:px-10 mx-auto container'>
-          <div className='flex items-center justify-between h-[100px]'>
+    <header className='bg-[#0ca9f2da] w-full flex px-50'>
+        <div className=' mx-auto container'>
+          <div className='flex px-2 items-center justify-between h-[100px]'>
                     
                     {/* Logo */}
                     <div className='flex-shrink-0'>
                         <Image 
-                        className='w-[180px] h-auto' 
-                        src='/logo.png' 
+                        className='xl:w-[150px] w-[180px] h-auto' 
+                        src='/logo-white.png' 
                         width={150} 
                         height={150} 
                         priority 
@@ -24,10 +24,14 @@ const Navbar = () => {
                     </div>
             
 
-            {/* Header */}
-            <nav className="my-auto">
-                <Links/>
-            </nav>
+              {/* Header */}
+              <nav className="my-auto">
+                  <Links/>
+              </nav>
+
+              {/* Get Quote Button */}
+              <button className='hidden xl:flex'>Get A Quote
+              </button>
           </div>
         </div>
     </header>

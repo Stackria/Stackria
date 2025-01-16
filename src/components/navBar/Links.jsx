@@ -7,8 +7,8 @@ import close from '@/assets/close.png'
 
 const links = [
     {
-    title: "Our Services",
-    path: "/services",
+    title: "Home",
+    path: "/",
     },
     {
     title: "About Us",
@@ -21,6 +21,10 @@ const links = [
     {
     title: "Reach Us",
     path: "/contact",
+    },
+    {
+        title: "Blog",
+        path: "/blog",
     },
     
 ];
@@ -59,7 +63,7 @@ const Links = () => {
                 </Image>
                 
                 {open && (
-                    <nav className='xl:hidden fixed top-[100px] left-0 h-[calc(100vh-100px)] leading-10 bg-[#032c62] py-20 px-5 text-xl text-white w-full z-10'>
+                    <nav className='xl:hidden fixed top-[100px] left-0 h-[calc(100vh-100px)] leading-10 bg-white py-20 px-5 text-xl  w-full z-10'>
                     <div className='flex flex-col space-y-4'>
                         {links.map((link) => (
                             <Navlink 
