@@ -73,8 +73,8 @@ export const Hero = () => {
       <p className={`${outfit.className}  text-base md:text-xl text-white dark:text-neutral-200 xl:px-40 px-10`}>
       Crafting powerful, custom web-based solutions that highlights your business, products and services.
       </p>
-      <div className="-mb-80">
-      <button className={` ${outfit.className} rounded-sm bg-white px-2 py-2 black mt-5 font-bold`}>Learn More</button>
+      <div className="">
+        <button className={` ${outfit.className} rounded-sm bg-white text-secondary px-2 py-2 black mt-5 font-bold`}>Learn More</button>
       </div>
     </div>)
   );
