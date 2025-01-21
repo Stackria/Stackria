@@ -33,7 +33,7 @@ export const HeroParallax = ({
   return (
     (<div
       ref={ref}
-      className="h-[120vh] md:h-[150vh] bg-primary pt-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
+      className="h-[150vh] md:h-[170vh] xl:h-[180vh] 2xl:h-[150vh] bg-primary xl:pt-0 pt-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
       <Hero />
       <motion.div
         style={{
@@ -42,7 +42,7 @@ export const HeroParallax = ({
           translateY,
           opacity,
         }}
-        className="">
+        className="-mt-100">
         <motion.div className="flex flex-row-reverse space-x-reverse space-x-20 mb-20">
           {firstRow.map((product) => (
             <ProductCard product={product} translate={translateX} key={product.title} />
@@ -65,17 +65,18 @@ export const HeroParallax = ({
 
 export const Hero = () => {
   return (
-    (<div
-      className="max-w-7xl relative mx-auto py-2 md:py-40 px-5 w-full  left-0 top-0 text-center">
-      <h1 className={`${museo.className} text-3xl  md:text-5xl font-bold text-white dark:text-white `}>
-      Web Based Solutions, <br/> To Reach More Customers
-      </h1>
-      <p className={`${outfit.className}  text-base md:text-xl text-white dark:text-neutral-200 xl:px-40 px-10`}>
-      Crafting powerful, custom web-based solutions that highlights your business, products and services.
-      </p>
-      <div className="">
-        <button className={` ${outfit.className} rounded-sm bg-white text-secondary px-2 py-2 black mt-5 font-bold`}>Learn More</button>
-      </div>
+    (
+    <div
+      className="max-w-7xl relative mx-auto py-2 md:py-40 px-10 xl:px-5 w-full  left-0 top-0 text-center ">
+        <h1 className={`${museo.className} text-3xl  md:text-5xl font-bold text-white dark:text-white `}>
+        Web Based Solutions, <br/> To Reach More Customers
+        </h1>
+        <p className={`${outfit.className}  text-base md:text-xl text-white dark:text-neutral-200 xl:px-40 px-10`}>
+        Crafting powerful, custom web-based solutions that highlights your business, products and services.
+        </p>
+        <div className="">
+          <button className={` ${outfit.className} rounded-sm bg-white text-secondary px-2 py-2 black mt-5 font-bold hover:bg-secondary hover:text-white`}>Learn More</button>
+        </div>
     </div>)
   );
 };

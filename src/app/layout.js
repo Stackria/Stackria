@@ -15,6 +15,16 @@ export const museo = localFont({
   variable: "--font-museo",
   weight: "700",
 });
+export const museoReg = localFont({
+  src: "./fonts/Museo_Slab_500.otf",
+  variable: "--font-museo",
+  weight: "700",
+});
+export const outfitMed = localFont({
+  src: "./fonts/Outfit-Medium.ttf",
+  variable: "--font-museo",
+  weight: "500",
+});
 
 // export const metadata = {
 //   title: "Stackria",
