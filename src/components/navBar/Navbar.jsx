@@ -10,7 +10,7 @@ const Navbar = () => {
     const [dropDown, setDropDown] = useState(false)
     
   return (
-    <header className='bg-[#0ca9f2da] w-full flex px-50 h-[80px]'>
+    <header className='bg-[#0ca9f2da] w-full flex fixed z-10 px-50 h-[80px]'>
         <div className=' mx-auto container'>
           <div className='flex px-2 items-center justify-between h-[100px]'>
                     

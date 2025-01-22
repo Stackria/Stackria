@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from '@/constants/style'
 import { museo } from "@/app/layout";
-import { outfit } from "@/app/layout";
+import { outfitMed } from "@/app/layout";
 
 export const HeroParallax = ({
   products
@@ -67,15 +67,15 @@ export const Hero = () => {
   return (
     (
     <div
-      className="max-w-7xl relative mx-auto py-2 md:py-40 px-10 xl:px-5 w-full  left-0 top-0 text-center ">
+      className="max-w-7xl relative mx-auto py-2 md:py-40 px-5 xl:px-5 w-full  left-0 top-0 text-center ">
         <h1 className={`${museo.className} text-3xl  md:text-5xl font-bold text-white dark:text-white `}>
-        Web Based Solutions, <br/> To Reach More Customers
+        Innovative Web Solutions, <br/> for Modern Businesses
         </h1>
-        <p className={`${outfit.className}  text-base md:text-xl text-white dark:text-neutral-200 xl:px-40 px-10`}>
-        Crafting powerful, custom web-based solutions that highlights your business, products and services.
+        <p className={`${outfitMed.className}  text-[19px] md:text-xl text-secondary dark:text-neutral-200 xl:px-40 px-10`}>
+        Custom web-based solutions that highlights your business, products and services.
         </p>
         <div className="">
-          <button className={` ${outfit.className} rounded-sm bg-white text-secondary px-2 py-2 black mt-5 font-bold hover:bg-secondary hover:text-white`}>Learn More</button>
+          <button className={` ${outfitMed.className} rounded-sm bg-white text-secondary px-2 py-2 black mt-5 font-bold hover:bg-secondary hover:text-white`}>Learn More</button>
         </div>
     </div>)
   );

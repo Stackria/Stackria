@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { museo } from "@/app/layout";
 import menu from '@/assets/menu.png'
 import close from '@/assets/close.png'
+import { GoArrowUpRight } from "react-icons/go";
 
 const links = [
     {
@@ -19,10 +20,10 @@ const links = [
         title: "Our Solutions",
         path: "/solutions",
         },
-    {
-    title: "Reach Us",
-    path: "/contact",
-    },
+    // {
+    // title: "Reach Us",
+    // path: "/contact",
+    // },
     {
         title: "Blog",
         path: "/blog",
@@ -74,7 +75,7 @@ const Links = () => {
                         ))}
                     </div>
                     <Link href="/contact">
-                        <button className={` ${museo.className} flex rounded-sm bg-primary ml-2 text-white px-2 py-2 black font-bold hover:bg-secondary hover:text-white`}>Get in touch
+                        <button className={` ${museo.className} flex rounded-sm bg-primary ml-2 text-white px-2 py-2 black font-bold hover:bg-secondary hover:text-white`}><GoArrowUpRight className='mt-2'/>Get in touch
                         </button>
                     </Link>
                 </nav>
