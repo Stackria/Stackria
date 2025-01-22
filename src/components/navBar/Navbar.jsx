@@ -2,7 +2,7 @@
 import React, { useState } from 'react'
 import Links from "@/components/navBar/Links"
 import Image from 'next/image';
-import { museo } from "@/app/layout";
+import { museo, museoReg } from "@/app/layout";
 import { outfit } from "@/app/layout";
 import Link from 'next/link';
 
@@ -34,7 +34,7 @@ const Navbar = () => {
 
               {/* Get in touch button */}
               <Link href="/contact">
-                  <button className={` ${museo.className} hidden xl:flex rounded-sm bg-white -mt-2 text-gray-800 px-2 py-2 black font-bold hover:bg-secondary hover:text-white`}>Get  in touch
+                  <button className={` ${museoReg.className} hidden xl:flex rounded-sm bg-white -mt-2 text-gray-800 px-2 py-2 black font-bold hover:bg-secondary hover:text-white`}>Get  in touch
                   </button>
               </Link>
               

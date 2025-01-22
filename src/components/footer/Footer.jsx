@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Links from '../footer/Links'
 import {socialIcons} from '@/constants'
+import { styles } from '@/constants/style'
+import { outfit, outfitLight } from '@/app/layout'
 
 const Footer = () => {
   
@@ -42,7 +44,7 @@ const Footer = () => {
           </div>
         </div>
         <div className='mx-auto text-center align-center py-2 bg-[#0ca8f2] w-full '>
-          <h2 className='text-white font-bold text-sm'>2025 Stackria LTD</h2>
+          <h2 className={`${outfitLight.className} text-center text-white text-[16px]`}>© 2025, Stackria Ltd</h2>
         </div>
     </footer>
   )
