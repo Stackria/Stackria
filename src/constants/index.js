@@ -11,19 +11,19 @@ export const footerLinks = [
         links: [
             {
             title: "Web Development",
-            path: "/web-development",
+            path: "/solutions/web-development",
             },
             {
             title: "Search Engine Optimization",
-            path: "/seo",
+            path: "/solutions/search-engine-optimization",
             },
             {
             title: "Frequent Asked Questions",
             path: "/faqs",
             },
             {
-            title: "Contact",
-            path: "/contact",
+            title: "Affiliate",
+            path: "/affiliate",
             },
             
         ]

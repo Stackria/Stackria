@@ -26,6 +26,8 @@ export const outfitLight = localFont({
   weight: "500",
 });
 
+
+
 // export const metadata = {
 //   title: "Stackria",
 //   description: "Ideas meets tech equals solutions for businesses",
