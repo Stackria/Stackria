@@ -22,7 +22,7 @@ export const museoReg = localFont({
 });
 export const outfitLight = localFont({
   src: "./fonts/Outfit-Light.ttf",
-  variable: "--font-museo",
+  variable: "--font-outfitLight",
   weight: "500",
 });
 

@@ -22,7 +22,7 @@ export const Services = () => {
               />
             </div>
 
-            {/* Solution Text */}
+            {/* Solution Texts */}
             <div className="">
               <h1 className={`${styles.heading1} text-left py-2 `}>{solution.title}</h1>
               <span className={`${styles.paragraph} text-left leading-2`}>{solution.details}
