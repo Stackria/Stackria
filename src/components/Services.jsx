@@ -24,12 +24,16 @@ export const Services = () => {
 
             {/* Solution Texts */}
             <div className="">
-              <h1 className={`${styles.heading1} text-left py-2 `}>{solution.title}</h1>
+              <h1 className={`${styles.headingLeft} text-left py-2 `}>{solution.title}</h1>
               <span className={`${styles.paragraph} text-left leading-2`}>{solution.details}
 
               </span>
               <h3 className="text-secondary font-extrabold">
-                {solution.link}  →
+                <Link href={solution.link}>
+                  <h3 className="hover:underline">
+                    More About {solution.title}  →
+                  </h3>
+                </Link>
               </h3>
             </div>
           </div>

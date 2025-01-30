@@ -28,7 +28,7 @@ module.exports = {
       colors: {
         primary: "#0ca9f2da",
         secondary: "#032c62",
-        customText: "#000B15",
+        customText: "#00d4ff",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
