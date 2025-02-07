@@ -25,7 +25,11 @@ export const outfitLight = localFont({
   variable: "--font-outfitLight",
   weight: "500",
 });
-
+export const outfitRegular = localFont({
+  src: "./fonts/Outfit-Regular.ttf",
+  variable: "--font-outfitLight",
+  weight: "500",
+});
 
 
 // export const metadata = {

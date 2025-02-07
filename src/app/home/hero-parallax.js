@@ -3,9 +3,9 @@ import React from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { museo } from "../layout";
+import { museo, museoReg, outfitLight } from "../layout";
 import  {outfit} from "../layout";
-import styles from '@/constants/style'
+import {styles} from '@/constants/style'
 
 export const HeroParallax = ({
   products
@@ -33,7 +33,7 @@ export const HeroParallax = ({
   return (
     (<div
       ref={ref}
-      className="h-[120vh] md:h-[220vh] bg-[#0ca9f2da] pt-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
+      className="h-[150vh] md:h-[170vh] xl:h-[180vh] 2xl:h-[150vh] bg-[#0ca9f2da] pt-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
       <Header />
       <motion.div
         style={{
@@ -66,17 +66,17 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     (<div
-      className="max-w-7xl relative mx-auto py-2 md:py-40 px-5 w-full  left-0 top-0 text-center">
-      <h1 className={`${museo.className} text-3xl  md:text-5xl font-bold text-white dark:text-white `}>
-      Web Based Solutions, <br/> To Reach More Customers
-      </h1>
-      <p className={`${outfit.className}  text-base md:text-xl text-white dark:text-neutral-200 xl:px-40 px-10`}>
-      Crafting powerful, custom web-based solutions that highlights your business, products and services.
-      </p>
-      <div className="-mb-80">
-      <button className={` ${outfit.className} rounded-sm bg-white px-2 py-2 black mt-5 font-bold`}>Learn More</button>
-      </div>
-    </div>)
+          className="max-w-7xl relative mx-auto py-2 md:py-40 px-2 xl:px-5 w-full  left-0 top-0 text-center ">
+            <h1 className={`${museo.className} text-3xl  md:text-5xl font-bold text-white dark:text-white `}>
+            Innovative Web Solutions for Modern Businesses
+            </h1>
+            <p className={`${outfitLight.className}  text-[15px] md:text-xl text-secondary dark:text-neutral-200 xl:px-40 px-10`}>
+            Custom web-based solutions that highlights your business, products and services.
+            </p>
+            <div className="">
+              <button className={`${styles.paragraph} rounded-sm bg-white text-primary px-2 py-2 black mt-5 font-bold hover:bg-secondary hover:text-white text-[15px]`}>Learn More</button>
+            </div>
+        </div>)
   );
 };
 

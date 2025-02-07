@@ -10,14 +10,14 @@ const Navbar = () => {
     const [dropDown, setDropDown] = useState(false)
     
   return (
-    <header className='bg-[#0ca9f2da] w-full flex fixed z-10 px-50 h-[80px]'>
+    <header className='bg-[#0ca9f2da] items-center w-full flex fixed z-10 px-50 h-[70px]'>
         <div className=' mx-auto container'>
-          <div className='flex px-2 items-center justify-between h-[100px]'>
+          <div className='flex px-2 items-center justify-between'>
                     
                     {/* Logo */}
-                    <div className='flex-shrink-0 -mt-2'>
+                    <div className='flex-shrink-0'>
                         <Image 
-                        className='xl:w-[150px] w-[180px] h-auto' 
+                        className='xl:w-[150px] w-[150px] h-auto' 
                         src='/logo-white.png' 
                         width={150} 
                         height={150} 

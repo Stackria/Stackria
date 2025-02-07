@@ -1,9 +1,11 @@
 'use client'
 import React, { useState } from 'react'
-import { outfitLight, museoReg } from "@/app/layout";
+import { outfitLight, outfit, museoReg } from "@/app/layout";
 import Image from 'next/image';
 import { solutionList } from "@/app/solutions/solutionsList";
 import { IoIosArrowDropdown } from "react-icons/io";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
+
 import Link from "next/link";
 import {styles} from '@/constants/style'
 
@@ -15,10 +17,11 @@ export const Services = () => {
     <section>
       <div className=" py-10 px-5">
         <div className="">
-            <h1 className={`${styles.headingLeft} text-center `}>OUR EXPERTISE</h1>
-            <h3 className="text black text-center text-[25px] font-bold">Innovative Solutions We Provide</h3>
+            <h1 className={`${museoReg.className} text-secondary text-xs text-center `}>OUR EXPERTISE</h1>
+            <h3 className="text-black text-center text-[20px] font-bold">Solutions We Provide:</h3>
         </div>
         <div className="bg-slate-50 py-5">
+          {/* index - position of each solution in the list - helps you know which item was clicked so you can show or hide its details.*/}
         {solutionList.map((solution, index) => (
           
             <div className="px-5 pb-10"
@@ -26,28 +29,38 @@ export const Services = () => {
 
               {/* Solution Dropdown */}
               <div className="">
-                {/* If the clicked item is already open (toggle === index), it sets toggle to null (closes it). */}
-                {/* If a different item is clicked, it sets toggle to that item's index (opens it). */}
+                {/*  when clicked and not previously open it sets toggle to the index of the clicked solution, which opens that particular solution's details. */}
+                {/* */}
                 <div className="flex justify-between cursor" onClick={()=> setToggle(toggle === index ? null : index)}>
-                  <Link href={solution.link} className={`${styles.headingLeft} text-left py-2 `}>{solution.title}</Link>
-                  <Image src="" alt=""  className=""/>
-                  <IoIosArrowDropdown className={`text-slate-500 text-[40px] transition-transform ${toggle === index ? "rotate-180" : "rotate-0"}`}/>
+                  <div className="flex items-center">
+                    <Link href={solution.link} className={`${styles.headingLeft} py-2 `}>{solution.title} 
+                    </Link>
+                    <FaArrowUpRightFromSquare className="ml-2 text-secondary text-[15px]"/>
+                  </div>
+                  <IoIosArrowDropdown className={`text-slate-500 text-[25px] transition-transform  mt-2 ${toggle === index ? "rotate-180" : "rotate-0"}`}/>
+                      
                 </div>
 
                 {/* Only Show the Active Dropdown */}
-                {/* If toggle === index, the current item is open → show details (flex). */}
-                <div className={toggle === index ?"flex mt-2" : 'hidden'}>
-                  <span className={`${styles.paragraph} text-left leading-2`}>{solution.details}
+                {/* If toggle === index, the current item is open → show details (flex) - clicked and already opened close previous dev*/}
+                <div className={toggle === index ? "flex mt-2" : 'hidden'}>
+                  <span className={`${styles.paragraphDetails} leading-2`}>
+                    {solution.details}
                   </span>
                 </div>
-                <h3 className="text-secondary font-extrabold">
-                  
-                </h3>
+                
               </div>
             </div>
+            
         ))}
+        </div>
+        <div className=" text-center align-center py-10">
+            <Link href='/solutions' className={` ${styles.outfit} rounded-sm bg-primary px-5 py-2 text-white text-xs mt-5 font-bold`}>
+                Explore More Of Our Services
+            </Link>
         </div>
       </div>
     </section>
   )
 }
+

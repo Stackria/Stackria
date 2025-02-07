@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Navlink from "@/components/navBar/links/navLink/NavLink"
 import Link from 'next/link';
 import Image from 'next/image';
-import { museo } from "@/app/layout";
+import { museo, museoReg } from "@/app/layout";
 import menu from '@/assets/menu.png'
 import close from '@/assets/close.png'
 import { GoArrowUpRight } from "react-icons/go";
@@ -63,9 +63,9 @@ const Links = () => {
                     
                     
                 </Image>
-                
+                {/* Mobile menu */}
                 {open && (
-                    <nav className='xl:hidden fixed top-[100px] left-0 h-[calc(100vh-100px)] leading-10 bg-white py-20 px-5 text-xl -mt-5 w-full z-10'>
+                    <nav className='xl:hidden fixed top-[100px] left-0 h-[calc(100vh-100px)] leading-10 bg-white py-10 px-5 text-[15px] -mt-5 w-full z-10'>
                     <div className='flex flex-col space-y-4'>
                         {links.map((link) => (
                             <Navlink 
@@ -75,7 +75,7 @@ const Links = () => {
                         ))}
                     </div>
                     <Link href="/contact">
-                        <button className={` ${museo.className} flex rounded-sm bg-primary ml-2 text-white px-2 py-2 black font-bold hover:bg-secondary hover:text-white`}><GoArrowUpRight className='mt-2'/>Get in touch
+                        <button className={` ${museoReg.className} items-center flex rounded-sm bg-primary ml-2 text-white px-2 py-1 black font-bold hover:bg-secondary hover:text-white`}><GoArrowUpRight />Get in touch
                         </button>
                     </Link>
                 </nav>

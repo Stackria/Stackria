@@ -1,7 +1,7 @@
 import React from 'react'
 import { museo } from './layout'
 // Name import not default import
-import {Hero} from '@/components/hero/Hero.js'
+import {Hero} from '@/app/home/Hero.js'
 import {AfterHero} from '@/components/AfterHero'
 import {Services} from '@/components/Services'
 import {Showcase} from '@/components/Showcase'
