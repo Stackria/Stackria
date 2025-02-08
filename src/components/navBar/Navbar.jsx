@@ -29,7 +29,7 @@ const Navbar = () => {
             
 
               {/* Links */}
-              <nav className="xl:ml-0 ml-28 md:ml-auto">
+              <nav className="xl:ml-0 ml-32 md:ml-auto">
                   <Links/>
               </nav>
 
