@@ -8,18 +8,19 @@ import close from '@/assets/close.png'
 import { GoArrowUpRight } from "react-icons/go";
 
 const links = [
+    
     {
-    title: "Home",
-    path: "/",
+        title: "About Us",
+        path: "/about",
     },
     {
-    title: "About Us",
-    path: "/about",
+        title: "Our Services",
+        path: "/services",
     },
     {
-        title: "Our Solutions",
-        path: "/solutions",
-        },
+        title: "Our Portfolio",
+        path: "/portfolio",
+    },
     // {
     // title: "Reach Us",
     // path: "/contact",

@@ -18,11 +18,12 @@ const Navbar = () => {
                     <div className='flex-shrink-0'>
                         <Image 
                         className='xl:w-[150px] w-[150px] h-auto' 
+                        // Change logo to svg
                         src='/logo-white.png' 
                         width={150} 
                         height={150} 
                         priority 
-                        alt='web development agency'
+                        alt='stackria web development agency'
                         />
                     </div>
             

@@ -1,4 +1,4 @@
-export const solutionList = [
+export const servicesList = [
   {
     title: "Custom Web Development",
     details: "We specialize in delivering scalable, high-performance web-based solutions tailored to meet your business needs. Our development process focuses on creating responsive, user-friendly platforms that enhance customer engagement and drive conversions.",

@@ -4,7 +4,7 @@ import { museo } from './layout'
 import {Hero} from '@/app/home/Hero.js'
 import {AfterHero} from '@/components/AfterHero'
 import {Services} from '@/components/Services'
-import {Showcase} from '@/components/Showcase'
+import {Portfolio} from '@/components/Portfolio'
 import {Process} from '@/components/Process'
 import {CTA} from '@/components/CTA'
 import {Industries} from '@/components/Industries'
@@ -17,7 +17,7 @@ const page = () => {
       <Hero/>
       <AfterHero/>
       <Services/>
-      <Showcase/>
+      <Portfolio/>
       <Process/>
       <CTA/>
       <Industries/>
