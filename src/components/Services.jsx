@@ -16,7 +16,7 @@ export const Services = () => {
   return (
     <section>
       <div className=" py-10 px-5">
-        <div className="">
+        <div className="py-5">
             <h1 className={`${museoReg.className} text-secondary text-xs text-center `}>OUR EXPERTISE</h1>
             <h3 className="text-black text-center text-[20px] font-bold">Solutions We Provide:</h3>
         </div>

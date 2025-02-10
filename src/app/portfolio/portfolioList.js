@@ -1,43 +1,42 @@
-import { FaCode, FaRocket, FaShieldAlt, FaShoppingCart, FaMobileAlt, FaSearch } from "react-icons/fa";  
-import pictureOne from '@/assets/logo-white.png'
+import { FaWordpressSimple, FaBootstrap, FaSquarespace, FaReact} from "react-icons/fa"; 
+import { SiWoocommerce } from "react-icons/si";
+import { RiJavascriptFill, RiTailwindCssFill } from "react-icons/ri";
+import { BsFiletypeCss } from "react-icons/bs";
 
 export const portfolioList = [  
     {  
-      title: "Custom Web Development",  
-      details: "This platform was developed to simplify payment and product showcases.",  
-      link: "/solutions/web-development",  
-      img: "/images/web-development.png",  
-      icons: [FaCode, FaRocket, FaMobileAlt],  
-      span: "Web-Based Platform",  
-      button: { text: "View Project", url: "/projects/web-development" },  
+      title: "ZL Shop",  
+      details: "Well crafted sophisticated and seamless e-commerce web-based solution for Zamani Luxuries, an homage to timeless elegance and premium craftsmanship.",   
+      img: "/images/portfolio/p-1.png",  
+      icons: [FaWordpressSimple, SiWoocommerce],  
+      span: "Technology Stack",  
+      button: { text: "Explore", url: "/portfolio/zamaniluxuries" },  
     },  
     {  
-      title: "MVP Development",  
-      details: "Bring your business idea to life with a Minimum Viable Product (MVP). We build a functional, streamlined version of your product so you can test the market, attract early users, and secure funding—without wasting time or resources. Launch fast, validate your idea, and scale with confidence.",  
-      link: "/solutions/mvp",  
-      img: "/images/mvp.png",  
-      icons: [FaRocket, FaCode, FaShieldAlt],  
-      span: "Startup MVP",  
-      button: { text: "Explore MVPs", url: "/projects/mvp" },  
+        title: "Colorful Sound Design",  
+        details: "A web-based solution for a sound - production company, integrating a clean Bootstrap-based UI with Squarespace for appointment booking and service management..",  
+        img: "/images/portfolio/p-4.png",  
+        icons: [BsFiletypeCss, FaBootstrap, RiJavascriptFill, FaSquarespace],  
+        span: "Technology Stack",  
+        button: { text: "Explore", url: "/projects/ecommerce" },  
+      },
+    {  
+      title: "ES Broker",  
+      details: "A stunning and user-friendly web-based solution for a real estate agent-broker, designed to enhance client engagement and streamline exclusive listings.",  
+      img: "/images/portfolio/p-2.png",  
+      icons: [BsFiletypeCss, FaBootstrap, RiJavascriptFill],  
+      span: "Technology Stack",  
+      button: { text: "Explore", url: "/portfolio/esbroker" },  
     },  
     {  
-      title: "Web Care",  
-      details: "Our web care solutions provide ongoing support, ensuring your digital tools remain secure, up-to-date, and fully optimized. We handle maintenance, performance monitoring, and security updates, so you can focus on growing your business without worry.",  
-      link: "/solutions/web-care",  
-      img: "/images/web-care.png",  
-      icons: [FaShieldAlt, FaCode, FaSearch],  
-      span: "Ongoing Support",  
-      button: { text: "See Details", url: "/projects/web-care" },  
+      title: "Bill Me",  
+      details: "A spectacular landing page for a financial technology application, Bill Me carefully highlight the company's aim and services.",  
+      img: "/images/portfolio/p-3.png",  
+      icons: [BsFiletypeCss, RiJavascriptFill, RiTailwindCssFill,  FaReact],  
+      span: "Technology Stack",  
+      button: { text: "Explore", url: "/portfolio/billme" },  
     },  
-    // {  
-    //   title: "E-Commerce Solutions",  
-    //   details: "We build powerful, scalable e-commerce platforms designed to help you grow your business online. Whether you’re launching a new store or optimizing an existing one, our solutions include payment integrations, product management, and custom features to enhance the shopping experience.",  
-    //   link: "/solutions/e-commerce",  
-    //   img: "/images/ecommerce.png",  
-    //   icons: [FaShoppingCart, FaCode, FaRocket],  
-    //   span: "E-Commerce Platform",  
-    //   button: { text: "Shop the Demo", url: "/projects/ecommerce" },  
-    // },  
+     
   ];  
   
   
