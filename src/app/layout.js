@@ -20,6 +20,11 @@ export const museoReg = localFont({
   variable: "--font-museo",
   weight: "700",
 });
+export const museoBold = localFont({
+  src: "./fonts/Museo_Slab_700.otf",
+  variable: "--font-museo",
+  weight: "700",
+});
 export const outfitLight = localFont({
   src: "./fonts/Outfit-Light.ttf",
   variable: "--font-outfitLight",

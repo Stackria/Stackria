@@ -35,7 +35,7 @@ export const Services = () => {
                   <div className="flex items-center">
                     <Link href={service.link} className={`${styles.headingLeft} py-2 `}>{service.title} 
                     </Link>
-                    <FaArrowUpRightFromSquare className="ml-2 text-secondary text-[15px]"/>
+                    <FaArrowUpRightFromSquare className="ml-2 text-black text-[15px]"/>
                   </div>
                   <IoIosArrowDropdown className={`text-slate-500 text-[25px] transition-transform  mt-2 ${toggle === index ? "rotate-180" : "rotate-0"}`}/>
                       
@@ -55,8 +55,9 @@ export const Services = () => {
         ))}
         </div>
         <div className=" text-center align-center py-10">
-            <Link href='/services' className={` ${styles.outfit} rounded-sm bg-primary px-5 py-2 text-white text-xs mt-5 font-bold hover:bg-secondary`}>
-                Explore More Of Our Services
+            <Link href='/services' className={` ${styles.outfit} rounded-md bg-primary px-5 py-2 text-white text-[15px] mt-5 shadow-lg shadow-blue-500/50 
+            font-bold hover:bg-secondary`}>
+                EXPLORE MORE OF OUR SERVICES
             </Link>
         </div>
       </div>
