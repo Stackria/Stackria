@@ -46,8 +46,14 @@ export const Portfolio = () => {
                   priority 
                   alt={title}/>
             </div>
+            
           </div>
         ))}
+        <div className="mx-auto text-center">
+              <Link href='#'  className={`${styles.outfit} rounded-md bg-primary px-5 py-3 text-white text-[14px] shadow-lg shadow-blue-500/50 mt-5 font-bold hover:bg-secondary`}>
+                      DISCOVER MORE
+                              </Link>
+            </div>
       </div>
     </section>
 

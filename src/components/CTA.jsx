@@ -1,7 +1,8 @@
 import React from 'react'
+import TypewriterEffect from '@/components/typewriter'
 
 export const CTA = () => {
   return (
-    <div>CTA</div>
+    <div>{}<TypewriterEffect/></div>
   )
 }

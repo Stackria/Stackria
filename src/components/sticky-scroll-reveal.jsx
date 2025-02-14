@@ -93,8 +93,8 @@ const content = [
     description:
       "We analyze your business needs, define project goals, and create a roadmap for success.",
     content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Collaborative Editing
+      <div className="text-[20px] h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+       Phase 1
       </div>
     ),
   },
@@ -103,14 +103,15 @@ const content = [
     description:
       "We craft intuitive UI/UX wireframes and prototypes, ensuring a visually appealing and user-friendly experience then our team codes a fast, scalable, and responsive solution using modern web technologies",
     content: (
-      <div className="h-full w-full  flex items-center justify-center text-white">
-        <Image
+      <div className="text-[20px] h-full w-full  flex items-center justify-center text-white">
+        {/* <Image
           src="/linear.webp"
           width={300}
           height={300}
           className="h-full w-full object-cover"
           alt="linear board demo"
-        />
+        /> */}
+        Phase 2
       </div>
     ),
   },
@@ -119,8 +120,8 @@ const content = [
     description:
       "We rigorously test for performance, security, and responsiveness to ensure flawless functionality.",
     content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-        Version control
+      <div className="text-[20px] h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+        Phase 3
       </div>
     ),
   },
@@ -129,8 +130,8 @@ const content = [
     description:
       "After final refinements, we deploy the solution with seamless integration and scalability in mind.",
     content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Running out of content
+      <div className="text-[20px] h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+        Phase 4
       </div>
     ),
   },
@@ -139,8 +140,8 @@ const content = [
     description:
       "We provide continuous support, updates, and optimization to help your business scale effortlessly.",
     content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Running out of content
+      <div className="text-[20px] h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+        Phase 5
       </div>
     ),
   },
