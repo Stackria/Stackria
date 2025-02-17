@@ -70,11 +70,13 @@ export const Header = () => {
             <h1 className={`${museo.className} text-3xl  md:text-5xl font-bold text-white dark:text-white `}>
             Innovative Web Solutions for Modern Businesses
             </h1>
-            <p className={`${outfitLight.className}  text-[15px] md:text-xl text-secondary dark:text-neutral-200 xl:px-40 px-10`}>
+            <p className={`${outfitLight.className}  text-[15px] md:text-xl text-secondary dark:text-neutral-200 xl:px-40 px-10 pb-10`}>
             Custom web-based solutions that highlights your business, products and services.
             </p>
+
+            {/* Get a quote button */}
             <div className="">
-              <button className={`${styles.paragraph} rounded-sm bg-white text-primary px-2 py-2 black mt-5 font-bold hover:bg-secondary hover:text-white text-[15px]`}>Learn More</button>
+              <Link href='/contact' className={`${styles.paragraph} rounded-md shadow-lg shadow-slate-800 bg-white text-primary px-2 py-2 black mt-10 font-bold hover:bg-secondary hover:text-white text-[15px]`}>GET A QUOTE</Link>
             </div>
         </div>)
   );

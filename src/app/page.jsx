@@ -20,7 +20,7 @@ const page = () => {
       <Portfolio/>
       <Process/>
       <CTA/>
-      <Industries/>
+      {/* <Industries/> */}
       
     </div>
   )
