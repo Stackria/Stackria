@@ -3,6 +3,6 @@ import TypewriterEffect from '@/components/typewriter'
 
 export const CTA = () => {
   return (
-    <div>{}<TypewriterEffect/></div>
+    <div className='bg-slate-100'><TypewriterEffect/></div>
   )
 }

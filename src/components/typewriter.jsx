@@ -163,13 +163,13 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
   
     return (
       <div className={`${styles.outfit} flex flex-col items-center justify-center h-[40rem]`}>
-        <p className="text-neutral-600 font-bold dark:text-neutral-200 text-[15px] sm:text-base">
+        <p className="text-neutral-600 font-bold dark:text-neutral-200 text-[15px] xl:text-[25px] sm:text-base">
           Lets help your business innovate swiftly
         </p>
-        <TypewriterEffectSmooth words={words} />
+        <TypewriterEffectSmooth words={words} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl" />
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
           <button className="w-40 h-10 rounded-md bg-primary border dark:border-white border-transparent text-white font-bold text-[16px]">
-            Reach us
+            REACH US
           </button>
           {/* <button className="w-40 h-10 rounded-xl bg-white text-black border border-black text-sm">Signup</button> */}
         </div>

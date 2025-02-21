@@ -3,7 +3,7 @@ import React from "react";
 import { motion, useScroll, useTransform, useSpring } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { museo, museoReg, outfitLight } from "../layout";
+import { museo, museoReg, outfitLight, outfitRegular } from "../layout";
 import  {outfit} from "../layout";
 import {styles} from '@/constants/style'
 
@@ -33,7 +33,7 @@ export const HeroParallax = ({
   return (
     (<div
       ref={ref}
-      className="h-[150vh] md:h-[170vh] xl:h-[180vh] 2xl:h-[150vh] bg-[#0ca9f2da] pt-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
+      className="h-[150vh] md:h-[170vh] xl:h-[230vh] 2xl:h-[150vh] bg-[#0ca9f2da] pt-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]">
       <Header />
       <motion.div
         style={{
@@ -66,17 +66,17 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     (<div
-          className="max-w-7xl relative mx-auto py-2 md:py-40 px-2 xl:px-5 w-full  left-0 top-0 text-center ">
+          className="max-w-7xl relative mx-auto py-2 md:py-40 px-2 w-full xl:w-[50%]  left-0 top-0 text-center ">
             <h1 className={`${museo.className} text-3xl  md:text-5xl font-bold text-white dark:text-white `}>
             Innovative Web Solutions for Modern Businesses
             </h1>
-            <p className={`${outfitLight.className}  text-[15px] md:text-xl text-secondary dark:text-neutral-200 xl:px-40 px-10 pb-10`}>
+            <p className={`${outfitLight.className}  text-[15px] md:text-[15px] xl:text-[15px] text-secondary dark:text-neutral-200 xl:px-40 px-10 pb-10`}>
             Custom web-based solutions that highlights your business, products and services.
             </p>
 
             {/* Get a quote button */}
             <div className="">
-              <Link href='/contact' className={`${styles.paragraph} rounded-md shadow-lg shadow-slate-800 bg-white text-primary px-2 py-2 black mt-10 font-bold hover:bg-secondary hover:text-white text-[15px]`}>GET A QUOTE</Link>
+              <Link href='/contact' className={`${museo.className} text-[15px] md:text-[15px] xl:text-[15px] rounded-md shadow-md shadow-slate-800 bg-white text-primary px-5 py-2 black mt-10 font-bold hover:bg-secondary hover:text-white`}>GET A QUOTE</Link>
             </div>
         </div>)
   );

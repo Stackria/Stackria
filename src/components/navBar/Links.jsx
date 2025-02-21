@@ -67,7 +67,7 @@ const Links = ({scroll}) => {
                 </Image>
                 {/* Mobile menu */}
                 {open && (
-                    <nav className='xl:hidden fixed top-[100px] left-0 h-[calc(100vh-100px)] leading-10 bg-white py-10 px-5 xl:text-[15px] text-[15px] -mt-5 w-full z-10'>
+                    <nav className={`xl:hidden fixed top-[90px] left-0 h-[calc(100vh-100px)] leading-10  py-10 px-5 xl:text-[15px] text-[15px] -mt-5 w-full z-10 ${scroll ? "bg-black" : "bg-black"}`}>
                     <div className='flex flex-col space-y-4'>
                         {links.map((link) => (
                             <Navlink 
@@ -77,7 +77,7 @@ const Links = ({scroll}) => {
                         ))}
                     </div>
                     <Link href="/contact">
-                        <button className={` ${museoReg.className} items-center flex rounded-sm bg-primary ml-2 text-white px-5 py-0 black font-bold hover:bg-secondary hover:text-white`}><GoArrowUpRight />Get in touch
+                        <button className={` ${museoReg.className} items-center flex rounded-md bg-primary ml-2 text-white px-5 py-0 black font-bold hover:bg-secondary hover:text-white`}><GoArrowUpRight />GET IN TOUCH
                         </button>
                     </Link>
                 </nav>

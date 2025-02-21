@@ -53,7 +53,7 @@ const Navbar = () => {
               {/* Get in touch button */}
               <Link href="/contact">
                   <button className={` ${museoReg.className} ${scroll ? "bg-primary" : "bg-white"}
-                  ${scroll ? "text-white" : "text-primary"} hidden xl:flex rounded-md -mt-2 text-gray-800 px-5 py-2 black font-bold hover:bg-secondary hover:text-white`}>Get  in touch
+                  ${scroll ? "text-white" : "text-primary"} hidden xl:flex rounded-md -mt-2 text-gray-800 px-5 py-2 black font-bold hover:bg-secondary hover:text-white`}>GET IN TOUCH
                   </button>
               </Link>
               

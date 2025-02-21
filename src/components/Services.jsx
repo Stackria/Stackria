@@ -16,11 +16,11 @@ export const Services = () => {
   return (
     <section>
       <div className=" py-10 px-5">
-        <div className="py-5">
+        <div className="py-5 xl:py-10 xl:px-5">
             <h1 className={`${museoReg.className} text-secondary text-xs text-center `}>OUR EXPERTISE</h1>
-            <h3 className="text-black text-center text-[20px] font-bold">Solutions We Provide:</h3>
+            <h3 className={`${museoReg.className}text-black text-center text-[20px] font-bold xl:text-3xl`}>Solutions We Provide:</h3>
         </div>
-        <div className="bg-slate-50 py-5">
+        <div className="bg-slate-50 py-5 xl:p-10 mx-auto xl:w-[1000px]">
           {/* index - position of each solution in the list - helps you know which item was clicked so you can show or hide its details.*/}
       {servicesList.map((service, index) => (
           
@@ -35,9 +35,9 @@ export const Services = () => {
                   <div className="flex items-center">
                     <Link href={service.link} className={`${styles.headingLeft} py-2 `}>{service.title} 
                     </Link>
-                    <FaArrowUpRightFromSquare className="ml-2 text-black text-[15px]"/>
+                    <FaArrowUpRightFromSquare className="ml-2 text-black text-[15px] "/>
                   </div>
-                  <IoIosArrowDropdown className={`text-slate-500 text-[25px] transition-transform  mt-2 ${toggle === index ? "rotate-180" : "rotate-0"}`}/>
+                  <IoIosArrowDropdown className={`text-slate-500 text-[25px] xl:text-[35px] transition-transform  mt-2 ${toggle === index ? "rotate-180" : "rotate-0"}`}/>
                       
                 </div>
 
@@ -57,7 +57,7 @@ export const Services = () => {
         <div className=" text-center align-center py-10">
             <Link href='/services' className={` ${styles.outfit} rounded-md bg-primary px-5 py-2 text-white text-[15px] mt-5 shadow-lg shadow-blue-500/50 
             font-bold hover:bg-secondary`}>
-                EXPLORE MORE OF OUR SERVICES
+                DISCOVER MORE
             </Link>
         </div>
       </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import {footerLinks, socialIcon} from "@/constants/index"
-import FooterLink from '@/components/footer/links/footerLink/FooterLink';
+
 import styles from '@/constants/style'
 import { museoReg, outfitLight, outfitMed, outfitReg, outfitSM } from '@/app/layout';
 

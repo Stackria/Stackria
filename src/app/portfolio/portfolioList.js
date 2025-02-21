@@ -11,7 +11,7 @@ export const portfolioList = [
       img: "/images/portfolio/p-1.png",  
       icons: [FaWordpressSimple, SiWoocommerce],  
       span: "Technology Stack",  
-      button: { text: "EXPLORE", url: "/portfolio/zamaniluxuries" },  
+      button: { text: "Explore", url: "/portfolio/zamaniluxuries" },  
     },  
     {  
         title: "Colorful Sound Design",  
@@ -19,7 +19,7 @@ export const portfolioList = [
         img: "/images/portfolio/p-4.png",  
         icons: [BiSolidFileCss , FaBootstrap, RiJavascriptFill, FaSquarespace],  
         span: "Technology Stack",  
-        button: { text: "EXPLORE", url: "/projects/ecommerce" },  
+        button: { text: "Explore", url: "/projects/ecommerce" },  
       },
     {  
       title: "ES Broker",  
@@ -27,7 +27,7 @@ export const portfolioList = [
       img: "/images/portfolio/p-2.png",  
       icons: [BiSolidFileCss, FaBootstrap, RiJavascriptFill],  
       span: "Technology Stack",  
-      button: { text: "EXPLORE", url: "/portfolio/esbroker" },  
+      button: { text: "Explore", url: "/portfolio/esbroker" },  
     },  
     {  
       title: "Bill Me",  
@@ -35,7 +35,7 @@ export const portfolioList = [
       img: "/images/portfolio/p-3.png",  
       icons: [BiSolidFileCss, RiJavascriptFill, RiTailwindCssFill,  FaReact],  
       span: "Technology Stack",  
-      button: { text: "EXPLORE", url: "/portfolio/billme" },  
+      button: { text: "Explore", url: "/portfolio/billme" },  
     },  
      
   ];  
