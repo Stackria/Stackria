@@ -162,7 +162,7 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
     ]
   
     return (
-      <div className={`${styles.outfit} flex flex-col items-center justify-center h-[40rem]`}>
+      <div className={`${styles.outfit} flex flex-col items-center justify-center h-[40rem] `}>
         <p className="text-neutral-600 font-bold dark:text-neutral-200 text-[15px] xl:text-[25px] sm:text-base">
           Lets help your business innovate swiftly
         </p>

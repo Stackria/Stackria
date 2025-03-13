@@ -7,8 +7,8 @@ import {styles} from '@/constants/style'
 export const Process = () => {
   return (
     <div>
-      <div className="">
-        <h1 className={`${museoReg.className} text-secondary text-lg text-center pt-20`}>OUR DEVELOPMENT PROCESS</h1>
+      <div className="xl:py-20">
+        <h1 className={`${museoReg.className} text-secondary text-lg text-center pt-20 `}>OUR DEVELOPMENT PROCESS</h1>
         {/* Button */}
         
       </div>
