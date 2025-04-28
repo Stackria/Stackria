@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import Links from "@/components/navBar/Links"
 import Image from 'next/image';
-import { museo, museoReg } from "@/app/layout";
+import { museo, museoReg, outfitRegular } from "@/app/layout";
 import { outfit } from "@/app/layout";
 import logoOne from '@/assets/logo-white.png'
 import logoColored from '@/assets/logo.png'
@@ -27,38 +27,36 @@ const Navbar = () => {
     
 
   return (
-    <header className={`${scroll ? "bg-white" : "bg-transparent"} items-center w-full flex fixed z-10 px-50 h-[70px] xl:h-[80px]`}>
-        <div className=' mx-auto container'>
-          <div className='flex px-2 items-center justify-between'>
-                    
-                    {/* Logo */}
-                    <div className='flex-shrink-0'>
-                        <Image 
-                        className='xl:w-[150px] w-[150px] h-auto' 
-                        // Change logo to svg
-                        src={scroll ? logoColored : logoOne}
-                        width={150} 
-                        height={150} 
-                        priority 
-                        alt='stackria web development agency'
-                        />
-                    </div>
+    <header className={` ${scroll ? "bg-white" : "bg-transparent"} bg-transperant items-center w-full flex fixed z-10 px-5 xl:px-20 h-[70px] xl:h-[80px] `}>
+        <div className='mx-auto flex justify-between items-center w-full'>
+
+              {/* Logo */}
+              <div className='flex-shrink-0'>
+                  <Image 
+                  className='xl:w-[150px] xl:-ml-0 -ml-2 w-[150px] h-auto' 
+                  // Change logo to svg
+                  src={scroll ? logoColored : logoOne}
+                  width={150} 
+                  height={150} 
+                  priority 
+                  alt='stackria web development agency'
+                  />
+              </div>
             
 
               {/* Links */}
-              <nav className="xl:ml-0 ml-32 md:ml-auto">
+              <nav className="xl:ml-0 ml-40 md:-mr-[370px] lg:-mr-[570px] flex flex-1 justify-center">
                   <Links scroll={scroll}/>
               </nav>
 
               {/* Get in touch button */}
               <Link href="/contact">
-                  <button className={` ${museoReg.className} ${scroll ? "bg-primary" : "bg-white"}
-                  ${scroll ? "text-white" : "text-primary"} hidden xl:flex rounded-md -mt-2 text-gray-800 text-[15px] px-5 py-2 black font-bold hover:bg-secondary hover:text-white`}>GET IN TOUCH
+                  <button className={` ${outfitRegular.className} ${scroll ? "bg-primary" : "bg-white"}
+                   ${scroll ? "text-white" : "text-black"} hidden xl:flex rounded-md -mt-2 text-[15px] px-5 py-3 black font-bold hover:bg-secondary hover:text-white`}>GET IN TOUCH
                   </button>
               </Link>
               
           </div>
-        </div>
     </header>
   )
 }

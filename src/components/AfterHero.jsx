@@ -15,7 +15,7 @@ export const AfterHero = () => {
         <div className="xl:pt-5 xl:w-[50%]">
           <h4
           
-          className={`${outfitLight.className} xl:text-left text-justify text-slate-800 text-[15px] xl:text-[16px] xl:w-[70%]`}>At Stackria, we empower businesses to thrive by delivering modern, scalable web-based solutions that streamline operations and enhance digital presence.</h4>
+          className={`${outfitLight.className} xl:text-left text-justify text-slate-800 text-[15px] xl:text-[16px] xl:w-[70%]`}>At Stackria, we empower businesses to <span className='font-bold text-black'>thrive</span> by delivering <span className='font-bold text-black'>modern</span>, scalable <span className='font-bold text-black'>web-based</span> solutions that streamline operations and enhance digital presence.</h4>
         </div>
       </div>
     </section>

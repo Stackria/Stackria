@@ -7,23 +7,53 @@ import googlebiz from '@/assets/google-business.svg'
 {/* Footer Link */}
 export const footerLinks = [
     {
-        title: "Quick Links",
+        title: "Stackria",
+        links: [
+            {
+            title: "Who We Are",
+            path: "/about",
+            },
+            {
+            title: "Contact Us",
+            path: "/contact",
+            },
+            {
+            title: "Our Work",
+            path: "/portfolio",
+            },
+            {
+            title: "FAQs",
+            path: "/faqs",
+            },
+            {
+            title: "Affiliate",
+            path: "/affiliate",
+            },
+            {
+                title: "Privacy Policy",
+                path: "/privacy"
+                },
+            
+        ]
+    },
+    {
+        title: "Our Services",
         links: [
             {
             title: "Web Development",
             path: "/solutions/web-development",
             },
             {
+                title: "Custom Software Development",
+                path: "/solutions/custom-software-development",
+                },
+            {
+            title: "MVP Development",
+            path: "/mvp-development",
+            },
+            {
             title: "Search Engine Optimization",
-            path: "/solutions/search-engine-optimization",
-            },
-            {
-            title: "Frequent Asked Questions",
-            path: "/faqs",
-            },
-            {
-            title: "Affiliate",
-            path: "/affiliate",
+            path: "/search-engine-optimization",
             },
             
         ]

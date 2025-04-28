@@ -20,7 +20,7 @@ export const Services = () => {
             <h1 className={`${museoReg.className} text-secondary text-xs text-center `}>OUR EXPERTISE</h1>
             <h3 className={`${museoReg.className}text-black text-center text-[20px] font-bold xl:text-3xl`}>Solutions We Provide:</h3>
         </div>
-        <div className="bg-slate-50 py-5 xl:p-10 mx-auto xl:w-[1000px]">
+        <div className="bg-slate-50 py-5 xl:p-10 mx-auto xl:w-[1200px]">
           {/* index - position of each solution in the list - helps you know which item was clicked so you can show or hide its details.*/}
       {servicesList.map((service, index) => (
           
@@ -44,7 +44,7 @@ export const Services = () => {
                 {/* Only Show the Active Dropdown */}
                 {/* If toggle === index, the current item opens → shows details (flex)*/}
                 <div className={toggle === index ? "flex mt-2" : 'hidden'}>
-                  <span className={`${styles.paragraphDetails} leading-2`}>
+                  <span className={`${styles.paragraphDetails} leading-2 `}>
                     {service.details}
                   </span>
                 </div>

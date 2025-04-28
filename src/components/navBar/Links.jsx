@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Navlink from "@/components/navBar/links/navLink/NavLink"
 import Link from 'next/link';
 import Image from 'next/image';
-import { museo, museoReg } from "@/app/layout";
+import { museo, museoReg, outfitRegular } from "@/app/layout";
 import menu from '@/assets/menu.png'
 import close from '@/assets/close.png'
 import { GoArrowUpRight } from "react-icons/go";
@@ -67,7 +67,7 @@ const Links = ({scroll}) => {
                 </Image>
                 {/* Mobile menu */}
                 {open && (
-                    <nav className={`xl:hidden fixed top-[90px] left-0 h-[calc(100vh-100px)] leading-10  py-10 px-5 xl:text-[15px] text-[15px] -mt-5 w-full z-10 ${scroll ? "bg-black" : "bg-black"}`}>
+                <nav className={`xl:hidden fixed top-[90px] left-0 h-[calc(100vh-100px)] leading-10  py-10 px-5 xl:text-[15px] text-[15px] -mt-5 w-full z-10 bg-white`}>
                     <div className='flex flex-col space-y-4'>
                         {links.map((link) => (
                             <Navlink 
@@ -77,7 +77,7 @@ const Links = ({scroll}) => {
                         ))}
                     </div>
                     <Link href="/contact">
-                        <button className={` ${museoReg.className} items-center flex rounded-md bg-primary ml-2 text-white px-5 py-0 black font-bold hover:bg-secondary hover:text-white`}><GoArrowUpRight />GET IN TOUCH
+                        <button className={` ${outfitRegular.className}  items-center flex rounded-md bg-primary ml-2 text-white px-2 py-2 black font-bold hover:bg-secondary hover:text-white text-sm`}><GoArrowUpRight />GET IN TOUCH
                         </button>
                     </Link>
                 </nav>
