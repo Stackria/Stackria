@@ -27,13 +27,13 @@ const Navbar = () => {
     
 
   return (
-    <header className={` ${scroll ? "bg-white" : "bg-transparent"} bg-transperant items-center w-full flex fixed z-10 px-5 xl:px-20 h-[70px] xl:h-[80px] `}>
+    <header className={` ${scroll ? "bg-white" : "bg-transparent"} bg-transperant items-center w-full flex fixed z-10 px-5 xl:px-10 h-[70px] xl:h-[80px] `}>
         <div className='mx-auto flex justify-between items-center w-full'>
 
               {/* Logo */}
               <div className='flex-shrink-0'>
                   <Image 
-                  className='xl:w-[150px] xl:-ml-0 -ml-2 w-[150px] h-auto' 
+                  className='xl:w-[170px] md:w-[120px] xl:-ml-0 -ml-2 w-[150px] h-auto' 
                   // Change logo to svg
                   src={scroll ? logoColored : logoOne}
                   width={150} 
@@ -52,7 +52,7 @@ const Navbar = () => {
               {/* Get in touch button */}
               <Link href="/contact">
                   <button className={` ${outfitRegular.className} ${scroll ? "bg-primary" : "bg-white"}
-                   ${scroll ? "text-white" : "text-black"} hidden xl:flex rounded-md -mt-2 text-[15px] px-5 py-3 black font-bold hover:bg-secondary hover:text-white`}>GET IN TOUCH
+                   ${scroll ? "text-white" : "text-black"} hidden xl:flex rounded-md -mt-2 text-[15px] px-5 py-3 black font-bold xl:mt-2 xl:text-[20px] hover:bg-secondary hover:text-white`}>REACH US NOW
                   </button>
               </Link>
               

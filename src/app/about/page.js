@@ -29,9 +29,9 @@ const page = () => {
         
         <section className="flex flex-col-reverse lg:flex-row md:flex-row xl:flex-row items-center justify-between mx-auto xl:px-10 xl:py-20 gap-20">
           {/* Hero text */}
-          <div  className="xl:w-[60%] lg:w-[50%] pb-10 xl:pb-0 ">
+          <div  className="xl:w-[50%] lg:w-[50%] pb-10 xl:pb-0 ">
             <h1 
-              className={`${museoReg.className} text-left text-primary text-[26px] md:text-[26px] lg:text-[36px] xl:text-[48px]`}
+              className={`${museoReg.className} text-left text-primary text-[26px] md:text-[18px] lg:text-[36px] xl:text-[48px]`}
               
             >
               Empowering Businesses with Scalable Web-Based Solutions
@@ -45,7 +45,7 @@ const page = () => {
           </div>
 
           {/* Image */}
-          <div className="xl:w-[50%] lg:w-[50%] w-full h-full">
+          <div className="xl:w-[50%] lg:w-[50%] w-full h-full md:w-[50%]">
             <Image alt='about-us'
             className='relative xl:h-full xl:w-full w-full h-full mx-auto'
             src={img} 

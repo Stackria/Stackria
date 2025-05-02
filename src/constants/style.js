@@ -1,4 +1,4 @@
-import { museo, outfitLight, outfitRegular, museoReg } from '@/app/layout'
+import { museo, outfitLight, outfitRegular, museoReg, outfitSemibold } from '@/app/layout'
 
 export const styles = {
     heading1: `${museoReg.className} text-secondary text-center  text-[36px]`,
