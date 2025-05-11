@@ -7,8 +7,8 @@ import { outfit, outfitLight } from '@/app/layout'
 const Footer = () => {
   
   return (
-    <footer className='flex-col w-full flex justify-between mx-auto px-50 h-[400px] bottom-0'>
-        <div  className='flex flex-col xl:flex-row items-center justify-around text-center  h-[300px] px-40 py-10'>
+    <footer className='flex flex-col w-full justify-between min-h-[400px]'>
+        <div  className='flex flex-col xl:flex-row items-center justify-around text-center px-12 py-10'>
           {/* Footer Logo */}
           <div className=' grid justify-items-center'>
             <div className='w-[150px]'>
@@ -49,8 +49,8 @@ const Footer = () => {
         </div>
         
          {/* Footer Bottom */}
-        <div className='mx-auto text-center align-center fixed bottom-0 py-2 bg-[#0ca8f2] w-full '>
-          <h2 className={`${outfitLight.className} text-center text-white text-[15px]`}>© 2025, Stackria Ltd</h2>
+        <div className='mt-auto text-center py-2 bg-[#0ca8f2] w-full'>
+          <h2 className={`${outfitLight.className} text-center text-white text-[11px] md:text-[15px]`}>© 2025, Stackria Ltd</h2>
         </div>
     </footer>
   )

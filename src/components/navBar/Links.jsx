@@ -11,7 +11,7 @@ const links = [
     
     {
         title: "About Us",
-        path: "/about",
+        path: "/about-us",
     },
     {
         title: "Our Services",
@@ -77,7 +77,7 @@ const Links = ({scroll}) => {
                         ))}
                     </div>
                     <Link href="/contact">
-                        <button className={` ${outfitRegular.className}  items-center flex rounded-md bg-primary ml-2 text-white px-2 py-2 black font-bold hover:bg-secondary hover:text-white text-sm`}><GoArrowUpRight />GET IN TOUCH
+                        <button className={` ${outfitRegular.className}  items-center flex rounded-md bg-primary ml-2 text-white px-2 py-2 black font-bold hover:bg-secondary hover:text-white text-sm`}><GoArrowUpRight />REACH US NOW
                         </button>
                     </Link>
                 </nav>

@@ -1,5 +1,5 @@
 import React from 'react'
-import TypewriterEffect from '@/components/typewriter'
+import TypewriterEffect from '@/components/ui/typewriter'
 
 export const CTA = () => {
   return (

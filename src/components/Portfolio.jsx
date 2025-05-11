@@ -22,7 +22,7 @@ export const Portfolio = () => {
               <h1 className={`${museoReg.className}  text-black text-[18px] xl:text-[24px] pb-5`}>{title}</h1>
               
               {/* Details */}
-              <p className={`${outfitRegular.className} text-sm xl:text-[16px]  text-slate-700 xl:w-[90%]`}>{details}</p>
+              <p className={`${outfitRegular.className} text-[14px] xl:text-[16px]  text-slate-700 xl:w-[90%]`}>{details}</p>
               
               {/* Tech Stack */}
               <div className="leading-10 mt-10">
@@ -31,12 +31,12 @@ export const Portfolio = () => {
                 {/* Stack logo */}
                 <div className="flex gap-1 pb-2">
                   {Icons.map((Icon, i) => (
-                    <Icon key={i} className="text-primary xl:text-4xl text-2xl" />
+                    <Icon key={i} className="text-primary xl:text-4xl text-4xl" />
                   ))}
                 </div>
                 
                 {/* Button */}
-                <Link href={button.url}  className={`${styles.outfit} rounded-md bg-primary px-5 py-2 text-white text-xs xl:text-[15px] shadow-lg shadow-blue-500/50 mt-5 font-bold hover:bg-secondary`}>{button.text}
+                <Link href={button.url} className={`${outfitLight.className} rounded-md bg-primary px-5 py-2 text-white text-[12px] xl:text-[15px] shadow-lg shadow-blue-500/50 mt-5 font-bold hover:bg-secondary`}>{button.text}
                 </Link>
               </div>
             </div>
@@ -55,7 +55,7 @@ export const Portfolio = () => {
           </div>
         ))}
         <div className="mx-auto text-center">
-              <Link href='#'  className={`${styles.outfit} rounded-md bg-primary px-5 py-2 text-white text-[15px] shadow-lg shadow-blue-500/50 mt-5 font-bold hover:bg-secondary`}>
+              <Link href='/portfolio'  className={`${outfitLight.className} rounded-md bg-primary px-5 py-2 text-white text-[12px] shadow-lg shadow-blue-500/50 mt-5 font-bold hover:bg-secondary`}>
                       DISCOVER MORE
                               </Link>
             </div>

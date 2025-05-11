@@ -6,22 +6,22 @@ import {AfterHero} from '@/components/AfterHero'
 import {Services} from '@/components/Services'
 import {Portfolio} from '@/components/Portfolio'
 import {Process} from '@/components/Process'
+import {WhyChooseUs} from '@/components/WhyChooseUs'
 import {CTA} from '@/components/CTA'
-import {Industries} from '@/components/Industries'
+// import {Industries} from '@/components/Industries'
 
 
 const page = () => {
   return (
     <div>
-      {/* <h1 className={`${museo.className}`}></h1> */}
       <Hero/>
       <AfterHero/>
       <Services/>
       <Portfolio/>
+      <WhyChooseUs/>
       <Process/>
       <CTA/>
       {/* <Industries/> */}
-      
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import { outfitRegular, museoReg, outfitLight } from "@/app/layout";
+import { outfitRegular, museoReg, outfitLight, outfitSemibold } from "@/app/layout";
 import {styles} from '@/constants/style'
 import imgOne from '@/assets/software-development.png'
 import imgTwo from '@/assets/mvp-development.png'
@@ -24,7 +24,7 @@ import { SiSemrush } from "react-icons/si";
 import { SiNextdotjs } from "react-icons/si";
 import { SiWoocommerce } from "react-icons/si";
 import { SiYoast } from "react-icons/si";
-import TypewriterEffect from '@/components/typewriter'
+import TypewriterEffect from '@/components/ui/typewriter'
 import Link from 'next/link';
 
 const page = () => {
@@ -44,8 +44,10 @@ const page = () => {
         <h1 className={`${museoReg.className} text-center text-slate-900 text-[20px] md:text-[18px] lg:text-[36px] xl:text-[38px]`} >
               Shaping Tomorrow’s Web, Today
         </h1>
-        <p className={`${outfitLight.className} text-center mx-auto text-slate-800 text-xs md:text-sm md:w-[70%] xl:text-[16px] xl:w-[70%] px-10`}>
+        <p className={`${outfitLight.className} text-center mx-auto text-slate-800 text-[12px] md:text-sm md:w-[70%] xl:text-[16px] xl:w-[70%] px-10`}>
         With Stackria, your business is equipped with innovative solutions that propel you ahead of the competition.
+        </p>
+        <p className={`${outfitLight.className} text-center mx-auto text-slate-800 text-[12px] hidden xl:flex md:flex lg:flex md:text-sm md:w-[70%] xl:text-[16px] xl:w-[70%] px-10`}>
         Partner with Stackria to create web experiences that are as forward-thinking as your business. 
         </p>
       </div>
@@ -89,8 +91,8 @@ const page = () => {
             {/* Button */}
             <div className="flex justify-center md:justify-start mt-5 md:pb-20">
               <Link
-                href="#"
-                className={`${styles.outfitSemibold} rounded-[3px] bg-primary px-5 py-2 text-white text-[xs] md:text-[11px] xl:text-[15px] shadow-lg shadow-blue-500/50 font-bold hover:bg-secondary`}
+                href="/services/custom-software-development"
+                className={`${outfitSemibold.className} rounded-[3px] bg-primary px-5 py-2 text-white text-[11px] md:text-[11px] xl:text-[15px] shadow-lg shadow-blue-500/50 font-bold hover:bg-secondary`}
               >
                 EXPLORE
               </Link>
@@ -146,8 +148,8 @@ const page = () => {
             {/* Button */}
             <div className="flex justify-center md:justify-start mt-5 md:pb-20">
               <Link
-                href="#"
-                className={`${styles.outfitSemibold} rounded-[3px] bg-primary px-5 py-2 text-white text-[xs] md:text-[11px] xl:text-[15px] shadow-lg shadow-blue-500/50 font-bold hover:bg-secondary`}
+                href="/services/mvp-development"
+                className={`${outfitSemibold.className} rounded-[3px] bg-primary px-5 py-2 text-white text-[11px] md:text-[11px] xl:text-[15px] shadow-lg shadow-blue-500/50 font-bold hover:bg-secondary`}
               >
                 EXPLORE
               </Link>
@@ -203,8 +205,8 @@ const page = () => {
             {/* Button */}
             <div className="flex justify-center md:justify-start mt-5 md:pb-20">
               <Link
-                href="#"
-                className={`${styles.outfitSemibold} rounded-[3px] bg-primary px-5 py-2 text-white text-[xs] md:text-[11px] xl:text-[15px] shadow-lg shadow-blue-500/50 font-bold hover:bg-secondary`}
+                href="/services/mern-development"
+                className={`${outfitSemibold.className} rounded-[3px] bg-primary px-5 py-2 text-white text-[11px] md:text-[11px] xl:text-[15px] shadow-lg shadow-blue-500/50 font-bold hover:bg-secondary`}
               >
                 EXPLORE
               </Link>
@@ -261,8 +263,8 @@ const page = () => {
             {/* Button */}
             <div className="flex justify-center md:justify-start mt-5 md:pb-20">
               <Link
-                href="#"
-                className={`${styles.outfitSemibold} rounded-[3px] bg-primary px-5 py-2 text-white text-[xs] md:text-[11px] xl:text-[15px] shadow-lg shadow-blue-500/50 font-bold hover:bg-secondary`}
+                href="/services/e-commerce-development"
+                className={`${outfitSemibold.className} rounded-[3px] bg-primary px-5 py-2 text-white text-[11px] md:text-[11px] xl:text-[15px] shadow-lg shadow-blue-500/50 font-bold hover:bg-secondary`}
               >
                 EXPLORE
               </Link>
@@ -311,8 +313,8 @@ const page = () => {
             {/* Button */}
             <div className="flex justify-center md:justify-start mt-5 md:pb-20">
               <Link
-                href="#"
-                className={`${styles.outfitSemibold} rounded-[3px] bg-primary px-5 py-2 text-white text-[xs] md:text-[11px] xl:text-[15px] shadow-lg shadow-blue-500/50 font-bold hover:bg-secondary`}
+                href="/services/web-care"
+                className={`${outfitSemibold.className} rounded-[3px] bg-primary px-5 py-2 text-white text-[11px] md:text-[11px] xl:text-[15px] shadow-lg shadow-blue-500/50 font-bold hover:bg-secondary`}
               >
                 EXPLORE
               </Link>
@@ -362,8 +364,8 @@ const page = () => {
             {/* Button */}
             <div className="flex justify-center md:justify-start mt-5 md:pb-20">
               <Link
-                href="#"
-                className={`${styles.outfitSemibold} rounded-[3px] bg-primary px-5 py-2 text-white text-[xs] md:text-[11px] xl:text-[15px] shadow-lg shadow-blue-500/50 font-bold hover:bg-secondary`}
+                href="/services/search-engine-optimization"
+                className={`${outfitSemibold.className} rounded-[3px] bg-primary px-5 py-2 text-white text-[11px] md:text-[11px] xl:text-[15px] shadow-lg shadow-blue-500/50 font-bold hover:bg-secondary`}
               >
                 EXPLORE
               </Link>
@@ -382,6 +384,7 @@ const page = () => {
             
           </div>
         </div>
+        
         {/* CTA */}
         <section>
              <div className='bg-white py-0 xl:py-20' style={{ backgroundImage: 'url(/images/bg-cta.svg)', backgroundSize: 'cover', backgroundPosition: 'center' }}><TypewriterEffect/></div>

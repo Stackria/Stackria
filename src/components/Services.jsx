@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import { outfitLight, outfit, museoReg } from "@/app/layout";
+import { outfitLight, outfitSemibold, outfit, museoReg, outfitRegular } from "@/app/layout";
 import Image from 'next/image';
 import { servicesList } from "@/app/services/servicesList";
 import { IoIosArrowDropdown } from "react-icons/io";
@@ -17,8 +17,8 @@ export const Services = () => {
     <section>
       <div className=" py-10 px-5">
         <div className="py-5 xl:py-10 xl:px-5">
-            <h1 className={`${museoReg.className} text-secondary text-xs text-center `}>OUR EXPERTISE</h1>
-            <h3 className={`${museoReg.className}text-black text-center text-[20px] font-bold xl:text-3xl`}>Solutions We Provide:</h3>
+            <h1 className={`${outfitSemibold.className} text-secondary text-xs text-center `}>OUR EXPERTISE</h1>
+            <h3 className={`${outfitSemibold.className}text-black text-center text-[20px] font-bold xl:text-3xl`}>Solutions We Provide:</h3>
         </div>
         <div className="bg-slate-50 py-5 xl:p-10 mx-auto xl:w-[1200px]">
           {/* index - position of each solution in the list - helps you know which item was clicked so you can show or hide its details.*/}
@@ -33,9 +33,9 @@ export const Services = () => {
                 {/* */}
                 <div className="flex justify-between cursor" onClick={()=> setToggle(toggle === index ? null : index)}>
                   <div className="flex items-center">
-                    <Link href={service.link} className={`${styles.headingLeft} py-2 `}>{service.title} 
+                    <Link href={service.link} className={`${outfitRegular.className} py-2 text-[19px] md:text-[16px] xl:text-[25px]`}>{service.title} 
                     </Link>
-                    <FaArrowUpRightFromSquare className="ml-2 text-black text-[15px] "/>
+                    <FaArrowUpRightFromSquare className="ml-2 text-black text-[12px] "/>
                   </div>
                   <IoIosArrowDropdown className={`text-slate-500 text-[25px] xl:text-[35px] transition-transform  mt-2 ${toggle === index ? "rotate-180" : "rotate-0"}`}/>
                       
@@ -55,9 +55,9 @@ export const Services = () => {
         ))}
         </div>
         <div className=" text-center align-center py-10">
-            <Link href='/services' className={` ${styles.outfit} rounded-md bg-primary px-5 py-2 text-white text-[15px] mt-5 shadow-lg shadow-blue-500/50 
+            <Link href='/services' className={` ${outfitLight.className}  rounded-[5px] bg-primary px-5 py-2 text-white text-[11px] mt-5 shadow-lg shadow-blue-500/50 
             font-bold hover:bg-secondary`}>
-                DISCOVER MORE
+                DISCOVER MORE SERVICES
             </Link>
         </div>
       </div>

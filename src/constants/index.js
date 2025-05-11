@@ -11,7 +11,7 @@ export const footerLinks = [
         links: [
             {
             title: "Who We Are",
-            path: "/about",
+            path: "/about-us",
             },
             {
             title: "Contact Us",
@@ -40,8 +40,8 @@ export const footerLinks = [
         title: "Our Services",
         links: [
             {
-            title: "Web Development",
-            path: "/solutions/web-development",
+            title: "MERN Development",
+            path: "/solutions/mern-development",
             },
             {
                 title: "Custom Software Development",

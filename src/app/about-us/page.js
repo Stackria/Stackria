@@ -9,7 +9,7 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { MdConnectWithoutContact } from "react-icons/md";
 import { MdContactSupport } from "react-icons/md";
 import { GiLifeSupport } from "react-icons/gi";
-import TypewriterEffect from '@/components/typewriter'
+import TypewriterEffect from '@/components/ui/typewriter'
 
 const page = () => {
   return (

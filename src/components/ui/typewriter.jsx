@@ -2,6 +2,8 @@
 import { cn } from "@/utils"
 import { motion, stagger, useAnimate, useInView } from "framer-motion"
 import {styles} from '@/constants/style'
+import { outfitRegular, museoReg, outfitLight, outfitSemibold } from "@/app/layout";
+import FancyButton from "@/components/ui/FancyButton"
 
 import { useEffect } from "react"
 
@@ -162,16 +164,13 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
     ]
   
     return (
-      <div className={`${styles.outfit} flex flex-col items-center justify-center h-[40rem] `}>
-        <p className="text-neutral-600 font-bold dark:text-neutral-200 text-[16px] xl:text-[25px] sm:text-base">
-          Lets help your business innovate swiftly
+      <div className="flex flex-col items-center justify-center h-[40rem] ">
+        <p className={`${museoReg.className}text-neutral-600 font-bold dark:text-neutral-200 text-[36px] xl:text-[25px] sm:text-base px-10`}>
+        Ready to Build the Next Chapter of Your Business Story?
         </p>
-        <TypewriterEffectSmooth words={words} className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl" />
+        <TypewriterEffectSmooth words={words} className={`${outfitSemibold.className} text-xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl`} />
         <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
-          <button className="w-40 h-10 rounded-md bg-primary border dark:border-white border-transparent text-white font-bold text-sm">
-            REACH US
-          </button>
-          {/* <button className="w-40 h-10 rounded-xl bg-white text-black border border-black text-sm">Signup</button> */}
+        <FancyButton/>
         </div>
       </div>
     )

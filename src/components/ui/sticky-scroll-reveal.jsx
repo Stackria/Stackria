@@ -93,7 +93,7 @@ const content = [
     description:
       "We analyze your business needs, define project goals, and create a roadmap for success.",
     content: (
-      <div className="text-[20px] h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+      <div className="text-[20px] h-full w-full bg-[linear-gradient(to_bottom_right,var(--blac-500),var(--emerald-500))] flex items-center justify-center text-white">
        Phase 1
       </div>
     ),
@@ -149,7 +149,7 @@ const content = [
 
 export default function StickyScrollRevealDemo() {
   return (
-    <div className="p-10">
+    <div className="py-10">
       <StickyScroll content={content} />
     </div>
   )
