@@ -30,7 +30,12 @@ export const projects = [
   {
     title: "Content Management System (CMS) Development",
     description:
-      "We develop tailored CMS solutions that give you full control over content—pages, blogs, media, products—with user roles, approval workflows, and easy expansion.",
+      "We develop tailored CMS solutions that give you full control over content pages, blogs, media, products—with user roles, approval workflows, and easy expansion.",
+  },
+  {
+    title: "Custom WordPress Development",
+    description:
+      "We create bespoke WordPress solutions tailored to your brand, empowering you to easily manage content, optimize performance, and scale your online presence.",
   },
   
 ]

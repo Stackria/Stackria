@@ -1,6 +1,6 @@
 import React from 'react'
 import StickyScroll from '@/components/ui/sticky-scroll-reveal'
-import { outfit, museoReg } from "@/app/layout";
+import { outfit, museoReg, museoBold, outfitSemibold } from "@/app/layout";
 import Link from 'next/link';
 import {styles} from '@/constants/style'
 
@@ -12,7 +12,7 @@ export const Process = () => {
         
       >
         <h1
-          className={`${museoReg.className} text-secondary text-lg text-center`}
+          className={`${outfitSemibold.className} text-slate-900 text-[34px] font-bold md:text-[34px] xl:text-[42px] text-center`}
         >
           OUR DEVELOPMENT PROCESS
         </h1>

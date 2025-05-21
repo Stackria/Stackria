@@ -6,6 +6,7 @@ import {AfterHero} from '@/components/AfterHero'
 import {Services} from '@/components/Services'
 import {Portfolio} from '@/components/Portfolio'
 import {Process} from '@/components/Process'
+import {Testimonials} from '@/components/Testimonials'
 import {WhyChooseUs} from '@/components/WhyChooseUs'
 import {CTA} from '@/components/CTA'
 // import {Industries} from '@/components/Industries'
@@ -19,6 +20,7 @@ const page = () => {
       <Services/>
       <Portfolio/>
       <WhyChooseUs/>
+      <Testimonials/>
       <Process/>
       <CTA/>
       {/* <Industries/> */}

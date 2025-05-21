@@ -33,7 +33,9 @@ export const Services = () => {
                 {/* */}
                 <div className="flex justify-between cursor" onClick={()=> setToggle(toggle === index ? null : index)}>
                   <div className="flex items-center">
-                    <Link href={service.link} className={`${outfitRegular.className} py-2 text-[19px] md:text-[16px] xl:text-[25px]`}>{service.title} 
+                    
+                    {/* title */}
+                    <Link href={service.link} className={`${outfitRegular.className} py-2 text-[19px] md:text-[16px] xl:text-[25px] text-slate-900`}>{service.title} 
                     </Link>
                     <FaArrowUpRightFromSquare className="ml-2 text-black text-[12px] "/>
                   </div>
@@ -55,7 +57,7 @@ export const Services = () => {
         ))}
         </div>
         <div className=" text-center align-center py-10">
-            <Link href='/services' className={` ${outfitLight.className}  rounded-[5px] bg-primary px-5 py-2 text-white text-[11px] mt-5 shadow-lg shadow-blue-500/50 
+            <Link href='/services' className={` ${outfitSemibold.className}  rounded-[5px] bg-primary px-5 py-2 text-white text-[14px] mt-5 shadow-lg shadow-blue-500/50 
             font-bold hover:bg-secondary`}>
                 DISCOVER MORE SERVICES
             </Link>

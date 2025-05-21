@@ -3,6 +3,7 @@
 import { cn } from "@/utils"
 import { AnimatePresence, motion } from "framer-motion"
 import { useState } from "react"
+import { outfitRegular, museoReg, outfitLight, outfitSemibold } from "@/app/layout";
 
 export const HoverEffect = ({ items, className }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null)
@@ -60,9 +61,17 @@ export const Card = ({ className, children }) => {
 }
 
 export const CardTitle = ({ className, children }) => {
-  return <h4 className={cn("text-black font-bold tracking-wide mt-4", className)}>{children}</h4>
-}
+  return (
+    <h4 className={cn(outfitLight.className, "text-slate-900 font-bold tracking-wide text-[20px] mt-4", className)}>
+      {children}
+    </h4>
+  );
+};
 
 export const CardDescription = ({ className, children }) => {
-  return <p className={cn("mt-8 text-black tracking-wide leading-relaxed text-sm", className)}>{children}</p>
-}
+  return (
+    <p className={cn(outfitLight.className, "mt-8 text-slate-800 tracking-wide leading-relaxed text-[15px] xl:text-[16px]", className)}>
+      {children}
+    </p>
+  );
+};

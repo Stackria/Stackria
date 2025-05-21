@@ -164,7 +164,7 @@ export const TypewriterEffect = ({ words, className, cursorClassName }) => {
     ]
   
     return (
-      <div className="flex flex-col items-center justify-center h-[40rem] ">
+      <div className="flex flex-col items-center justify-center h-[40rem] " style={{ backgroundImage: 'url(/images/bg-cta0.svg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <p className={`${museoReg.className}text-neutral-600 font-bold dark:text-neutral-200 text-[36px] xl:text-[25px] sm:text-base px-10`}>
         Ready to Build the Next Chapter of Your Business Story?
         </p>

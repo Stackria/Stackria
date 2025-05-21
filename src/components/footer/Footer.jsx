@@ -20,7 +20,7 @@ const Footer = () => {
                 priority 
                 alt='web development agency'
               />
-              <span className='block -mt-14 text-sm text-gray-900'>
+              <span className='block -mt-14 text-[15px] text-gray-900'>
                 Building Rich Internet Applications That Thrives Businesses
               </span>
             </div>

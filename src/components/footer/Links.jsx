@@ -14,7 +14,7 @@ const Links = () => {
                         <ul>
                             {footer.links.map((link, index) => 
                                 <li 
-                                    className={`${outfitLight.className} text-black text-center xl:text-left text-sm xl:text-[16px] leading-7 hover:text-black cursor-pointer`} 
+                                    className={`${outfitLight.className} text-black text-center xl:text-left text-[15px] xl:text-[16px] leading-7 hover:text-black cursor-pointer`} 
                                     key={`${footer.key}-${index}`}>
                                     {link.title}
                                 </li>

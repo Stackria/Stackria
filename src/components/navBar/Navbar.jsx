@@ -2,9 +2,8 @@
 import React, { useState, useEffect } from 'react'
 import Links from "@/components/navBar/Links"
 import Image from 'next/image';
-import { museo, museoReg, outfitRegular } from "@/app/layout";
-import { outfit } from "@/app/layout";
-import logoOne from '@/assets/logo-white.png'
+import { museo, museoReg, outfitRegular, outfitSemibold } from "@/app/layout";
+import logoOne from '@/assets/logo-black.png'
 import logoColored from '@/assets/logo.png'
 import Link from 'next/link';
 
@@ -27,13 +26,13 @@ const Navbar = () => {
     
 
   return (
-    <header className={` ${scroll ? "bg-white" : "bg-transparent"} bg-transperant items-center w-full flex fixed z-10 px-5 xl:px-20 h-[70px] xl:h-[80px] `}>
-        <div className='mx-auto flex justify-between items-center w-full'>
+    <header className={`${scroll ? "bg-white" : "bg-transparent"} bg-transperant items-center w-full flex fixed z-10 px-5 xl:px-12 h-[70px] xl:h-[80px] `}>
+        <div className='mx-auto flex justify-between items-center w-full Scrn425:ml-1 Scrn360:pl-1'>
 
               {/* Logo */}
               <div className='flex-shrink-0'>
-                  <Image 
-                  className='xl:w-[170px] md:w-[120px] xl:-ml-0 -ml-2 w-[140px] h-auto' 
+                  <Image href="/"
+                  className='xl:w-[150px] xl:-ml-0 -ml-4 w-[150px] h-auto pointer md:ml-2 ' 
                   // Change logo to svg
                   src={scroll ? logoColored : logoOne}
                   width={150} 
@@ -45,14 +44,14 @@ const Navbar = () => {
             
 
               {/* Links */}
-              <nav className="xl:ml-0 ml-40 md:-mr-[370px] lg:-mr-[570px] flex flex-1 justify-center">
+              <nav className="xl:-ml-40 -mr-52 md:-mr-[370px] lg:-mr-[570px] flex flex-1 justify-center xl:justify-center xs:-mr-32 md:ml-40 Scrn425:ml-20 Scrn375:ml-12">
                   <Links scroll={scroll}/>
               </nav>
 
               {/* Get in touch button */}
               <Link href="/contact">
-                  <button className={` ${outfitRegular.className} ${scroll ? "bg-primary" : "bg-white"}
-                   ${scroll ? "text-white" : "text-black"} hidden xl:flex rounded-md -mt-2 text-[15px] px-5 py-3 black font-bold xl:mt-2 xl:text-[15px] hover:bg-secondary hover:text-white`}>REACH US NOW
+                  <button className={` ${outfitSemibold.className} ${scroll ? "bg-primary" : "bg-black"}
+                    text-white hidden xl:flex rounded-md -mt-2 text-[15px] px-5 py-3 black xl:-mt-2 xl:text-[15px] hover:bg-secondary hover:text-white`}>Get A Quote In 12 Hours
                   </button>
               </Link>
               

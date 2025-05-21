@@ -2,13 +2,16 @@ import React, { useState } from 'react'
 import Navlink from "@/components/navBar/links/navLink/NavLink"
 import Link from 'next/link';
 import Image from 'next/image';
-import { museo, museoReg, outfitRegular } from "@/app/layout";
+import { museo, museoReg, outfitRegular, outfitSemibold } from "@/app/layout";
 import menu from '@/assets/menu.png'
 import close from '@/assets/close.png'
 import { GoArrowUpRight } from "react-icons/go";
 
 const links = [
-    
+    {
+        title: "Home",
+        path: "/",
+    },
     {
         title: "About Us",
         path: "/about-us",
@@ -17,10 +20,10 @@ const links = [
         title: "Our Services",
         path: "/services",
     },
-    {
-        title: "Our Portfolio",
-        path: "/portfolio",
-    },
+    // {
+    //     title: "Our Portfolio",
+    //     path: "/portfolio",
+    // },
     // {
     // title: "Reach Us",
     // path: "/contact",
@@ -77,7 +80,7 @@ const Links = ({scroll}) => {
                         ))}
                     </div>
                     <Link href="/contact">
-                        <button className={` ${outfitRegular.className}  items-center flex rounded-md bg-primary ml-2 text-white px-2 py-2 black font-bold hover:bg-secondary hover:text-white text-sm`}><GoArrowUpRight />REACH US NOW
+                        <button className={` ${outfitSemibold.className}  items-center flex rounded-md bg-primary ml-2 text-white px-2 py-2 black font-bold hover:bg-secondary hover:text-white text-[15px]`}><GoArrowUpRight />Get A Quote In 12 Hours
                         </button>
                     </Link>
                 </nav>
