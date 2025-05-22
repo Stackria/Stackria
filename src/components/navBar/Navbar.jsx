@@ -44,7 +44,7 @@ const Navbar = () => {
             
 
               {/* Links */}
-              <nav className="xl:-ml-40 -mr-52 md:-mr-[370px] lg:-mr-[570px] flex flex-1 justify-center xl:justify-center xs:-mr-32 md:ml-40 Scrn425:ml-20 Scrn375:ml-12">
+              <nav className="xl:-ml-36 -mr-52 md:-mr-[370px] lg:-mr-[570px] flex flex-1 justify-center xl:justify-center xs:-mr-32 md:ml-40 Scrn425:ml-20 Scrn375:ml-12">
                   <Links scroll={scroll}/>
               </nav>
 

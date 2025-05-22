@@ -40,11 +40,11 @@ const page = () => {
         <section className="px-0">
             {/* Hero */}
             <div className="flex flex-col lg:flex-row md:flex-row xl:flex-row items-center px-0 justify-between mx-auto xl:px-0 xl:py-20 gap-10 md:gap-10 lg:gap-20 xl:gap-0 xl:justify-between xl:-mb-20">  
-                <div className="xl:w-[40%] lg:w-[50%] md:w-[40%] md:text-left md:justify-start xl:p-16 xl:pb-0 pt-28 px-5 md:ml-5 xl:-mt-36">
+                <div className="xl:w-[40%] lg:w-[50%] md:w-[40%] md:text-left md:justify-start xl:p-16 xl:pb-0 pt-28 px-5 md:ml-5 xl:-mt-36 md:px-2">
                     <h1 className={`${outfitSemibold.className} text-left text-slate-900 text-[34px] md:text-[28px] lg:text-[36px] xl:text-[53px] `}>
                         SEO that’s Built to Be Believable
                     </h1>
-                    <span className={`${outfitLight.className} text-slate-700 text-[15px] xs:text-[15px] md:text-[15px] xl:text-[16px] xl:w-[70%] text-justify`}>
+                    <span className={`${outfitLight.className} text-slate-700 text-[15px] xl:text-[16px] xl:w-[70%] text-justify`}>
                         At Stackria, we don’t chase algorithms. We craft human-first SEO strategies that tell stories, build trust, and grow visibility without the fluff.
                     </span>
                 <div className="flex justify-start mt-5 md:pb-20">
@@ -81,7 +81,7 @@ const page = () => {
                     initial="hidden"
                     animate="visible"
                     variants={containerVariants}
-                    className={`${outfitLight.className} space-y-6 mb-12 max-w-3xl text-slate-800 text-[15px] xs:text-[15px] xl:text-[16px] md:text-[16px] text-left xl:text-center mx-auto`}
+                    className={`${outfitLight.className} space-y-6 mb-12 max-w-3xl text-slate-800 text-[15px] xl:text-[16px]  text-left xl:text-center mx-auto`}
                 >
                     <motion.p variants={itemVariants}>
                     Real SEO isn’t about tricking search engines, it’s about showing up with relevance, clarity, and consistency. We help you get found by the people who are already looking for what you offer.
@@ -112,7 +112,7 @@ const page = () => {
                         className={`${outfitLight.className} flex items-start text-slate-800 justify-start xl:justify-center`}
                         >
                         <FaCheckCircle className="text-primary w-3 h-3 mt-1 mr-3 flex-shrink-0" />
-                        <span className="font-medium text-left xl:text-center">{item}</span>
+                        <span className="text-[15px] xl:text-[16px] text-left xl:text-center">{item}</span>
                         </motion.li>
                     ))}
                     </motion.ul>
@@ -128,7 +128,7 @@ const page = () => {
                         SEO with a Human Touch
                     </h2>
 
-                    <p className={`${outfitLight.className} text-slate-800 mb-12 max-w-3xl text-[15px] md:text-[16px] xl:text-[16px] xl:mx-auto xl:text-center xl:w-[50%]`}>
+                    <p className={`${outfitLight.className} text-slate-800 mb-12 max-w-3xl text-[15px] xl:text-[16px] xl:mx-auto xl:text-center xl:w-[50%]`}>
                         We prioritize clarity, accessibility, and storytelling in every SEO decision because algorithms may evolve, but people always seek value.
                     </p>
 
@@ -166,7 +166,7 @@ const page = () => {
                             <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>
                                 {item.title}
                             </h3>
-                            <p className={`${outfitLight.className} text-slate-700 text-[15px]`}>
+                            <p className={`${outfitLight.className} text-slate-700 text-[15px] xl:text-[16px]`}>
                                 {item.desc}
                             </p>
                             </div>
@@ -214,7 +214,7 @@ const page = () => {
                         <FaCheckCircle className='text-primary text-[20px]' />
                         <div>
                             <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>{point.title}</h3>
-                            <p className={`${outfitLight.className} text-slate-700 text-[14px] md:text-[15px]`}>{point.desc}</p>
+                            <p className={`${outfitLight.className} text-slate-700 text-[15px] xl:text-[16px]`}>{point.desc}</p>
                         </div>
                         </div>
                     ))}

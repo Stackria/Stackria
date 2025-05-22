@@ -33,7 +33,7 @@ const page = () => {
 
       {/* Hero */}
       <div className="flex flex-col lg:flex-row md:flex-row xl:flex-row items-center px-0 justify-between mx-auto xl:px-0 xl:py-20 gap-10 md:gap-10 lg:gap-20 xl:gap-0 xl:justify-between xl:-mb-20">  
-        <div className="xl:w-[40%] lg:w-[50%] md:w-[40%] md:text-left md:justify-start xl:p-16 xl:pb-0 pt-28 px-5 md:ml-5 xl:mt-5">
+        <div className="xl:w-[40%] lg:w-[50%] md:w-[40%] md:text-left md:justify-start xl:p-16 xl:pb-0 pt-28 px-5 md:ml-5 xl:mt-5 md:px-2">
           <h1 className={`${outfitSemibold.className} text-left text-slate-900 text-[34px] md:text-[28px] lg:text-[36px] xl:text-[53px]`}>
             Behind Every Great Site is Quiet, Ongoing Care
           </h1>
@@ -141,7 +141,7 @@ const page = () => {
             Web Care That Grows With You
           </h2>
 
-          <p className={`${outfitLight.className} text-slate-800 mb-12 max-w-3xl text-[15px] md:text-[15px] xl:text-[16px] xl:mx-auto xl:text-center xl:w-[50%]`}>
+          <p className={`${outfitLight.className} text-slate-800 mb-12 max-w-3xl text-[15px] xl:text-[16px] xl:mx-auto xl:text-center xl:w-[50%]`}>
             Your digital presence deserves more than occasional check-ins. 
             <br></br>At Stackria, our Web Care solutions are designed to protect, improve, and evolve your web-based experience.
           </p>
@@ -180,7 +180,7 @@ const page = () => {
                   <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>
                     {item.title}
                   </h3>
-                  <p className={`${outfitLight.className} text-slate-700 text-[14px] md:text-[14px] xl:text-[15px]`}>
+                  <p className={`${outfitLight.className} text-slate-700 text-[15px] xl:text-[16px]`}>
                     {item.desc}
                   </p>
                 </div>
@@ -215,7 +215,7 @@ const page = () => {
                 <FaCheckCircle className='text-primary text-[20px]' />
                 <div>
                   <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>{item.title}</h3>
-                  <p className={`${outfitLight.className} text-slate-700 text-[14px] md:text-[16px]`}>{item.text}</p>
+                  <p className={`${outfitLight.className} text-slate-700 text-[15px] xl:text-[16px]`}>{item.text}</p>
                 </div>
               </div>
             ))}

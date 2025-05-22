@@ -34,7 +34,7 @@ return (
     
         {/* Hero */}
         <div className="flex flex-col lg:flex-row md:flex-row xl:flex-row items-center px-0 justify-between mx-auto xl:px-0 xl:py-20 gap-10 md:gap-10 lg:gap-20 xl:gap-0 xl:justify-between xl:-mb-20">  
-                <div className="xl:w-[40%] lg:w-[50%] md:w-[40%] md:text-left md:justify-start xl:p-16 xl:pb-0 pt-28 px-5 md:ml-5 xl:mt-5">
+                <div className="xl:w-[40%] lg:w-[50%] md:w-[40%] md:text-left md:justify-start xl:p-16 xl:pb-0 pt-28 px-5 md:ml-5 xl:mt-5 md:px-2">
                     <h1 
                         className={`${outfitSemibold.className} text-left text-slate-900 text-[34px] md:text-[28px] lg:text-[36px] xl:text-[53px]`}
                         
@@ -89,7 +89,7 @@ return (
             initial="hidden"
             animate="visible"
             variants={containerVariants}
-            className={`${outfitLight.className} space-y-6 mb-12 max-w-3xl text-gray-700 text-[16px] xs:text-[15px] xl:text-lg text-left xl:text-center mx-auto`}
+            className={`${outfitLight.className} space-y-6 mb-12 max-w-3xl text-gray-700 text-[15px] xl:text-[16px] text-left xl:text-center mx-auto`}
         >
             <motion.p variants={itemVariants}>
             In a crowded marketplace, a basic template store won’t cut it. Stackria builds <strong>bespoke e-commerce solutions</strong> designed to convert, scale, and represent your brand at its best.
@@ -129,7 +129,7 @@ return (
                 className={`${outfitLight.className} flex items-start text-gray-800 hover:text-primary transition-colors cursor-pointer justify-start xl:justify-center`}
                 >
                 <FaCheckCircle className="text-primary w-3 h-3 mt-1 mr-3 flex-shrink-0" />
-                <span className="font-medium text-left xl:text-center">{item}</span>
+                <span className="text-[15px] xl:text-[16px] text-left xl:text-center">{item}</span>
                 </motion.li>
             ))}
             </motion.ul>
@@ -142,8 +142,8 @@ return (
         <div class="bg-slate-100 mt-20 xs:mx-auto">
             <div class="py-20">
                 <div class="">
-                    <h1 className={`${outfitSemibold.className} text-slate-900 text-center text-[34px] xs:text-[15px] xl:text-[42px] pb-5 font-bold`}>Our E Commerce Development</h1>
-                    <p className={`${outfitLight.className} xl:text-center text-center text-slate-900 text-[16px] md:text-[15px] xl:text-[15px] xl:w-[40%] md:text-justify xl:mx-auto px-10`}>At Stackria, we build e-commerce solutions that tell your brand’s story and make shopping feel personal.
+                    <h1 className={`${outfitSemibold.className} text-slate-900 text-center text-[34px] xl:text-[42px] pb-5 font-bold`}>Our E Commerce Development</h1>
+                    <p className={`${outfitLight.className} xl:text-center text-center text-slate-900 text-[15px] xl:text-[15px] xl:w-[40%] md:text-justify xl:mx-auto px-10`}>At Stackria, we build e-commerce solutions that tell your brand’s story and make shopping feel personal.
                     From first click to final checkout, we design experiences that grow with your business and connect with real people.
                     
                     </p>
@@ -160,7 +160,7 @@ return (
                     <h2 className={`${outfitSemibold.className} text-slate-900 text-[34px] font-bold md:text-[32px] xl:text-[42px] text-left mb-6 xl:text-center`}>
                     Why Clients Prefer Stackria for E Commerce Development
                     </h2>
-                    <p className={`${outfitLight.className} text-slate-800 text-left text-[15px] xl:px-20 md:text-[16px] xl:text-[16px] leading-relaxed mb-10 xl:w-[60%] xl:text-center xl:mx-auto`}>
+                    <p className={`${outfitLight.className} text-slate-800 text-left text-[15px] xl:px-20 xl:text-[16px] leading-relaxed mb-10 xl:w-[60%] xl:text-center xl:mx-auto`}>
                     Our approach blends conversion-focused design with storytelling that makes your <span className='font-bold'>customers</span> care. We go beyond templates, every storefront we build is a living <span className='font-bold'>representation</span> of your brand, values, and voice.
                     </p>
 
@@ -172,7 +172,7 @@ return (
                             <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>
                                 Tailored to Your Brand
                             </h3>
-                            <p className={`${outfitLight.className} text-slate-700 text-[14px] md:text-[16px]`}>
+                            <p className={`${outfitLight.className} text-slate-700 text-[14px] lg:text-[16px]`}>
                                 We start with deep discovery to understand your business, target audience, and what sets you apart.
                             </p>
                         </div>
@@ -184,7 +184,7 @@ return (
                                 <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>
                                     Customer Journey First
                                 </h3>
-                                <p className={`${outfitLight.className} text-slate-700 text-[14px] md:text-[16px]`}>
+                                <p className={`${outfitLight.className} text-slate-700 text-[14px] lg:text-[16px]`}>
                                     We map intuitive user journeys that guide visitors effortlessly from product discovery to final checkout. 
                                 </p>
                             </div>
@@ -196,7 +196,7 @@ return (
                                 <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>
                                     Optimized for Growth
                                 </h3>
-                                <p className={`${outfitLight.className} text-slate-700 text-[14px] md:text-[16px]`}>
+                                <p className={`${outfitLight.className} text-slate-700 text-[14px] lg:text-[16px]`}>
                                     From launch day, your platform is optimized for speed, SEO, responsiveness, and scalability.
                                 </p>
                             </div>
@@ -208,7 +208,7 @@ return (
                                 <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>
                                     You’re Not Alone
                                 </h3>
-                                <p className={`${outfitLight.className} text-slate-700 text-[14px] md:text-[16px]`}>
+                                <p className={`${outfitLight.className} text-slate-700 text-[14px] lg:text-[16px]`}>
                                     As your technical partner, Stackria offers continuous support, feature expansion, and maintenance.
 
 
@@ -222,7 +222,7 @@ return (
                                 <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>
                                     Story-Driven Product Pages
                                 </h3>
-                                <p className={`${outfitLight.className} text-slate-700 text-[14px] md:text-[16px]`}>
+                                <p className={`${outfitLight.className} text-slate-700 text-[14px] lg:text-[16px]`}>
                                     <span class="font-italic">Stackria crafts product pages that showcase features and the emotional value driving every purchase decision.</span>
                                     
                                 </p>
@@ -235,7 +235,7 @@ return (
                                 <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>
                                     Built for Businesses
                                 </h3>
-                                <p className={`${outfitLight.className} text-slate-700 text-[14px] md:text-[16px]`}>
+                                <p className={`${outfitLight.className} text-slate-700 text-[14px] lg:text-[16px]`}>
                                     <span class="font-italic">Every line of code and pixel is crafted with your bottom line in mind: conversion, retention, and trust.</span>
                                     
                                 </p>

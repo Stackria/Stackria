@@ -33,7 +33,7 @@ return (
     
         {/* Hero */}
         <div className="flex flex-col lg:flex-row md:flex-row xl:flex-row items-center px-0 justify-between mx-auto xl:px-0 xl:py-20 gap-10 md:gap-10 lg:gap-20 xl:gap-0 xl:justify-between">  
-                <div className="xl:w-[40%] lg:w-[50%] md:w-[40%] md:text-left md:justify-start xl:p-16 xl:pb-0 pt-28 px-5 md:ml-5">
+                <div className="xl:w-[40%] lg:w-[50%] md:w-[40%] md:text-left md:justify-start xl:p-16 xl:pb-0 pt-28 px-5 md:ml-5 md:px-2">
                     <h1 
                         className={`${outfitSemibold.className} text-left text-slate-900 text-[36px] md:text-[28px] lg:text-[36px] xl:text-[58px]`}
                         
@@ -92,7 +92,7 @@ return (
                 initial="hidden"
                 animate="visible"
                 variants={containerVariants}
-                className={`${outfitLight.className} space-y-6 mb-12 max-w-3xl text-slate-800 text-[15px] xs:text-[15px] md:text-[16px] xl:text-[16px] text-left xl:text-center mx-auto`}
+                className={`${outfitLight.className} space-y-6 mb-12 max-w-3xl text-slate-800 text-[15px] xs:text-[15px] xl:text-[16px] text-left xl:text-center mx-auto`}
             >
                 <motion.p variants={itemVariants}>
                 Your business is one of a kind, and your web presence should reflect that uniqueness. We craft custom web solutions that tell your story clearly, engaging your audience at every step.
@@ -123,7 +123,7 @@ return (
                     className={`${outfitLight.className} flex items-start text-slate-800 justify-start xl:justify-center text-left xl:text-center`}
                     >
                     <FaCheckCircle className="text-primary w-3 h-3 mt-1 mr-3 flex-shrink-0" />
-                    <span className="font-medium">{item}</span>
+                    <span className="text-[15px] xl:text-[16px]">{item}</span>
                     </motion.li>
                 ))}
                 </motion.ul>
@@ -137,7 +137,7 @@ return (
             <div class="py-20">
                 <div class="">
                     <h1  className={`${outfitSemibold.className} text-slate-900 text-center text-[34px] xl:text-[42px] pb-5 font-bold`}>Our Custom Web Development</h1>
-                    <p className={`${outfitLight.className} xl:text-center text-center text-slate-900 text-[16px] md:text-[15px] xl:text-[15px] xl:w-[40%] md:text-justify xl:mx-auto px-10`}>At Stackria We build solutions that center your customers, narrate your brand, and scale with you.
+                    <p className={`${outfitLight.className} xl:text-center text-center text-slate-900 text-[15px] xl:text-[16px] xl:w-[40%] md:text-justify xl:mx-auto px-10`}>At Stackria We build solutions that center your customers, narrate your brand, and scale with you.
                     Whether you're launching your startup or evolving your SME, we help you turn ideas into intuitive digital experiences.
                     
                     </p>
@@ -155,7 +155,7 @@ return (
                     <h2 className={`${outfitSemibold.className} text-slate-900 text-[34px] font-bold md:text-[32px] xl:text-[42px] xl:text-center text-left mb-6`}>
                     Why Clients Prefer Stackria for Custom Software Development
                     </h2>
-                    <p className={`${outfitLight.className} text-slate-800 text-left text-[15px] xl:px-20 md:text-[16px] xl:text-[16px] leading-relaxed mb-10 xl:w-[60%] xl:text-center xl:mx-auto`}>
+                    <p className={`${outfitLight.className} text-slate-800 text-left text-[15px] xl:px-20 xl:text-[16px] leading-relaxed mb-10 xl:w-[60%] xl:text-center xl:mx-auto`}>
                     We don't just build software, we craft <span className='font-bold'>solutions</span> that align with your vision, scale with your <span className='font-bold'>growth</span>, and empower your business.
                     
                     We develop strategic solutions tailored to your <span className='font-bold'>unique business objectives</span>.  Here’s why businesses choose us as their trusted development partner:
@@ -180,7 +180,7 @@ return (
                                 <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>
                                     Full-Cycle Development
                                 </h3>
-                                <p className={`${outfitLight.className} text-slate-700 text-[14px] md:text-[16px]`}>
+                                <p className={`${outfitLight.className} text-slate-700 text-[14px] lg:text-[16px]`}>
                                     From discovery to deployment, we handle every phase—ensuring quality, speed, and alignment at each step.
                                 </p>
                             </div>
@@ -192,7 +192,7 @@ return (
                                 <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>
                                     Agile & Transparent Process
                                 </h3>
-                                <p className={`${outfitLight.className} text-slate-700 text-[14px] md:text-[16px]`}>
+                                <p className={`${outfitLight.className} text-slate-700 text-[14px] lg:text-[16px]`}>
                                     Stay in the loop with regular updates, iterative sprints, and collaboration at every milestone.
                                 </p>
                             </div>
@@ -204,7 +204,7 @@ return (
                                 <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>
                                     Scalable & Future-Ready Tech
                                 </h3>
-                                <p className={`${outfitLight.className} text-slate-700 text-[14px] md:text-[16px]`}>
+                                <p className={`${outfitLight.className} text-slate-700 text-[14px] lg:text-[16px]`}>
                                     We use modern frameworks and scalable architectures so your software grows as your business grows.
                                 </p>
                             </div>
@@ -216,7 +216,7 @@ return (
                                 <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>
                                     Focus on User Experience
                                 </h3>
-                                <p className={`${outfitLight.className} text-slate-700 text-[14px] md:text-[16px]`}>
+                                <p className={`${outfitLight.className} text-slate-700 text-[14px] lg:text-[16px]`}>
                                     Intuitive interfaces, seamless flows, and delightful interactions that keep users engaged.
                                 </p>
                             </div>
@@ -228,7 +228,7 @@ return (
                                 <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>
                                     Dedicated Support & Partnership
                                 </h3>
-                                <p className={`${outfitLight.className} text-slate-700 text-[14px] md:text-[16px]`}>
+                                <p className={`${outfitLight.className} text-slate-700 text-[14px] lg:text-[16px]`}>
                                     We treat your project like our own—offering proactive support, guidance, and ongoing collaboration.
                                 </p>
                             </div>

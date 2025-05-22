@@ -33,7 +33,7 @@ const page = () => {
 
       {/* Hero */}
       <div className="flex flex-col lg:flex-row md:flex-row xl:flex-row items-center px-0 justify-between mx-auto xl:px-0 xl:py-20 gap-10 md:gap-10 lg:gap-20 xl:gap-0 xl:justify-between xl:-mb-20">  
-        <div className="xl:w-[40%] lg:w-[50%] md:w-[40%] md:text-left md:justify-start xl:p-16 xl:pb-0 pt-28 px-5 md:ml-5 xl:mt-5">
+        <div className="xl:w-[40%] lg:w-[50%] md:w-[40%] md:text-left md:justify-start xl:p-16 xl:pb-0 pt-28 px-5 md:ml-5 xl:mt-5 md:px-2">
           <h1 className={`${outfitSemibold.className} text-left text-slate-900 text-[34px] md:text-[28px] lg:text-[36px] xl:text-[58px]`}>
             Build Smarter, Not Just Faster With the MERN Stack
           </h1>
@@ -87,7 +87,7 @@ const page = () => {
           initial="hidden"
           animate="visible"
           variants={containerVariants}
-          className={`${outfitLight.className} space-y-6 mb-12 max-w-3xl text-slate-800 text-[15px] xs:text-[15px] md:text-[16px] xl:text-[16px] text-left xl:text-center mx-auto`}
+          className={`${outfitLight.className} space-y-6 mb-12 max-w-3xl text-slate-800 text-[15px] xs:text-[15px] xl:text-[16px] text-left xl:text-center mx-auto`}
         >
           <motion.p variants={itemVariants}>
             At Stackria, we build fast, scalable, and maintainable web applications using the MERN stack—MongoDB, Express, React, and Node.js. We transform your ideas into seamless digital experiences.
@@ -118,7 +118,7 @@ const page = () => {
                 className={`${outfitLight.className} flex items-start text-slate-800 justify-start xl:justify-center text-left xl:text-center`}
               >
                 <FaCheckCircle className="text-primary w-3 h-3 mt-1 mr-3 flex-shrink-0" />
-                <span className="font-medium">{item}</span>
+                <span className="text-[15px] xl:text-[16px]">{item}</span>
               </motion.li>
             ))}
           </motion.ul>
@@ -133,7 +133,7 @@ const page = () => {
             <h1 className={`${outfitSemibold.className} text-slate-900 text-center text-[34px] xl:text-[42px] pb-5 font-bold`}>
               MERN Stack Solutions That Don’t Overpromise
             </h1>
-            <p className={`${outfitLight.className} text-center text-slate-900 text-[16px] xs:text-[15px] md:text-[15px] xl:text-[15px] xl:w-[50%] xl:mx-auto px-10 xl:text-center`}>
+            <p className={`${outfitLight.className} text-center text-slate-900 text-[15px] xl:text-[16px] xl:w-[50%] xl:mx-auto px-10 xl:text-center`}>
               At Stackria, we help you build flexible platforms that evolve with your users—not fragile prototypes that break at scale.
             </p>
           </div>
@@ -183,7 +183,7 @@ const page = () => {
                     <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>
                       {reason.title}
                     </h3>
-                    <p className={`${outfitLight.className} text-slate-700 text-[14px] md:text-[16px]`}>
+                    <p className={`${outfitLight.className} text-slate-700 text-[15px] xl:text-[16px]`}>
                       {reason.desc}
                     </p>
                   </div>

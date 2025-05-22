@@ -43,7 +43,7 @@ return (
     
         {/* Hero */}
         <div className="flex flex-col lg:flex-row md:flex-row xl:flex-row items-center px-0 justify-between mx-auto xl:px-0 xl:py-20 gap-10 md:gap-10 lg:gap-20 xl:gap-0 xl:justify-between xl:-mb-20">  
-                <div className="xl:w-[40%] lg:w-[50%] md:w-[40%] md:text-left md:justify-start xl:p-16 xl:pb-0 pt-28 px-5 md:ml-5 xl:mt-5">
+                <div className="xl:w-[40%] lg:w-[50%] md:w-[40%] md:text-left md:justify-start xl:p-16 xl:pb-0 pt-28 px-5 md:ml-5 xl:mt-5 md:px-2">
                     <h1 
                         className={`${outfitSemibold.className} text-left text-slate-900 text-[34px] md:text-[28px] lg:text-[36px] xl:text-[58px]`}
                         
@@ -102,7 +102,7 @@ return (
             initial="hidden"
             animate="visible"
             variants={containerVariants}
-            className={`${outfitLight.className} space-y-6 mb-12 max-w-3xl text-gray-700 text-[16px] xs:text-[15px] xl:text-lg md:text-[16px] text-left xl:text-center mx-auto`}
+            className={`${outfitLight.className} space-y-6 mb-12 max-w-3xl text-gray-700 text-[16px] xs:text-[15px] xl:text-[16px] text-left xl:text-center mx-auto`}
           >
             <motion.p variants={itemVariants}>
               You've got the vision, the problem you're solving, and maybe even some buzz. But before going all-in, you need <strong>proof that your idea works, that users care, and that investors are interested</strong>. That’s where Stackria comes in.
@@ -128,7 +128,7 @@ return (
 
             <motion.p
               variants={itemVariants}
-              className={`${outfitRegular.className} mb-6 text-gray-700 text-[16px] xl:text-lg`}
+              className={`${outfitRegular.className} mb-6 text-gray-700 text-[15px] xl:text-[16px]`}
             >
               An MVP isn’t just a “simple version” of your product. It’s a <strong>strategic tool</strong> to:
             </motion.p>
@@ -150,14 +150,14 @@ return (
                   }}
                 >
                   <FaCheckCircle className="text-primary w-3 h-3 mt-1 mr-3 flex-shrink-0" />
-                  <span className="font-medium">{feature}</span>
+                  <span className="text-[15px] xl:text-[16px]">{feature}</span>
                 </motion.li>
               ))}
             </motion.ul>
 
             <motion.p
               variants={itemVariants}
-              className={`${outfitLight.className} mt-10 text-[16px] xs:text-[15px] xl:text-lg text-gray-700 text-left xl:text-center`}
+              className={`${outfitLight.className} mt-10 text-[15px] xl:text-[16px] text-gray-700 text-left xl:text-center`}
             >
               Whether you’re pitching to investors, entering a new market, or solving a user pain point, <strong>you don’t need the final product. You need a smart, focused start.</strong>
             </motion.p>
@@ -170,7 +170,7 @@ return (
             <div class="py-20">
                 <div class="">
                     <h1  className={`${outfitSemibold.className} text-slate-900 text-center text-[34px] xl:text-[42px] pb-5 font-bold`}>Our MVP Development</h1>
-                    <p className={`${outfitLight.className} xl:text-center text-center text-slate-900 text-[16px] md:text-[15px] xl:text-[15px] xl:w-[40%] md:text-justify xl:mx-auto px-10`}>At Stackria We build solutions that center your customers, narrate your brand, and scale with you.
+                    <p className={`${outfitLight.className} xl:text-center text-center text-slate-900 text-[16px] md:text-[15px] xl:text-[16px] xl:w-[40%] md:text-justify xl:mx-auto px-10`}>At Stackria We build solutions that center your customers, narrate your brand, and scale with you.
                     Whether you're launching your startup or evolving your SME, we help you turn ideas into intuitive digital experiences.
                     </p>
                 </div>
@@ -186,7 +186,7 @@ return (
                     <h2 className={`${outfitSemibold.className} text-slate-900 text-[38px] font-bold md:text-[32px] xl:text-[42px] text-left mb-6 xl:text-center`}>
                     Why Stackria for MVP Development
                     </h2>
-                    <p className={`${outfitLight.className} text-slate-800 text-left text-[15px] xl:px-20 md:text-[16px] leading-relaxed mb-10 xl:w-[60%] xl:text-center xl:mx-auto`}>
+                    <p className={`${outfitLight.className} text-slate-800 text-left text-[15px] xl:px-20 leading-relaxed mb-10 xl:w-[60%] xl:text-center xl:mx-auto`}>
                     At Stackria, we don’t just code MVPs,  we <span className='font-bold'>partner</span> with startups and businesses to help them validate, evolve, and scale. Here's what makes our approach different:
                     </p>
 
@@ -197,7 +197,7 @@ return (
                             <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>
                                 Strategy Before Software
                             </h3>
-                            <p className={`${outfitLight.className} text-slate-700 text-[14px] md:text-[16px]`}>
+                            <p className={`${outfitLight.className} text-slate-700 text-[14px] lg:text-[16px]`}>
                                 Through discovery and user-focused research, we define the problem and decide what features your MVP needs. 
                             </p>
                         </div>
@@ -209,7 +209,7 @@ return (
                                 <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>
                                     Human-Centered Design 
                                 </h3>
-                                <p className={`${outfitLight.className} text-slate-700 text-[14px] md:text-[16px]`}>
+                                <p className={`${outfitLight.className} text-slate-700 text-[14px] lg:text-[16px]`}>
                                     We design MVPs that are intuitive, visually compelling, and focused on user experience, without overbuilding.
                                 </p>
                             </div>
@@ -221,7 +221,7 @@ return (
                                 <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>
                                     Scalable Architecture from Day One
                                 </h3>
-                                <p className={`${outfitLight.className} text-slate-700 text-[14px] md:text-[16px]`}>
+                                <p className={`${outfitLight.className} text-slate-700 text-[14px] lg:text-[16px]`}>
                                     Our code and infrastructure make it easy to add features, handle more users, and evolve your product without costly rewrites.
                                 </p>
                             </div>
@@ -233,7 +233,7 @@ return (
                                 <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>
                                     Post-Launch Support
                                 </h3>
-                                <p className={`${outfitLight.className} text-slate-700 text-[14px] md:text-[16px]`}>
+                                <p className={`${outfitLight.className} text-slate-700 text-[14px] lg:text-[16px]`}>
                                     We offer straightforward post-launch support and clear documentation to help you move forward confidently.
                                 </p>
                             </div>
@@ -245,7 +245,7 @@ return (
                                 <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>
                                     Built to Tell a Story
                                 </h3>
-                                <p className={`${outfitLight.className} text-slate-700 text-[14px] md:text-[16px]`}>
+                                <p className={`${outfitLight.className} text-slate-700 text-[14px] lg:text-[16px]`}>
                                     Built to showcase your vision clearly helping users, partners, and investors quickly grasp your MVP’s value.
                                 </p>
                             </div>
@@ -254,7 +254,7 @@ return (
                         <div className="flex items-start gap-4">
                             <FaCheckCircle className='text-primary text-2xl'/>
                             <div>
-                                <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] md:text-[18px]`}>
+                                <h3 className={`${outfitSemibold.className} text-slate-900 text-[16px] lg:text-[18px]`}>
                                     Dedicated Support & Partnership
                                 </h3>
                                 <p className={`${outfitLight.className} text-slate-700 text-[14px] md:text-[16px]`}>

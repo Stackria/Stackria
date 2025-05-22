@@ -40,7 +40,7 @@ const page = () => {
       </div>
 
       {/* Service top text */}
-      <div class="flex flex-col px-5 xl:py-5 xl:pb-40 xl:px-40 md:pb-[250px] text-center">
+      <div className="flex flex-col px-5 xl:py-5 xl:pb-40 xl:px-40 md:pb-[250px] text-center">
         <h1 className={`${outfitSemibold.className} text-center text-slate-900 text-[34px] md:text-[18px] lg:text-[36px] xl:text-[38px]`} >
               Shaping Tomorrow’s Web, Today
         </h1>
