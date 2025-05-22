@@ -32,7 +32,7 @@ const Navbar = () => {
               {/* Logo */}
               <div className='flex-shrink-0'>
                   <Image href="/"
-                  className='xl:w-[150px] xl:-ml-0 -ml-4 w-[150px] h-auto pointer md:ml-2 ' 
+                  className='xl:w-[150px] xl:-ml-5 -ml-4 w-[150px] h-auto pointer md:-ml- ' 
                   // Change logo to svg
                   src={scroll ? logoColored : logoOne}
                   width={150} 
