@@ -1,4 +1,3 @@
-'use client'
 import Image from 'next/image'
 import React from 'react'
 import { outfitRegular, museoReg, outfitLight, outfitSemibold, museoBold } from "@/app/layout";
@@ -26,6 +25,37 @@ const itemVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 }
 };
+
+export const metadataBase = new URL('https://stackria.com');
+
+export async function generateMetadata() {
+  return {
+    title: 'Custom Web-Based Solutions | Stackria',
+    description: 'Scalable custom web solutions designed to grow your business.',
+    metadataBase, // add this here
+    openGraph: {
+      title: 'Custom Web-Based Solutions | Stackria',
+      description: 'Scalable custom web solutions designed to grow your business.',
+      url: '/services/custom-web-dev', // relative path works with metadataBase
+      siteName: 'Stackria',
+      images: [
+        {
+          url: '/images/og-custom-web-dev.jpg', // relative paths resolved via metadataBase
+          width: 1200,
+          height: 630,
+          alt: 'Custom Web Dev',
+        },
+      ],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Custom Web-Based Solutions | Stackria',
+      description: 'Scalable custom web solutions designed to grow your business.',
+      images: ['/images/og-custom-web-dev.jpg'], // relative
+    },
+  };
+}
 
 const page = () => {
 return (
@@ -79,58 +109,48 @@ return (
                 backgroundPosition: 'center',
             }}
             >
-            <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7 }}
+            <h2
                 className={`${outfitSemibold.className} text-[34px] md:text-5xl font-extrabold text-gray-900 mb-8 leading-tight text-left xl:text-center`}
             >
                 Every business has a story. Let’s build yours online.
-            </motion.h2>
+            </h2>
 
-            <motion.div
-                initial="hidden"
-                animate="visible"
-                variants={containerVariants}
+            <div
                 className={`${outfitLight.className} space-y-6 mb-12 max-w-3xl text-slate-800 text-[15px] xs:text-[15px] xl:text-[16px] text-left xl:text-center mx-auto`}
             >
-                <motion.p variants={itemVariants}>
+                <p>
                 Your business is one of a kind, and your web presence should reflect that uniqueness. We craft custom web solutions that tell your story clearly, engaging your audience at every step.
-                </motion.p>
-                <motion.p variants={itemVariants}>
+                </p>
+                <p>
                 From sleek designs to seamless functionality, our custom development process focuses on creating a digital experience that grows with your business and resonates with your customers.
-                </motion.p>
-            </motion.div>
+                </p>
+            </div>
 
-            <motion.div variants={containerVariants} initial="hidden" animate="visible" className="max-w-3xl mx-auto text-left xl:text-center">
-                <motion.h3
-                variants={itemVariants}
+            <div className="max-w-3xl mx-auto text-left xl:text-center">
+                <h3
                 className={`${outfitSemibold.className} text-[34px] md:text-3xl font-semibold text-slate-900 mb-6 text-left xl:text-center`}
                 >
                 What We Build for You
-                </motion.h3>
+                </h3>
 
-                <motion.ul variants={containerVariants} className="space-y-4 xs:text-[15px]">
+                <ul className="space-y-4 xs:text-[15px]">
                 {[
                     "Tailored user interfaces designed for your audience",
                     "Scalable architectures built for future growth",
                     "Smooth integrations with your existing tools and platforms",
                     "Mobile-first experiences that delight on any device",
                 ].map((item, idx) => (
-                    <motion.li
+                    <li
                     key={idx}
-                    variants={itemVariants}
                     className={`${outfitLight.className} flex items-start text-slate-800 justify-start xl:justify-center text-left xl:text-center`}
                     >
                     <FaCheckCircle className="text-primary w-3 h-3 mt-1 mr-3 flex-shrink-0" />
                     <span className="text-[15px] xl:text-[16px]">{item}</span>
-                    </motion.li>
+                    </li>
                 ))}
-                </motion.ul>
-            </motion.div>
+                </ul>
+            </div>
         </section>
-
-
 
         {/* Features */}
         <div class="bg-slate-100 mt-20 xs:mx-auto xl:py-20">
@@ -246,7 +266,7 @@ return (
             </div>
             
              {/* Testimonial */}
-                <Testimonials/>
+            <Testimonials/>
 
             {/* CTA and Process*/}
             
@@ -257,5 +277,4 @@ return (
     </section>
   )
 }
-
 export default page

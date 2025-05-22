@@ -14,6 +14,7 @@ import { GiLifeSupport } from "react-icons/gi";
 import { FaCheckCircle } from "react-icons/fa";
 import TypewriterEffect from '@/components/ui/typewriter'
 
+
 const page = () => {
   return (
     <section >
