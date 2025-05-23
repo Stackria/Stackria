@@ -11,6 +11,7 @@ import {Process} from '@/components/Process'
 import { FaCheckCircle } from "react-icons/fa";
 import { motion } from 'framer-motion';
 
+
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -26,24 +27,25 @@ const itemVariants = {
   visible: { opacity: 1, y: 0 }
 };
 
-export const metadataBase = new URL('https://stackria.com');
+// /app/services/custom-web-dev/page.jsx
 
 export async function generateMetadata() {
   return {
     title: 'Custom Web-Based Solutions | Stackria',
-    description: 'Scalable custom web solutions designed to grow your business.',
-    metadataBase, // add this here
+    description:
+      'Need tailored digital infrastructure? Stackria crafts scalable, high-performance web-based solutions for startups and enterprises alike.',
     openGraph: {
       title: 'Custom Web-Based Solutions | Stackria',
-      description: 'Scalable custom web solutions designed to grow your business.',
-      url: '/services/custom-web-dev', // relative path works with metadataBase
+      description:
+        'Need tailored digital infrastructure? Stackria crafts scalable, high-performance web-based solutions for startups and enterprises alike.',
+      url: 'https://stackria.com/services/custom-software-development',
       siteName: 'Stackria',
       images: [
         {
-          url: '/images/og-custom-web-dev.jpg', // relative paths resolved via metadataBase
+          url: '/images/og-custom-software-development.jpg',
           width: 1200,
           height: 630,
-          alt: 'Custom Web Dev',
+          alt: 'Custom Web Development by Stackria',
         },
       ],
       type: 'website',
@@ -51,11 +53,13 @@ export async function generateMetadata() {
     twitter: {
       card: 'summary_large_image',
       title: 'Custom Web-Based Solutions | Stackria',
-      description: 'Scalable custom web solutions designed to grow your business.',
-      images: ['/images/og-custom-web-dev.jpg'], // relative
+      description:
+        'Need tailored digital infrastructure? Stackria crafts scalable, high-performance web-based solutions for startups and enterprises alike.',
+      images: ['/images/og-custom-web-dev.jpg'],
     },
   };
 }
+
 
 const page = () => {
 return (

@@ -12,6 +12,37 @@ import { Testimonials } from '@/components/Testimonials';
 import { FaCheckCircle } from "react-icons/fa";
 import { motion } from 'framer-motion';
 
+export async function generateMetadata() {
+  return {
+    title: 'Search Engine Optimization (SEO) | Stackria',
+    description:
+      'Attract organic traffic with strategy-first SEO. Stackria optimizes your web-based solutions for visibility, performance, and conversion.',
+    openGraph: {
+      title: 'Search Engine Optimization (SEO) | Stackria',
+      description:
+        'Attract organic traffic with strategy-first SEO. Stackria optimizes your web-based solutions for visibility, performance, and conversion.',
+      url: 'https://stackria.com/services/seo',
+      siteName: 'Stackria',
+      images: [
+        {
+          url: '/images/og-seo.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'SEO by Stackria',
+        },
+      ],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Search Engine Optimization (SEO) | Stackria',
+      description:
+        'Attract organic traffic with strategy-first SEO. Stackria optimizes your web-based solutions for visibility, performance, and conversion.',
+      images: ['/images/og-seo.jpg'],
+    },
+  };
+}
+
 const features = [
   "Test core features with early adopters",
   "Collect valuable feedback before scaling",

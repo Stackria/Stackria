@@ -1,4 +1,4 @@
-'use client'
+
 import Image from 'next/image'
 import React from 'react'
 import { outfitRegular, museoReg, outfitLight, outfitSemibold, museoBold } from "@/app/layout";
@@ -12,6 +12,38 @@ import {Process} from '@/components/Process'
 import { FaCheckCircle } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
+
+export async function generateMetadata() {
+  return {
+    title: 'MVP Development for Startups | Stackria',
+    description:
+      'Validate faster. Stackria builds lean MVPs that test your product idea quickly — scalable, user-ready, and future-proof.',
+    openGraph: {
+      title: 'MVP Development for Startups | Stackria',
+      description:
+        'Validate faster. Stackria builds lean MVPs that test your product idea quickly — scalable, user-ready, and future-proof.',
+      url: 'https://stackria.com/services/mvp-development',
+      siteName: 'Stackria',
+      images: [
+        {
+          url: '/images/og-mvp-development.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'MVP Development by Stackria',
+        },
+      ],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'MVP Development for Startups | Stackria',
+      description:
+        'Validate faster. Stackria builds lean MVPs that test your product idea quickly — scalable, user-ready, and future-proof.',
+      images: ['/images/og-mvp-development.jpg'],
+    },
+  };
+}
+
 
 const features = [
   "Test core features with early adopters",
@@ -35,6 +67,7 @@ const itemVariants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 },
 };
+
 
 const page = () => {
 

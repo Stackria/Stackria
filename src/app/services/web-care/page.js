@@ -12,6 +12,37 @@ import { Testimonials } from '@/components/Testimonials';
 import { FaCheckCircle } from "react-icons/fa";
 import { motion } from 'framer-motion';
 
+export async function generateMetadata() {
+  return {
+    title: 'Web Maintenance & Care Plans | Stackria',
+    description:
+      'Downtime is expensive. Stackria keeps your web-based solutions secure, updated, and running smoothly—so you can focus on your business.',
+    openGraph: {
+      title: 'Web Maintenance & Care Plans | Stackria',
+      description:
+        'Downtime is expensive. Stackria keeps your web-based solutions secure, updated, and running smoothly—so you can focus on your business.',
+      url: 'https://stackria.com/services/web-maintenance',
+      siteName: 'Stackria',
+      images: [
+        {
+          url: '/images/og-web-maintenance.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'Web Maintenance by Stackria',
+        },
+      ],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'Web Maintenance & Care Plans | Stackria',
+      description:
+        'Downtime is expensive. Stackria keeps your web-based solutions secure, updated, and running smoothly—so you can focus on your business.',
+      images: ['/images/og-web-maintenance.jpg'],
+    },
+  };
+}
+
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {

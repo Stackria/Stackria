@@ -12,6 +12,36 @@ import {Testimonials} from '@/components/Testimonials'
 import { motion } from "framer-motion";
 import { FaCheckCircle } from "react-icons/fa";
 
+export async function generateMetadata() {
+  return {
+    title: 'E-Commerce Web-Based Solutions | Stackria',
+    description:
+      'From product pages to payment gateways, Stackria builds sleek, high-converting e-commerce platforms that scale as you grow.',
+    openGraph: {
+      title: 'E-Commerce Web-Based Solutions | Stackria',
+      description:
+        'From product pages to payment gateways, Stackria builds sleek, high-converting e-commerce platforms that scale as you grow.',
+      url: 'https://stackria.com/services/ecommerce-development',
+      siteName: 'Stackria',
+      images: [
+        {
+          url: '/images/og-ecommerce.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'E-Commerce Solutions by Stackria',
+        },
+      ],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'E-Commerce Web-Based Solutions | Stackria',
+      description:
+        'From product pages to payment gateways, Stackria builds sleek, high-converting e-commerce platforms that scale as you grow.',
+      images: ['/images/og-ecommerce.jpg'],
+    },
+  };
+
 const containerVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: {

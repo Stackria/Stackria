@@ -1,4 +1,4 @@
-"use client"
+
 import Image from 'next/image'
 import React from 'react'
 import { outfitRegular, museoReg, outfitLight, outfitSemibold, museoBold } from "@/app/layout";
@@ -11,6 +11,37 @@ import { Process } from '@/components/Process'
 import { Testimonials } from '@/components/Testimonials'
 import { FaCheckCircle } from "react-icons/fa";
 import { motion } from 'framer-motion';
+
+export async function generateMetadata() {
+  return {
+    title: 'MERN Stack Development | Stackria',
+    description:
+      'Full-stack web solutions with MongoDB, Express, React, and Node.js — custom-built by Stackria for performance and scale.',
+    openGraph: {
+      title: 'MERN Stack Development | Stackria',
+      description:
+        'Full-stack web solutions with MongoDB, Express, React, and Node.js — custom-built by Stackria for performance and scale.',
+      url: 'https://stackria.com/services/mern-development',
+      siteName: 'Stackria',
+      images: [
+        {
+          url: '/images/og-mern-development.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'MERN Stack Development by Stackria',
+        },
+      ],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'MERN Stack Development | Stackria',
+      description:
+        'Full-stack web solutions with MongoDB, Express, React, and Node.js — custom-built by Stackria for performance and scale.',
+      images: ['/images/og-mern-development.jpg'],
+    },
+  };
+}
 
 const containerVariants = {
   hidden: { opacity: 0 },
