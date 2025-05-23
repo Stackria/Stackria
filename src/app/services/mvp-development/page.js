@@ -43,7 +43,7 @@ return (
     
         {/* Hero */}
         <div className="flex flex-col lg:flex-row md:flex-row xl:flex-row items-center px-0 justify-between mx-auto xl:px-0 xl:py-20 gap-10 md:gap-10 lg:gap-20 xl:gap-0 xl:justify-between xl:-mb-20">  
-                <div className="xl:w-[40%] lg:w-[50%] md:w-[40%] md:text-left md:justify-start xl:p-16 xl:pb-0 pt-28 px-5 md:ml-5 xl:mt-5 md:px-2">
+                <div className="xl:w-[40%] lg:w-[50%] md:w-[40%] md:text-left md:justify-start xl:p-16 xl:pb-0 pt-28 px-5 md:ml-5 xl:mt-5 md:px-2 2xl:-ml-5 2xl:-mt-20">
                     <h1 
                         className={`${outfitSemibold.className} text-left text-slate-900 text-[34px] md:text-[28px] lg:text-[36px] xl:text-[58px]`}
                         
@@ -70,7 +70,7 @@ return (
                 <div className="xl:w-[60%] lg:w-[50%] md:w-[50%] xl:-mt-20 w-full h-full">
                   <Image 
                       alt='stackria web development services'
-                      className='relative xl:h-full xl:w-full w-full h-full md:-mt-[120px] mx-auto '
+                      className='relative xl:h-full xl:w-full w-full h-full md:-mt-[120px] mx-auto 2xl:-mt-40'
                       src={imgOne}
                       width={800}
                       height={600}
@@ -89,59 +89,44 @@ return (
             backgroundPosition: 'center',
           }}
         >
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
+          <h2
             className={`${outfitSemibold.className} text-4xl md:text-5xl font-extrabold text-gray-900 mb-8 leading-tight text-left xl:text-center xl:mx-auto xl:w-[60%]`}
           >
             Turning your idea into a product shouldn’t feel like a gamble.
-          </motion.h2>
+          </h2>
 
-          <motion.div
-            initial="hidden"
-            animate="visible"
-            variants={containerVariants}
+          <div
             className={`${outfitLight.className} space-y-6 mb-12 max-w-3xl text-gray-700 text-[16px] xs:text-[15px] xl:text-[16px] text-left xl:text-center mx-auto`}
           >
-            <motion.p variants={itemVariants}>
+            <p>
               You've got the vision, the problem you're solving, and maybe even some buzz. But before going all-in, you need <strong>proof that your idea works, that users care, and that investors are interested</strong>. That’s where Stackria comes in.
-            </motion.p>
+            </p>
 
-            <motion.p variants={itemVariants}>
+            <p>
               We help you <strong>design, develop, and launch a lean, functional MVP</strong> that does one thing really well: prove your concept in the real world.
-            </motion.p>
-          </motion.div>
+            </p>
+          </div>
 
-          <motion.div
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-            className="max-w-3xl mx-auto text-left xl:text-center"
-          >
-            <motion.h3
-              variants={itemVariants}
+          <div className="max-w-3xl mx-auto text-left xl:text-center">
+            <h3
               className={`${outfitSemibold.className} text-[34px] md:text-3xl font-semibold text-slate-900 mb-6`}
             >
               What is an MVP and Why Does It Matter?
-            </motion.h3>
+            </h3>
 
-            <motion.p
-              variants={itemVariants}
+            <p
               className={`${outfitRegular.className} mb-6 text-gray-700 text-[15px] xl:text-[16px]`}
             >
               An MVP isn’t just a “simple version” of your product. It’s a <strong>strategic tool</strong> to:
-            </motion.p>
+            </p>
 
-            <motion.ul
-              variants={containerVariants}
+            <ul
               className="space-y-4"
               aria-label="List of MVP benefits"
             >
               {features.map((feature, idx) => (
-                <motion.li
+                <li
                   key={idx}
-                  variants={itemVariants}
                   className={`${outfitLight.className} flex items-start text-gray-800 hover:text-primary transition-colors cursor-pointer justify-start xl:justify-center text-left xl:text-center`}
                   tabIndex={0}
                   role="listitem"
@@ -151,18 +136,18 @@ return (
                 >
                   <FaCheckCircle className="text-primary w-3 h-3 mt-1 mr-3 flex-shrink-0" />
                   <span className="text-[15px] xl:text-[16px]">{feature}</span>
-                </motion.li>
+                </li>
               ))}
-            </motion.ul>
+            </ul>
 
-            <motion.p
-              variants={itemVariants}
+            <p
               className={`${outfitLight.className} mt-10 text-[15px] xl:text-[16px] text-gray-700 text-left xl:text-center`}
             >
               Whether you’re pitching to investors, entering a new market, or solving a user pain point, <strong>you don’t need the final product. You need a smart, focused start.</strong>
-            </motion.p>
-          </motion.div>
+            </p>
+          </div>
         </section>
+
 
 
         {/* Features */}

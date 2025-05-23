@@ -40,7 +40,7 @@ const page = () => {
         <section className="px-0">
             {/* Hero */}
             <div className="flex flex-col lg:flex-row md:flex-row xl:flex-row items-center px-0 justify-between mx-auto xl:px-0 xl:py-20 gap-10 md:gap-10 lg:gap-20 xl:gap-0 xl:justify-between xl:-mb-20">  
-                <div className="xl:w-[40%] lg:w-[50%] md:w-[40%] md:text-left md:justify-start xl:p-16 xl:pb-0 pt-28 px-5 md:ml-5 xl:-mt-36 md:px-2">
+                <div className="xl:w-[40%] lg:w-[50%] md:w-[40%] md:text-left md:justify-start xl:p-16 xl:pb-0 pt-28 px-5 md:ml-5 xl:-mt-36 md:px-2 2xl:-ml-5 2xl:-mt-20">
                     <h1 className={`${outfitSemibold.className} text-left text-slate-900 text-[34px] md:text-[28px] lg:text-[36px] xl:text-[53px] `}>
                         SEO that’s Built to Be Believable
                     </h1>
@@ -57,7 +57,7 @@ const page = () => {
                 <div className="xl:w-[60%] lg:w-[50%] md:w-[50%] xl:-mt-20 w-full h-full">
                     <Image 
                         alt='stackria web development services'
-                        className='relative xl:h-full xl:w-full w-full h-full md:-mt-[120px] mx-auto '
+                        className='relative xl:h-full xl:w-full w-full h-full md:-mt-[120px] mx-auto 2xl:-mt-40'
                         src={imgOne} 
                         width={800} 
                         height={600} 
@@ -67,57 +67,57 @@ const page = () => {
             </div>
 
             {/* Intro */}
-            <section className="bg-white py-20 px-6 md:px-12 lg:px-24  mx-auto xl:py-20" style={{ backgroundImage: 'url(/images/bg-cta0.svg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
-                <motion.h2
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.7 }}
-                    className={`${outfitSemibold.className} text-[34px] md:text-5xl font-extrabold text-gray-900 mb-8 leading-tight text-left xl:text-center`}
+            <div
+                className="bg-white py-20 px-6 md:px-12 lg:px-24 mx-auto xl:py-20 text-left xl:text-center xl:w-full xl:mx-auto"
+                style={{
+                    backgroundImage: 'url(/images/bg-cta0.svg)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                }}
                 >
-                    Visibility is earned, not bought.
-                </motion.h2>
-
-                <motion.div
-                    initial="hidden"
-                    animate="visible"
-                    variants={containerVariants}
-                    className={`${outfitLight.className} space-y-6 mb-12 max-w-3xl text-slate-800 text-[15px] xl:text-[16px]  text-left xl:text-center mx-auto`}
+                <h2
+                    className={`${outfitSemibold.className} text-[34px] md:text-5xl font-extrabold text-gray-900 mb-8 leading-tight text-left xl:text-center xl:w-[60%] mx-auto`}
                 >
-                    <motion.p variants={itemVariants}>
-                    Real SEO isn’t about tricking search engines, it’s about showing up with relevance, clarity, and consistency. We help you get found by the people who are already looking for what you offer.
-                    </motion.p>
-                    <motion.p variants={itemVariants}>
-                    Whether it’s technical audits, content optimization, or local visibility, we design strategies based on real business needs, not just rankings.
-                    </motion.p>
-                </motion.div>
+                    Web maintenance is peace of mind delivered quietly, every day.
+                </h2>
 
-                <motion.div variants={containerVariants} initial="hidden" animate="visible" className="max-w-3xl mx-auto text-left xl:text-center">
-                    <motion.h3
-                    variants={itemVariants}
-                    className={`${outfitSemibold.className} text-[34px] md:text-3xl font-semibold text-slate-900 mb-6`}
+                <div
+                    className={`${outfitLight.className} space-y-6 mb-12 max-w-3xl text-slate-800 text-[15px] md:text-[15px] xl:text-[16px] text-left xl:text-center mx-auto`}
+                >
+                    <p>
+                    Just like a car needs oil changes, your digital presence needs updates, backups, and occasional problem-solving. That’s where Stackria’s <strong>Web Care</strong> solution comes in.
+                    </p>
+
+                    <p>
+                    From plugin updates to uptime monitoring, we handle the routine so your team can stay focused on what matters—running your business.
+                    </p>
+                </div>
+
+                <div className="max-w-3xl mx-auto text-left xl:text-center">
+                    <h3
+                    className={`${outfitSemibold.className} text-2xl md:text-3xl font-semibold text-slate-900 mb-6`}
                     >
-                    Our SEO Approach
-                    </motion.h3>
+                    What We Handle (So You Don’t Have To):
+                    </h3>
 
-                    <motion.ul variants={containerVariants} className="space-y-4 xs:text-[15px]">
+                    <ul className="space-y-4 text-[15px] md:text-[15px] xl:text-[16px]">
                     {[
-                        "Technical SEO groundwork that ensures crawlability and speed",
-                        "Content that answers real questions and builds trust",
-                        "Keyword research focused on buyer intent",
-                        "On-page strategies that align with UX"
+                        "Core and plugin updates",
+                        "Site speed and performance checks",
+                        "Broken link monitoring and error resolution",
+                        "Backups and basic security sweeps",
                     ].map((item, idx) => (
-                        <motion.li
+                        <li
                         key={idx}
-                        variants={itemVariants}
-                        className={`${outfitLight.className} flex items-start text-slate-800 justify-start xl:justify-center`}
+                        className={`${outfitLight.className} flex items-start text-gray-800 hover:text-primary transition-colors cursor-pointer justify-start xl:justify-center`}
                         >
                         <FaCheckCircle className="text-primary w-3 h-3 mt-1 mr-3 flex-shrink-0" />
-                        <span className="text-[15px] xl:text-[16px] text-left xl:text-center">{item}</span>
-                        </motion.li>
+                        <span className="font-medium text-left xl:text-center">{item}</span>
+                        </li>
                     ))}
-                    </motion.ul>
-                </motion.div>
-            </section>
+                    </ul>
+                </div>
+            </div>
 
 
             {/* Features */}

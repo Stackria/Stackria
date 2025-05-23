@@ -63,7 +63,7 @@ return (
     
         {/* Hero */}
         <div className="flex flex-col lg:flex-row md:flex-row xl:flex-row items-center px-0 justify-between mx-auto xl:px-0 xl:py-20 gap-10 md:gap-10 lg:gap-20 xl:gap-0 xl:justify-between">  
-                <div className="xl:w-[40%] lg:w-[50%] md:w-[40%] md:text-left md:justify-start xl:p-16 xl:pb-0 pt-28 px-5 md:ml-5 md:px-2">
+                <div className="xl:w-[40%] lg:w-[50%] md:w-[40%] md:text-left md:justify-start xl:p-16 xl:pb-0 pt-28 px-5 md:ml-5 md:px-2 2xl:-ml-5  2xl:-mt-20">
                     <h1 
                         className={`${outfitSemibold.className} text-left text-slate-900 text-[36px] md:text-[28px] lg:text-[36px] xl:text-[58px]`}
                         
@@ -90,7 +90,7 @@ return (
                 <div className="xl:w-[60%] lg:w-[50%] md:w-[50%] xl:-mt-[50px] w-full h-full">
                 <Image 
                     alt='stackria web development services'
-                    className='relative xl:h-full xl:w-full w-full h-full md:-mt-[120px] mx-auto'
+                    className='relative xl:h-full xl:w-full w-full h-full md:-mt-[120px] mx-auto 2xl:-mt-40'
                     src={imgOne}
                     width={800}
                     height={600}

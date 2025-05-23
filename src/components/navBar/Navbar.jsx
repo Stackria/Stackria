@@ -26,13 +26,13 @@ const Navbar = () => {
     
 
   return (
-    <header className={`${scroll ? "bg-white" : "bg-transparent"} bg-transperant items-center w-full flex fixed z-10 px-5 xl:px-12 h-[70px] xl:h-[80px] `}>
+    <header className={`${scroll ? "bg-white" : "bg-transparent"} bg-transperant items-center w-full flex fixed z-10 px-5 xl:px-12 h-[70px] xl:h-[80px] 2xl:pt-2`}>
         <div className='mx-auto flex justify-between items-center w-full Scrn425:ml-1 Scrn360:pl-1'>
 
               {/* Logo */}
               <div className='flex-shrink-0'>
                   <Image href="/"
-                  className='xl:w-[150px] xl:-ml-5 -ml-4 w-[150px] h-auto pointer md:-ml- ' 
+                  className='xl:w-[150px] 2xl:w-[180px] xl:-ml-5 -ml-4 w-[150px] h-auto pointer 2xl:-ml-7 ' 
                   // Change logo to svg
                   src={scroll ? logoColored : logoOne}
                   width={150} 
@@ -51,7 +51,7 @@ const Navbar = () => {
               {/* Get in touch button */}
               <Link href="/contact">
                   <button className={` ${outfitSemibold.className} ${scroll ? "bg-primary" : "bg-black"}
-                    text-white hidden xl:flex rounded-md -mt-2 text-[15px] px-5 py-3 black xl:-mt-2 xl:text-[15px] hover:bg-secondary hover:text-white`}>Get A Quote In 12 Hours
+                    text-white hidden xl:flex rounded-md -mt-2 text-[15px] px-5 py-3 black xl:-mt-2 xl:text-[16px] 2xl:text-[20px] hover:bg-secondary hover:text-white`}>Get A Quote In 12 Hours
                   </button>
               </Link>
               

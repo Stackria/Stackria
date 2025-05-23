@@ -33,7 +33,7 @@ const page = () => {
 
       {/* Hero */}
       <div className="flex flex-col lg:flex-row md:flex-row xl:flex-row items-center px-0 justify-between mx-auto xl:px-0 xl:py-20 gap-10 md:gap-10 lg:gap-20 xl:gap-0 xl:justify-between xl:-mb-20">  
-        <div className="xl:w-[40%] lg:w-[50%] md:w-[40%] md:text-left md:justify-start xl:p-16 xl:pb-0 pt-28 px-5 md:ml-5 xl:mt-5 md:px-2">
+        <div className="xl:w-[40%] lg:w-[50%] md:w-[40%] md:text-left md:justify-start xl:p-16 xl:pb-0 pt-28 px-5 md:ml-5 xl:mt-5 md:px-2 2xl:-ml-5 2xl:-mt-20">
           <h1 className={`${outfitSemibold.className} text-left text-slate-900 text-[34px] md:text-[28px] lg:text-[36px] xl:text-[58px]`}>
             Build Smarter, Not Just Faster With the MERN Stack
           </h1>
@@ -56,7 +56,7 @@ const page = () => {
         <div className="xl:w-[60%] lg:w-[50%] md:w-[50%] xl:-mt-20 w-full h-full">
           <Image 
               alt='stackria web development services'
-              className='relative xl:h-full xl:w-full w-full h-full md:-mt-[120px] mx-auto '
+              className='relative xl:h-full xl:w-full w-full h-full md:-mt-[120px] mx-auto 2xl:-mt-40'
               src={imgOne}
               width={800}
               height={600}
@@ -74,56 +74,49 @@ const page = () => {
           backgroundPosition: 'center',
         }}
       >
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+        <h2
           className={`${outfitSemibold.className} text-[34px] md:text-5xl font-extrabold text-gray-900 mb-8 leading-tight text-left xl:text-center`}
         >
           Powerful MERN Solutions, Tailored to Your Vision.
-        </motion.h2>
+        </h2>
 
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={containerVariants}
+        <div
           className={`${outfitLight.className} space-y-6 mb-12 max-w-3xl text-slate-800 text-[15px] xs:text-[15px] xl:text-[16px] text-left xl:text-center mx-auto`}
         >
-          <motion.p variants={itemVariants}>
+          <p>
             At Stackria, we build fast, scalable, and maintainable web applications using the MERN stack—MongoDB, Express, React, and Node.js. We transform your ideas into seamless digital experiences.
-          </motion.p>
-          <motion.p variants={itemVariants}>
+          </p>
+          <p>
             Whether it’s a custom web app, a complex dashboard, or an interactive user interface, our MERN solutions are designed for flexibility, performance, and growth.
-          </motion.p>
-        </motion.div>
+          </p>
+        </div>
 
-        <motion.div variants={containerVariants} initial="hidden" animate="visible" className="max-w-3xl mx-auto text-left xl:text-center">
-          <motion.h3
-            variants={itemVariants}
+        <div className="max-w-3xl mx-auto text-left xl:text-center">
+          <h3
             className={`${outfitSemibold.className} text-[34px] md:text-3xl font-semibold text-slate-900 mb-6 text-left xl:text-center`}
           >
             Our MERN Development Focus
-          </motion.h3>
+          </h3>
 
-          <motion.ul variants={containerVariants} className="space-y-4 xs:text-[15px]">
+          <ul className="space-y-4 xs:text-[15px]">
             {[
               "Custom web apps built for speed and scalability",
               "Responsive React frontends for engaging user experiences",
               "Robust backend APIs with Node.js and Express",
               "Flexible data management using MongoDB",
             ].map((item, idx) => (
-              <motion.li
+              <li
                 key={idx}
-                variants={itemVariants}
                 className={`${outfitLight.className} flex items-start text-slate-800 justify-start xl:justify-center text-left xl:text-center`}
               >
                 <FaCheckCircle className="text-primary w-3 h-3 mt-1 mr-3 flex-shrink-0" />
                 <span className="text-[15px] xl:text-[16px]">{item}</span>
-              </motion.li>
+              </li>
             ))}
-          </motion.ul>
-        </motion.div>
+          </ul>
+        </div>
       </section>
+ 
 
 
       {/* Features */}
