@@ -14,6 +14,36 @@ import { GiLifeSupport } from "react-icons/gi";
 import { FaCheckCircle } from "react-icons/fa";
 import TypewriterEffect from '@/components/ui/typewriter'
 
+export async function generateMetadata() {
+  return {
+    title: 'About Stackria | Human-Centered Web-Based Solutions',
+    description:
+      'Discover Stackria’s mission to build human-centered, scalable web-based solutions. Learn how we combine narrative-driven design and modern tech to empower businesses.',
+    openGraph: {
+      title: 'About Stackria | Human-Centered Web-Based Solutions',
+      description:
+        'Discover Stackria’s mission to build human-centered, scalable web-based solutions. Learn how we combine narrative-driven design and modern tech to empower businesses.',
+      url: 'https://stackria.com/about',
+      siteName: 'Stackria',
+      images: [
+        {
+          url: '/images/og-about.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'About Stackria - Web-Based Solutions',
+        },
+      ],
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: 'About Stackria | Human-Centered Web-Based Solutions',
+      description:
+        'Discover Stackria’s mission to build human-centered, scalable web-based solutions. Learn how we combine narrative-driven design and modern tech to empower businesses.',
+      images: ['/images/og-about.jpg'],
+    },
+  };
+}
 
 const page = () => {
   return (
