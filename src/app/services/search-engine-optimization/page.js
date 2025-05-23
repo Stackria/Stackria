@@ -17,11 +17,14 @@ export async function generateMetadata() {
     title: 'Search Engine Optimization (SEO) | Stackria',
     description:
       'Attract organic traffic with strategy-first SEO. Stackria optimizes your web-based solutions for visibility, performance, and conversion.',
+      alternates: {
+      canonical: 'https://stackria.com/services/search-engine-optimization',
+    },
     openGraph: {
       title: 'Search Engine Optimization (SEO) | Stackria',
       description:
         'Attract organic traffic with strategy-first SEO. Stackria optimizes your web-based solutions for visibility, performance, and conversion.',
-      url: 'https://stackria.com/services/seo',
+      url: 'https://stackria.com/services/search-engine-optimization',
       siteName: 'Stackria',
       images: [
         {

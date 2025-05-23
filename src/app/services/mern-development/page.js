@@ -17,6 +17,9 @@ export async function generateMetadata() {
     title: 'MERN Stack Development | Stackria',
     description:
       'Full-stack web solutions with MongoDB, Express, React, and Node.js — custom-built by Stackria for performance and scale.',
+      alternates: {
+      canonical: 'https://stackria.com/services/mern-development',
+    },
     openGraph: {
       title: 'MERN Stack Development | Stackria',
       description:

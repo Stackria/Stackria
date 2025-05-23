@@ -17,11 +17,14 @@ export async function generateMetadata() {
     title: 'Web Maintenance & Care Plans | Stackria',
     description:
       'Downtime is expensive. Stackria keeps your web-based solutions secure, updated, and running smoothly—so you can focus on your business.',
+      alternates: {
+      canonical: 'https://stackria.com/services/web-maintenance',
+    },
     openGraph: {
       title: 'Web Maintenance & Care Plans | Stackria',
       description:
         'Downtime is expensive. Stackria keeps your web-based solutions secure, updated, and running smoothly—so you can focus on your business.',
-      url: 'https://stackria.com/services/web-maintenance',
+      url: 'https://stackria.com/services/web-care',
       siteName: 'Stackria',
       images: [
         {

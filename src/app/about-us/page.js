@@ -19,11 +19,14 @@ export async function generateMetadata() {
     title: 'About Stackria | Human-Centered Web-Based Solutions',
     description:
       'Discover Stackria’s mission to build human-centered, scalable web-based solutions. Learn how we combine narrative-driven design and modern tech to empower businesses.',
+      alternates: {
+      canonical: 'https://stackria.com/about',
+    },
     openGraph: {
       title: 'About Stackria | Human-Centered Web-Based Solutions',
       description:
         'Discover Stackria’s mission to build human-centered, scalable web-based solutions. Learn how we combine narrative-driven design and modern tech to empower businesses.',
-      url: 'https://stackria.com/about',
+      url: 'https://stackria.com/about-us',
       siteName: 'Stackria',
       images: [
         {

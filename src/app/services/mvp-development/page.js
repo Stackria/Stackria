@@ -17,19 +17,22 @@ export async function generateMetadata() {
   return {
     title: 'MVP Development for Startups | Stackria',
     description:
-      'Validate faster. Stackria builds lean MVPs that test your product idea quickly — scalable, user-ready, and future-proof.',
+      'From idea to launch—Stackria rapidly builds MVPs that validate ideas and accelerate growth.',
+    alternates: {
+      canonical: 'https://stackria.com/services/mvp-development',
+    },
     openGraph: {
       title: 'MVP Development for Startups | Stackria',
       description:
-        'Validate faster. Stackria builds lean MVPs that test your product idea quickly — scalable, user-ready, and future-proof.',
+        'From idea to launch—Stackria rapidly builds MVPs that validate ideas and accelerate growth.',
       url: 'https://stackria.com/services/mvp-development',
       siteName: 'Stackria',
       images: [
         {
-          url: '/images/og-mvp-development.jpg',
+          url: '/images/og-mvp.jpg',
           width: 1200,
           height: 630,
-          alt: 'MVP Development by Stackria',
+          alt: 'Startup MVP Services - Stackria',
         },
       ],
       type: 'website',
@@ -38,11 +41,12 @@ export async function generateMetadata() {
       card: 'summary_large_image',
       title: 'MVP Development for Startups | Stackria',
       description:
-        'Validate faster. Stackria builds lean MVPs that test your product idea quickly — scalable, user-ready, and future-proof.',
-      images: ['/images/og-mvp-development.jpg'],
+        'From idea to launch—Stackria rapidly builds MVPs that validate ideas and accelerate growth.',
+      images: ['/images/og-mvp.jpg'],
     },
   };
 }
+
 
 
 const features = [

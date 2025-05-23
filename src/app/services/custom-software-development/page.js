@@ -11,29 +11,14 @@ import {Process} from '@/components/Process'
 import { FaCheckCircle } from "react-icons/fa";
 import { motion } from 'framer-motion';
 
-
-const containerVariants = {
-  hidden: { opacity: 0 },
-  visible: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.3
-    }
-  }
-};
-
-const itemVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0 }
-};
-
-// /app/services/custom-web-dev/page.jsx
-
 export async function generateMetadata() {
   return {
     title: 'Custom Web-Based Solutions | Stackria',
     description:
       'Need tailored digital infrastructure? Stackria crafts scalable, high-performance web-based solutions for startups and enterprises alike.',
+    alternates: {
+      canonical: 'https://stackria.com/services/custom-software-development',
+    },
     openGraph: {
       title: 'Custom Web-Based Solutions | Stackria',
       description:
@@ -60,6 +45,21 @@ export async function generateMetadata() {
   };
 }
 
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.3
+    }
+  }
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: { opacity: 1, y: 0 }
+};
 
 const page = () => {
 return (

@@ -1,4 +1,4 @@
-'use client'
+
 import Image from 'next/image'
 import React from 'react'
 import { outfitRegular, museoReg, outfitLight, outfitSemibold, museoBold } from "@/app/layout";
@@ -17,11 +17,15 @@ export async function generateMetadata() {
     title: 'E-Commerce Web-Based Solutions | Stackria',
     description:
       'From product pages to payment gateways, Stackria builds sleek, high-converting e-commerce platforms that scale as you grow.',
+      alternates: {
+      canonical: 'https://stackria.com/services/e-commerce-development',
+    },
+
     openGraph: {
       title: 'E-Commerce Web-Based Solutions | Stackria',
       description:
         'From product pages to payment gateways, Stackria builds sleek, high-converting e-commerce platforms that scale as you grow.',
-      url: 'https://stackria.com/services/ecommerce-development',
+      url: 'https://stackria.com/services/e-commerce-development',
       siteName: 'Stackria',
       images: [
         {
@@ -41,6 +45,7 @@ export async function generateMetadata() {
       images: ['/images/og-ecommerce.jpg'],
     },
   };
+}
 
 const containerVariants = {
   hidden: { opacity: 0, y: 30 },
