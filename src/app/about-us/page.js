@@ -42,7 +42,7 @@ const page = () => {
               Empowering Businesses with Scalable Web-Based Solutions
             </h1>
 
-            <span className={`${outfitLight.className} xl:text-left text-justify text-slate-800 text-[15px] md:text-[15px] xl:text-[16px] xl:w-[70%]`}>
+            <span className={`${outfitLight.className} xl:text-left text-justify text-slate-800 text-[15px] md:text-[15px] xl:text-[16px] xl:w-[70%] 2xl:w-[60%]`}>
             At Stackria, we don’t just build websites, we engineer <span className='font-bold text-black'>powerful</span>, scalable, and conversion-driven web-based solutions designed to help businesses <span className='font-bold text-black'>thrive</span> in the digital era. 
             
             </span>
@@ -51,7 +51,7 @@ const page = () => {
           {/* Image */}
           <div className="xl:w-[50%] lg:w-[50%] w-full h-full md:w-[50%] md:-mt-10">
             <Image alt='about-us'
-            className='relative xl:h-full xl:w-full w-full h-full mx-auto xl:-mt-24'
+            className='relative xl:h-full xl:w-full w-full h-full mx-auto xl:-mt-24 2xl:-mt-36'
             src={img} 
             width={800} 
             height={700} 
