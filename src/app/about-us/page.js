@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import Script from 'next/script';
 import { outfitRegular, museoReg, outfitLight, outfitSemibold } from "@/app/layout";
 import {styles} from '@/constants/style'
 import img from '@/assets/service-img1.png'

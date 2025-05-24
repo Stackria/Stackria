@@ -1,5 +1,6 @@
 "use client"
 import { useState } from 'react';
+import Script from 'next/script';
 import { outfitRegular, museoReg, outfitLight, outfitSemibold } from "@/app/layout";
 import img from '@/assets/contact-img.png'
 import Image from 'next/image'
@@ -39,7 +40,27 @@ export default function page() {
   };
 
   return (
-    <div class="">
+  <div class="">
+        <Script
+        id="contact-local-business"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Stackria",
+            url: "https://stackria.com",
+            contactPoint: {
+              "@type": "ContactPoint",
+              telephone: "+234-XXX-XXXXXXX",
+              contactType: "Customer Service",
+              areaServed: "NG",
+            },
+          }),
+        }}
+      />
+
       {/* Hero */}
       <div className="flex flex-col lg:flex-row md:flex-row xl:flex-row items-center justify-between mx-auto xl:py-20 xl:gap-20">
         

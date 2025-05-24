@@ -1,6 +1,7 @@
 'use client'
 import Image from 'next/image'
 import React from 'react'
+import Script from 'next/script';
 import { outfitRegular, museoReg, outfitLight, outfitSemibold, museoBold } from "@/app/layout";
 import { styles } from '@/constants/style';
 import imgOne from '@/assets/service-img5.png';
@@ -69,6 +70,30 @@ const itemVariants = {
 const page = () => {
     return (
         <section className="px-0">
+            <Script
+            id="jsonld-seo"
+            type="application/ld+json"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Service",
+                serviceType: "Search Engine Optimization (SEO)",
+                provider: {
+                    "@type": "Organization",
+                    name: "Stackria",
+                    url: "https://stackria.com",
+                },
+                description: "Boost visibility and rankings with modern, ethical SEO strategies tailored to your web-based solution.",
+                areaServed: {
+                    "@type": "Place",
+                    name: "Global",
+                },
+                }),
+            }}
+            />
+
+
             {/* Hero */}
             <div className="flex flex-col lg:flex-row md:flex-row xl:flex-row items-center px-0 justify-between mx-auto xl:px-0 xl:py-20 gap-10 md:gap-10 lg:gap-20 xl:gap-0 xl:justify-between xl:-mb-20">  
                 <div className="xl:w-[40%] lg:w-[50%] md:w-[40%] md:text-left md:justify-start xl:p-16 xl:pb-0 pt-28 px-5 md:ml-5 xl:-mt-36 md:px-2 2xl:-ml-5 2xl:-mt-20">

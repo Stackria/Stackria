@@ -1,6 +1,7 @@
 
 import Image from 'next/image'
 import React from 'react'
+import Script from 'next/script';
 import { outfitRegular, museoReg, outfitLight, outfitSemibold, museoBold } from "@/app/layout";
 import { styles } from '@/constants/style'
 import imgOne from '@/assets/service-img4.png' // <- Add suitable image to assets
@@ -61,6 +62,30 @@ const itemVariants = {
 const page = () => {
   return (
     <section className="px-0">
+
+      <Script
+        id="jsonld-mern"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Service",
+            serviceType: "MERN Stack Development",
+            provider: {
+              "@type": "Organization",
+              name: "Stackria",
+              url: "https://stackria.com",
+            },
+            description: "Stackria builds dynamic full-stack web-based solutions using MongoDB, Express, React, and Node.",
+            areaServed: {
+              "@type": "Place",
+              name: "Global",
+            },
+          }),
+        }}
+      />
+
 
       {/* Hero */}
       <div className="flex flex-col lg:flex-row md:flex-row xl:flex-row items-center px-0 justify-between mx-auto xl:px-0 xl:py-20 gap-10 md:gap-10 lg:gap-20 xl:gap-0 xl:justify-between xl:-mb-20">  

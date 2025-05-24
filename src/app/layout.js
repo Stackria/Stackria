@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Script from 'next/script';
 import Footer from '@/components/footer/Footer';
 import Navbar from '@/components/navBar/Navbar'
 import Head from "next/head";
@@ -54,6 +55,26 @@ export default function RootLayout({ children }) {
       <Head>
         {/* Add the favicon link here */}
         <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+        {/* Structured Data */}
+        <Script
+          id="stackria-org-jsonld"
+          type="application/ld+json"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Stackria",
+              url: "https://stackria.com",
+              logo: "https://stackria.com/logo.png",
+              sameAs: [
+                "https://www.linkedin.com/company/stackria",
+                "https://twitter.com/stackria",
+                "https://instagram.com/stackrialtd"
+              ]
+            }),
+          }}
+        />
       </Head>
       <body
         className={outfit.className}
