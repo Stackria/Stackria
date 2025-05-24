@@ -1,6 +1,7 @@
 "use client"
 import { useState } from 'react';
 import Script from 'next/script';
+import { motion } from 'framer-motion';
 import { outfitRegular, museoReg, outfitLight, outfitSemibold } from "@/app/layout";
 import img from '@/assets/contact-img.png'
 import Image from 'next/image'
@@ -87,8 +88,50 @@ export default function page() {
         </div>
       </div>
 
+      {/* Contact */}
+      <div
+  className="bg-white py-20 px-6 md:px-12 lg:px-24 mx-auto xl:py-20 text-left xl:text-center xl:w-full xl:mx-auto"
+  style={{
+    backgroundImage: 'url(/images/bg-cta0.svg)',
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  }}
+>
+  <motion.h2
+    initial={{ opacity: 0, y: 20 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.7 }}
+    className={`${outfitSemibold.className} text-[34px] md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight text-left xl:text-center`}
+  >
+    Let’s talk about what your business needs next.
+  </motion.h2>
+
+  <motion.p
+    initial={{ opacity: 0, y: 10 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.2, duration: 0.6 }}
+    className={`${outfitLight.className} max-w-xl mx-auto text-[15px] md:text-[16px] text-slate-800 mb-8 text-left xl:text-center`}
+  >
+    Whether you have a project in mind, a question, or just want to explore possibilities—we’d love to hear from you.
+  </motion.p>
+
+  <motion.div
+    initial={{ opacity: 0, y: 10 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.3, duration: 0.5 }}
+    className="flex justify-left xl:justify-center"
+  >
+    <a
+      href="mailto:hello@stackria.com"
+      className="inline-block bg-primary text-white text-sm md:text-base font-medium px-6 py-3 rounded-2xl shadow-md transition hover:bg-opacity-90"
+    >
+      Email us at hello@stackria.com
+    </a>
+  </motion.div>
+      </div>
+
       {/* Form */}
-      <div className="max-w-xl mx-auto px-4 py-12">
+      {/* <div className="max-w-xl mx-auto px-4 py-12">
         <h1 className={`${outfitRegular.className} text-3xl font-bold mb-6`}>
           Let’s Talk About Your Project
         </h1>
@@ -174,7 +217,7 @@ export default function page() {
         </form>
 
         {message && <p className="mt-4 text-sm text-green-600">{message}</p>}
-      </div>
+      </div> */}
 
       {/* JSON-LD Structured Data */}
       <script
