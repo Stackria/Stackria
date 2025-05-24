@@ -13,7 +13,7 @@ import { motion } from 'framer-motion';
 
 export async function generateMetadata() {
   return {
-    title: 'Custom Web-Based Solutions | Stackria',
+    title: 'Custom Software Solutions | Stackria',
     description:
       'Need tailored digital infrastructure? Stackria crafts scalable, high-performance web-based solutions for startups and enterprises alike.',
     alternates: {
@@ -40,7 +40,7 @@ export async function generateMetadata() {
       title: 'Custom Web-Based Solutions | Stackria',
       description:
         'Need tailored digital infrastructure? Stackria crafts scalable, high-performance web-based solutions for startups and enterprises alike.',
-      images: ['/images/og-custom-web-dev.jpg'],
+      images: ['/images/og-custom-software-development.jpg'],
     },
   };
 }

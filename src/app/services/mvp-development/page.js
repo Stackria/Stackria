@@ -42,7 +42,7 @@ export async function generateMetadata() {
       title: 'MVP Development for Startups | Stackria',
       description:
         'From idea to launch—Stackria rapidly builds MVPs that validate ideas and accelerate growth.',
-      images: ['/images/og-mvp.jpg'],
+      images: ['/images/og-mvp-development.jpg'],
     },
   };
 }

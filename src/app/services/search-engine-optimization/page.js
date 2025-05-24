@@ -41,7 +41,7 @@ export async function generateMetadata() {
       title: 'Search Engine Optimization (SEO) | Stackria',
       description:
         'Attract organic traffic with strategy-first SEO. Stackria optimizes your web-based solutions for visibility, performance, and conversion.',
-      images: ['/images/og-seo.jpg'],
+      images: ['/images/og-search-engine-optimization.jpg'],
     },
   };
 }

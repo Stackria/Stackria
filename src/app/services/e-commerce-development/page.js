@@ -29,7 +29,7 @@ export async function generateMetadata() {
       siteName: 'Stackria',
       images: [
         {
-          url: '/images/og-ecommerce.jpg',
+          url: '/images/og-ecommerce-development.jpg',
           width: 1200,
           height: 630,
           alt: 'E-Commerce Solutions by Stackria',
@@ -42,7 +42,7 @@ export async function generateMetadata() {
       title: 'E-Commerce Web-Based Solutions | Stackria',
       description:
         'From product pages to payment gateways, Stackria builds sleek, high-converting e-commerce platforms that scale as you grow.',
-      images: ['/images/og-ecommerce.jpg'],
+      images: ['/images/og-ecommerce-development.jpg'],
     },
   };
 }
