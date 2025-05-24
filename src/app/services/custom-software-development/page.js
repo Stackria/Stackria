@@ -12,18 +12,21 @@ import { FaCheckCircle } from "react-icons/fa";
 import { motion } from 'framer-motion';
 
 export async function generateMetadata() {
+  const title = 'Custom Software Solutions | Stackria';
+  const description =
+    'Need tailored digital infrastructure? Stackria crafts scalable, high-performance web-based solutions for startups and enterprises alike.';
+  const url = 'https://stackria.com/services/custom-software-development';
+
   return {
-    title: 'Custom Software Solutions | Stackria',
-    description:
-      'Need tailored digital infrastructure? Stackria crafts scalable, high-performance web-based solutions for startups and enterprises alike.',
+    title,
+    description,
     alternates: {
-      canonical: 'https://stackria.com/services/custom-software-development',
+      canonical: url,
     },
     openGraph: {
-      title: 'Custom Web-Based Solutions | Stackria',
-      description:
-        'Need tailored digital infrastructure? Stackria crafts scalable, high-performance web-based solutions for startups and enterprises alike.',
-      url: 'https://stackria.com/services/custom-software-development',
+      title,
+      description,
+      url,
       siteName: 'Stackria',
       images: [
         {
@@ -32,18 +35,27 @@ export async function generateMetadata() {
           height: 630,
           alt: 'Custom Web Development by Stackria',
         },
+        {
+          url: '/images/og-default.jpg',
+          width: 1200,
+          height: 630,
+          alt: 'Stackria Web-Based Solutions',
+        },
       ],
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Custom Web-Based Solutions | Stackria',
-      description:
-        'Need tailored digital infrastructure? Stackria crafts scalable, high-performance web-based solutions for startups and enterprises alike.',
-      images: ['/images/og-custom-software-development.jpg'],
+      title,
+      description,
+      images: [
+        '/images/og-custom-software-development.jpg',
+        '/images/og-default.jpg',
+      ],
     },
   };
 }
+
 
 
 const containerVariants = {

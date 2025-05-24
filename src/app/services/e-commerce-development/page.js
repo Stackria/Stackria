@@ -13,39 +13,35 @@ import { motion } from "framer-motion";
 import { FaCheckCircle } from "react-icons/fa";
 
 export async function generateMetadata() {
-  return {
-    title: 'E-Commerce Web-Based Solutions | Stackria',
-    description:
-      'From product pages to payment gateways, Stackria builds sleek, high-converting e-commerce platforms that scale as you grow.',
-      alternates: {
-      canonical: 'https://stackria.com/services/e-commerce-development',
-    },
+  const title = 'E-Commerce Web Solutions | Stackria';
+  const description =
+    'Sell smarter with Stackria’s e-commerce web solutions. We build performance-optimized storefronts for growth-driven brands.';
+  const url = 'https://stackria.com/services/e-commerce-development';
 
+  return {
+    title,
+    description,
+    alternates: { canonical: url },
     openGraph: {
-      title: 'E-Commerce Web-Based Solutions | Stackria',
-      description:
-        'From product pages to payment gateways, Stackria builds sleek, high-converting e-commerce platforms that scale as you grow.',
-      url: 'https://stackria.com/services/e-commerce-development',
+      title,
+      description,
+      url,
       siteName: 'Stackria',
       images: [
-        {
-          url: '/images/og-ecommerce-development.jpg',
-          width: 1200,
-          height: 630,
-          alt: 'E-Commerce Solutions by Stackria',
-        },
+        { url: '/images/og-ecommerce-development.jpg', width: 1200, height: 630, alt: 'E-Commerce Development by Stackria' },
+        { url: '/images/og-default.jpg', width: 1200, height: 630, alt: 'Stackria Web-Based Solutions' },
       ],
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'E-Commerce Web-Based Solutions | Stackria',
-      description:
-        'From product pages to payment gateways, Stackria builds sleek, high-converting e-commerce platforms that scale as you grow.',
-      images: ['/images/og-ecommerce-development.jpg'],
+      title,
+      description,
+      images: ['/images/og-ecommerce-development.jpg', '/images/og-default.jpg'],
     },
   };
 }
+
 
 const containerVariants = {
   hidden: { opacity: 0, y: 30 },

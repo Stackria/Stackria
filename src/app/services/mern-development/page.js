@@ -13,38 +13,35 @@ import { FaCheckCircle } from "react-icons/fa";
 import { motion } from 'framer-motion';
 
 export async function generateMetadata() {
+  const title = 'MERN Stack Web Solutions | Stackria';
+  const description =
+    'Get robust, full-stack web-based solutions built with MongoDB, Express, React, and Node.js.';
+  const url = 'https://stackria.com/services/mern-development';
+
   return {
-    title: 'MERN Stack Development | Stackria',
-    description:
-      'Full-stack web solutions with MongoDB, Express, React, and Node.js — custom-built by Stackria for performance and scale.',
-      alternates: {
-      canonical: 'https://stackria.com/services/mern-development',
-    },
+    title,
+    description,
+    alternates: { canonical: url },
     openGraph: {
-      title: 'MERN Stack Development | Stackria',
-      description:
-        'Full-stack web solutions with MongoDB, Express, React, and Node.js — custom-built by Stackria for performance and scale.',
-      url: 'https://stackria.com/services/mern-development',
+      title,
+      description,
+      url,
       siteName: 'Stackria',
       images: [
-        {
-          url: '/images/og-mern-development.jpg',
-          width: 1200,
-          height: 630,
-          alt: 'MERN Stack Development by Stackria',
-        },
+        { url: '/images/og-mern-development.jpg', width: 1200, height: 630, alt: 'MERN Stack Solutions by Stackria' },
+        { url: '/images/og-default.jpg', width: 1200, height: 630, alt: 'Stackria Web-Based Solutions' },
       ],
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'MERN Stack Development | Stackria',
-      description:
-        'Full-stack web solutions with MongoDB, Express, React, and Node.js — custom-built by Stackria for performance and scale.',
-      images: ['/images/og-mern-development.jpg'],
+      title,
+      description,
+      images: ['/images/og-mern-development.jpg', '/images/og-default.jpg'],
     },
   };
 }
+
 
 const containerVariants = {
   hidden: { opacity: 0 },

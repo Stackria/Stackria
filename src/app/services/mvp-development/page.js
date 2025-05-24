@@ -14,38 +14,35 @@ import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 
 export async function generateMetadata() {
+  const title = 'MVP Development for Startups | Stackria';
+  const description =
+    'Validate your idea fast. Stackria builds functional, scalable MVPs for startups and innovators.';
+  const url = 'https://stackria.com/services/mvp-development';
+
   return {
-    title: 'MVP Development for Startups | Stackria',
-    description:
-      'From idea to launch—Stackria rapidly builds MVPs that validate ideas and accelerate growth.',
-    alternates: {
-      canonical: 'https://stackria.com/services/mvp-development',
-    },
+    title,
+    description,
+    alternates: { canonical: url },
     openGraph: {
-      title: 'MVP Development for Startups | Stackria',
-      description:
-        'From idea to launch—Stackria rapidly builds MVPs that validate ideas and accelerate growth.',
-      url: 'https://stackria.com/services/mvp-development',
+      title,
+      description,
+      url,
       siteName: 'Stackria',
       images: [
-        {
-          url: '/images/og-mvp.jpg',
-          width: 1200,
-          height: 630,
-          alt: 'Startup MVP Services - Stackria',
-        },
+        { url: '/images/og-mvp-development.jpg', width: 1200, height: 630, alt: 'MVP Development by Stackria' },
+        { url: '/images/og-default.jpg', width: 1200, height: 630, alt: 'Stackria Web-Based Solutions' },
       ],
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'MVP Development for Startups | Stackria',
-      description:
-        'From idea to launch—Stackria rapidly builds MVPs that validate ideas and accelerate growth.',
-      images: ['/images/og-mvp-development.jpg'],
+      title,
+      description,
+      images: ['/images/og-mvp-development.jpg', '/images/og-default.jpg'],
     },
   };
 }
+
 
 
 

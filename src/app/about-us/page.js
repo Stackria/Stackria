@@ -15,38 +15,35 @@ import { FaCheckCircle } from "react-icons/fa";
 import TypewriterEffect from '@/components/ui/typewriter'
 
 export async function generateMetadata() {
+  const title = 'About Stackria | Human-Centered Web Solutions';
+  const description =
+    'Meet the team behind Stackria. We’re passionate about building people-first digital solutions that scale.';
+  const url = 'https://stackria.com/about-us';
+
   return {
-    title: 'About Stackria | Human-Centered Web-Based Solutions',
-    description:
-      'Discover Stackria’s mission to build human-centered, scalable web-based solutions. Learn how we combine narrative-driven design and modern tech to empower businesses.',
-      alternates: {
-      canonical: 'https://stackria.com/about',
-    },
+    title,
+    description,
+    alternates: { canonical: url },
     openGraph: {
-      title: 'About Stackria | Human-Centered Web-Based Solutions',
-      description:
-        'Discover Stackria’s mission to build human-centered, scalable web-based solutions. Learn how we combine narrative-driven design and modern tech to empower businesses.',
-      url: 'https://stackria.com/about-us',
+      title,
+      description,
+      url,
       siteName: 'Stackria',
       images: [
-        {
-          url: '/images/og-about.jpg',
-          width: 1200,
-          height: 630,
-          alt: 'About Stackria - Web-Based Solutions',
-        },
+        { url: '/images/og-about-us.jpg', width: 1200, height: 630, alt: 'About Stackria' },
+        { url: '/images/og-default.jpg', width: 1200, height: 630, alt: 'Stackria Web-Based Solutions' },
       ],
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'About Stackria | Human-Centered Web-Based Solutions',
-      description:
-        'Discover Stackria’s mission to build human-centered, scalable web-based solutions. Learn how we combine narrative-driven design and modern tech to empower businesses.',
-      images: ['/images/og-about.jpg'],
+      title,
+      description,
+      images: ['/images/og-about-us.jpg', '/images/og-default.jpg'],
     },
   };
 }
+
 
 const page = () => {
   return (

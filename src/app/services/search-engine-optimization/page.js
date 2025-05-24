@@ -13,38 +13,35 @@ import { FaCheckCircle } from "react-icons/fa";
 import { motion } from 'framer-motion';
 
 export async function generateMetadata() {
+  const title = 'Search Engine Optimization Services | Stackria';
+  const description =
+    'Boost visibility and outrank competitors. Stackria’s SEO solutions combine technical and creative strategies for measurable impact.';
+  const url = 'https://stackria.com/services/search-engine-optimization';
+
   return {
-    title: 'Search Engine Optimization (SEO) | Stackria',
-    description:
-      'Attract organic traffic with strategy-first SEO. Stackria optimizes your web-based solutions for visibility, performance, and conversion.',
-      alternates: {
-      canonical: 'https://stackria.com/services/search-engine-optimization',
-    },
+    title,
+    description,
+    alternates: { canonical: url },
     openGraph: {
-      title: 'Search Engine Optimization (SEO) | Stackria',
-      description:
-        'Attract organic traffic with strategy-first SEO. Stackria optimizes your web-based solutions for visibility, performance, and conversion.',
-      url: 'https://stackria.com/services/search-engine-optimization',
+      title,
+      description,
+      url,
       siteName: 'Stackria',
       images: [
-        {
-          url: '/images/og-seo.jpg',
-          width: 1200,
-          height: 630,
-          alt: 'SEO by Stackria',
-        },
+        { url: '/images/og-seo.jpg', width: 1200, height: 630, alt: 'SEO Services by Stackria' },
+        { url: '/images/og-default.jpg', width: 1200, height: 630, alt: 'Stackria Web-Based Solutions' },
       ],
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Search Engine Optimization (SEO) | Stackria',
-      description:
-        'Attract organic traffic with strategy-first SEO. Stackria optimizes your web-based solutions for visibility, performance, and conversion.',
-      images: ['/images/og-search-engine-optimization.jpg'],
+      title,
+      description,
+      images: ['/images/og-search-engine-optimization.jpg', '/images/og-default.jpg'],
     },
   };
 }
+
 
 const features = [
   "Test core features with early adopters",

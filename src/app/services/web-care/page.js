@@ -13,38 +13,35 @@ import { FaCheckCircle } from "react-icons/fa";
 import { motion } from 'framer-motion';
 
 export async function generateMetadata() {
+  const title = 'Web Maintenance & Support | Stackria';
+  const description =
+    'Keep your web-based solution secure, updated, and error-free with Stackria’s proactive maintenance packages.';
+  const url = 'https://stackria.com/services/web-care';
+
   return {
-    title: 'Web Maintenance & Care Plans | Stackria',
-    description:
-      'Downtime is expensive. Stackria keeps your web-based solutions secure, updated, and running smoothly—so you can focus on your business.',
-      alternates: {
-      canonical: 'https://stackria.com/services/web-maintenance',
-    },
+    title,
+    description,
+    alternates: { canonical: url },
     openGraph: {
-      title: 'Web Maintenance & Care Plans | Stackria',
-      description:
-        'Downtime is expensive. Stackria keeps your web-based solutions secure, updated, and running smoothly—so you can focus on your business.',
-      url: 'https://stackria.com/services/web-care',
+      title,
+      description,
+      url,
       siteName: 'Stackria',
       images: [
-        {
-          url: '/images/og-web-maintenance.jpg',
-          width: 1200,
-          height: 630,
-          alt: 'Web Maintenance by Stackria',
-        },
+        { url: '/images/og-web-maintenance.jpg', width: 1200, height: 630, alt: 'Web Maintenance by Stackria' },
+        { url: '/images/og-default.jpg', width: 1200, height: 630, alt: 'Stackria Web-Based Solutions' },
       ],
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Web Maintenance & Care Plans | Stackria',
-      description:
-        'Downtime is expensive. Stackria keeps your web-based solutions secure, updated, and running smoothly—so you can focus on your business.',
-      images: ['/images/og-web-maintenance.jpg'],
+      title,
+      description,
+      images: ['/images/og-web-maintenance.jpg', '/images/og-default.jpg'],
     },
   };
 }
+
 
 const containerVariants = {
   hidden: { opacity: 0 },
