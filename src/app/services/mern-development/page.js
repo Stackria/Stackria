@@ -235,6 +235,35 @@ const page = () => {
           <TypewriterEffect/>
         </div>
       </div>
+
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: "MERN Stack Development",
+            description: "Get powerful, scalable web applications built using MongoDB, Express, React, and Node.js. Stackria specializes in full-stack JavaScript development.",
+            brand: {
+              "@type": "Organization",
+              name: "Stackria",
+              url: "https://stackria.com",
+              logo: "https://stackria.com/logo.png"
+            },
+            url: "https://stackria.com/services/mern-development",
+            image: "https://stackria.com/images/og-mern-development.jpg",
+            offers: {
+              "@type": "Offer",
+              priceCurrency: "USD",
+              price: "0.00",
+              availability: "https://schema.org/InStock",
+              url: "https://stackria.com/contact"
+            }
+          })
+        }}
+      />
+
     </section>
   )
 }

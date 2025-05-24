@@ -273,6 +273,35 @@ const page = () => {
         <Process/>
         <TypewriterEffect/>
       </div>
+
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: "Web Maintenance & Care",
+            description: "Your digital infrastructure deserves proactive care. Stackria provides ongoing maintenance to keep your web-based solutions secure, fast, and reliable.",
+            brand: {
+              "@type": "Organization",
+              name: "Stackria",
+              url: "https://stackria.com",
+              logo: "https://stackria.com/logo.png"
+            },
+            url: "https://stackria.com/services/web-maintenance",
+            image: "https://stackria.com/images/og-web-maintenance.jpg",
+            offers: {
+              "@type": "Offer",
+              priceCurrency: "USD",
+              price: "0.00",
+              availability: "https://schema.org/InStock",
+              url: "https://stackria.com/contact"
+            }
+          })
+        }}
+      />
+
     </section>
   );
 };

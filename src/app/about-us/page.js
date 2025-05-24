@@ -262,6 +262,26 @@ const page = () => {
              <div className='bg-white py-0 xl:py-20' ><TypewriterEffect/></div>
         </section>
       </section>
+
+      {/* JSON-LD Structured Data */}
+      <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          name: "Stackria",
+          url: "https://stackria.com",
+          logo: "https://stackria.com/logo.png",
+          description: "Stackria is a web-based solution provider crafting custom digital infrastructure for modern businesses.",
+          sameAs: [
+            "https://www.linkedin.com/company/stackria",
+            "https://www.instagram.com/stackria",
+            // add more socials
+          ]
+        }),
+      }}
+    />
     </section>
   )
 }

@@ -278,6 +278,35 @@ return (
             <Process/>
             <TypewriterEffect/>
             </div>
+
+            {/* JSON-LD Structured Data */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                __html: JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Product",
+                    name: "Custom Web-Based Solutions",
+                    description:
+                    "Tailored digital infrastructure built for startups and enterprises. Stackria crafts scalable, high-performance web-based solutions.",
+                    brand: {
+                    "@type": "Organization",
+                    name: "Stackria",
+                    url: "https://stackria.com",
+                    logo: "https://stackria.com/logo.png", // Replace with actual URL
+                    },
+                    url: "https://stackria.com/services/custom-software-development",
+                    image: "https://stackria.com/images/og-custom-software-development.jpg",
+                    offers: {
+                    "@type": "Offer",
+                    priceCurrency: "USD",
+                    price: "0.00",
+                    availability: "https://schema.org/InStock",
+                    url: "https://stackria.com/contact",
+                    },
+                }),
+                }}
+            />
     </section>
   )
 }

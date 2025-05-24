@@ -286,12 +286,36 @@ return (
             <Process/>
             <TypewriterEffect/>
             </div>
-            
-            
-
-            
-            
         </div>
+
+        {/* JSON-LD Structured Data */}
+        <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: "E-Commerce Development",
+            description: "Sell smarter with Stackria's tailored e-commerce web solutions. Scalable storefronts optimized for performance, UX, and conversion.",
+            brand: {
+                "@type": "Organization",
+                name: "Stackria",
+                url: "https://stackria.com",
+                logo: "https://stackria.com/logo.png"
+            },
+            url: "https://stackria.com/services/ecommerce-development",
+            image: "https://stackria.com/images/og-ecommerce-development.jpg",
+            offers: {
+                "@type": "Offer",
+                priceCurrency: "USD",
+                price: "0.00",
+                availability: "https://schema.org/InStock",
+                url: "https://stackria.com/contact"
+            }
+            })
+        }}
+        />
+
     </section>
   )
 }

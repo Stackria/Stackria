@@ -154,6 +154,23 @@ export default function page() {
 
         {message && <p className="mt-4 text-sm text-green-600">{message}</p>}
       </div>
+
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            name: "Contact Stackria",
+            url: "https://stackria.com/contact",
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": "https://stackria.com/contact"
+            }
+          }),
+        }}
+      />
     </div>
   );
 }
