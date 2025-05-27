@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import React, { useState } from 'react'
 import { outfitLight, outfitSemibold, outfit, museoReg, outfitRegular } from "@/app/layout";
 import Image from 'next/image';

@@ -3,8 +3,6 @@ import React, { useState, useEffect } from 'react'
 import Links from "@/components/navBar/Links"
 import Image from 'next/image';
 import { museo, museoReg, outfitRegular, outfitSemibold } from "@/app/layout";
-import logoOne from '@/assets/logo-black.png'
-import logoColored from '@/assets/logo.png'
 import Link from 'next/link';
 
 const Navbar = () => {
@@ -31,15 +29,17 @@ const Navbar = () => {
 
               {/* Logo */}
               <div className='flex-shrink-0'>
-                  <Image href="/"
-                  className='xl:w-[150px] 2xl:w-[180px] xl:-ml-5 -ml-4 w-[150px] h-auto pointer 2xl:-ml-7 ' 
+                <Link href="/">
+                  <Image
+                  className='lg:z-100 xl:w-[150px] 2xl:w-[180px] xl:-ml-5 -ml-4 w-[150px] h-auto pointer 2xl:-ml-7 ' 
                   // Change logo to svg
-                  src={scroll ? logoColored : logoOne}
+                  src={scroll ? "/images/logo.png" : "/images/logo-black.png"}
                   width={150} 
                   height={150} 
                   priority 
                   alt='stackria web development agency'
                   />
+                </Link>
               </div>
             
 

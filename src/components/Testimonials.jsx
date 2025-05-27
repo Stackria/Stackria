@@ -9,9 +9,9 @@ export const Testimonials = () => {
           What Our Clients Say
         </h2>
         <p className={`${outfitRegular.className} text-slate-700 text-[14px] px-2 md:text-base italic leading-relaxed md:px-5 md:text-[14px]`}>
-          "Working with Stackria was a game-changer for our business. Their team delivered a
+          &ldquo;Working with Stackria was a game-changer for our business. Their team delivered a
           clean, functional, and modern web-based solution that truly reflects our brand.
-          Communication was clear, timelines were met, and the final product exceeded expectations."
+          Communication was clear, timelines were met, and the final product exceeded expectations.&ldquo;
         </p>
         <p className={`${outfitRegular.className} text-slate-900 font-medium mt-4`} >— Bright W, Founder of Zamani Luxuries</p>
       </div>

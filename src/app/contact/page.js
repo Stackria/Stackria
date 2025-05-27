@@ -1,44 +1,41 @@
-"use client"
-import { useState } from 'react';
+// import { useState } from 'react';
 import Script from 'next/script';
-import { motion } from 'framer-motion';
 import { outfitRegular, museoReg, outfitLight, outfitSemibold } from "@/app/layout";
-import img from '@/assets/contact-img.png'
 import Image from 'next/image'
 
 export default function page() {
-  const [formData, setFormData] = useState({ name: '', email: '', phone: '', company: '', budget: '',
-  });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [message, setMessage] = useState('');
+  // const [formData, setFormData] = useState({ name: '', email: '', phone: '', company: '', budget: '',
+  // });
+  // const [isSubmitting, setIsSubmitting] = useState(false);
+  // const [message, setMessage] = useState('');
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
+  // const handleChange = (e) => {
+  //   setFormData({ ...formData, [e.target.name]: e.target.value });
+  // };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   setIsSubmitting(true);
 
-    try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
-      });
+  //   try {
+  //     const res = await fetch('/api/contact', {
+  //       method: 'POST',
+  //       headers: { 'Content-Type': 'application/json' },
+  //       body: JSON.stringify(formData),
+  //     });
 
-      if (res.ok) {
-        setMessage('Thanks! We’ll be in touch shortly.');
-        setFormData({ name: '', email: '', phone: '', company: '', budget: '' });
-      } else {
-        setMessage('Something went wrong. Please try again.');
-      }
-    } catch (error) {
-      setMessage('Error: Unable to submit form.');
-    }
+  //     if (res.ok) {
+  //       setMessage('Thanks! We’ll be in touch shortly.');
+  //       setFormData({ name: '', email: '', phone: '', company: '', budget: '' });
+  //     } else {
+  //       setMessage('Something went wrong. Please try again.');
+  //     }
+  //   } catch (error) {
+  //     setMessage('Error: Unable to submit form.');
+  //   }
 
-    setIsSubmitting(false);
-  };
+  //   setIsSubmitting(false);
+  // };
 
   return (
   <div class="">
@@ -80,7 +77,7 @@ export default function page() {
         <div className="xl:w-[50%] lg:w-[50%] w-full h-full md:w-[55%] md:-mt-32">
           <Image alt='about-us'
           className='relative xl:h-full xl:w-full w-full h-full mx-auto xl:-mt-24'
-          src={img} 
+          src="/images/contact-img.png"
           width={800} 
           height={700} 
           priority/>
@@ -90,45 +87,35 @@ export default function page() {
 
       {/* Contact */}
       <div
-  className="bg-white py-20 px-6 md:px-12 lg:px-24 mx-auto xl:py-20 text-left xl:text-center xl:w-full xl:mx-auto"
-  style={{
-    backgroundImage: 'url(/images/bg-cta0.svg)',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  }}
->
-  <motion.h2
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.7 }}
-    className={`${outfitSemibold.className} text-[34px] md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight text-left xl:text-center`}
-  >
-    Let’s talk about what your business needs next.
-  </motion.h2>
+        className="bg-white py-20 px-6 md:px-12 lg:px-24 mx-auto xl:py-20 text-left xl:text-center xl:w-full xl:mx-auto"
+        style={{
+          backgroundImage: 'url(/images/bg-cta0.svg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <h2
+          className={`${outfitSemibold.className} text-[34px] md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight text-left xl:text-center`}
+        >
+          Let’s talk about what your business needs next.
+        </h2>
 
-  <motion.p
-    initial={{ opacity: 0, y: 10 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 0.2, duration: 0.6 }}
-    className={`${outfitLight.className} max-w-xl mx-auto text-[15px] md:text-[16px] text-slate-800 mb-8 text-left xl:text-center`}
-  >
-    Whether you have a project in mind, a question, or just want to explore possibilities—we’d love to hear from you.
-  </motion.p>
+        <p
+          className={`${outfitLight.className} max-w-xl mx-auto text-[15px] md:text-[16px] text-slate-800 mb-8 text-left xl:text-center`}
+        >
+          Whether you have a project in mind, a question, or just want to explore possibilities—we’d love to hear from you.
+        </p>
 
-  <motion.div
-    initial={{ opacity: 0, y: 10 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ delay: 0.3, duration: 0.5 }}
-    className="flex justify-left xl:justify-center"
-  >
-    <a
-      href="mailto:hello@stackria.com"
-      className="inline-block bg-primary text-white text-sm md:text-base font-medium px-6 py-3 rounded-2xl shadow-md transition hover:bg-opacity-90"
-    >
-      Email us at hello@stackria.com
-    </a>
-  </motion.div>
+        <div className="flex justify-left xl:justify-center">
+          <a
+            href="https://forms.fillout.com/t/vzJQ59nPa5us"
+            className="inline-block bg-primary text-white text-sm md:text-base font-medium px-6 py-3 rounded-2xl shadow-md transition hover:bg-opacity-90"
+          >
+            Reach Us
+          </a>
+        </div>
       </div>
+
 
       {/* Form */}
       {/* <div className="max-w-xl mx-auto px-4 py-12">

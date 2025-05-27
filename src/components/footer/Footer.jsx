@@ -1,8 +1,7 @@
 import Image from 'next/image'
 import Links from '../footer/Links'
 import {socialIcons} from '@/constants'
-import { styles } from '@/constants/style'
-import { outfit, outfitLight } from '@/app/layout'
+import { outfit, outfitLight, outfitRegular } from '@/app/layout'
 
 const Footer = () => {
   
@@ -20,7 +19,7 @@ const Footer = () => {
                 priority 
                 alt='web development agency'
               />
-              <span className='block -mt-14 text-[15px] text-gray-900'>
+              <span className={`${outfitRegular.className} block -mt-14 text-[15px] text-gray-900`}>
                 Building Rich Internet Applications That Thrives Businesses
               </span>
             </div>
@@ -39,8 +38,9 @@ const Footer = () => {
                   <Image
                   alt=''
                   width={22}
+                  height={22}
                     key={social.id}
-                    src={social.icon}
+                    src={social.img}
                   />
                   
                 )}

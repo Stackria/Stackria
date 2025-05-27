@@ -10,7 +10,6 @@ import TypewriterEffect from '@/components/ui/typewriter';
 import { Process } from '@/components/Process';
 import { Testimonials } from '@/components/Testimonials';
 import { FaCheckCircle } from "react-icons/fa";
-import { motion } from 'framer-motion';
 
 export async function generateMetadata() {
   const title = 'Web Maintenance & Support | Stackria';
@@ -121,71 +120,55 @@ const page = () => {
 
       {/* Intro */}
       <div
-  className="bg-white py-20 px-6 md:px-12 lg:px-24 mx-auto xl:py-20 text-left xl:text-center xl:w-full xl:mx-auto"
-  style={{
-    backgroundImage: 'url(/images/bg-cta0.svg)',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-  }}
->
-  <motion.h2
-    initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 0.7 }}
-    className={`${outfitSemibold.className} text-[34px] md:text-5xl font-extrabold text-gray-900 mb-8 leading-tight text-left xl:text-center xl:w-[60%] mx-auto`}
-  >
-    Web maintenance is peace of mind delivered quietly, every day.
-  </motion.h2>
-
-  <motion.div
-    initial="hidden"
-    animate="visible"
-    variants={containerVariants}
-    className={`${outfitLight.className} space-y-6 mb-12 max-w-3xl text-slate-800 text-[15px] md:text-[15px] xl:text-[16px] text-left xl:text-center mx-auto`}
-  >
-    <motion.p variants={itemVariants}>
-      Just like a car needs oil changes, your digital presence needs updates, backups, and occasional problem-solving. That’s where Stackria’s <strong>Web Care</strong> solution comes in.
-    </motion.p>
-
-    <motion.p variants={itemVariants}>
-      From plugin updates to uptime monitoring, we handle the routine so your team can stay focused on what matters—running your business.
-    </motion.p>
-  </motion.div>
-
-  <motion.div
-    variants={containerVariants}
-    initial="hidden"
-    animate="visible"
-    className="max-w-3xl mx-auto text-left xl:text-center"
-  >
-    <motion.h3
-      variants={itemVariants}
-      className={`${outfitSemibold.className} text-2xl md:text-3xl font-semibold text-slate-900 mb-6`}
-    >
-      What We Handle (So You Don’t Have To):
-    </motion.h3>
-
-    <motion.ul
-      variants={containerVariants}
-      className="space-y-4 text-[15px] md:text-[15px] xl:text-[16px]"
-    >
-      {[
-        "Core and plugin updates",
-        "Site speed and performance checks",
-        "Broken link monitoring and error resolution",
-        "Backups and basic security sweeps",
-      ].map((item, idx) => (
-        <motion.li
-          key={idx}
-          variants={itemVariants}
-          className={`${outfitLight.className} flex items-start text-gray-800 hover:text-primary transition-colors cursor-pointer justify-start xl:justify-center`}
+        className="bg-white py-20 px-6 md:px-12 lg:px-24 mx-auto xl:py-20 text-left xl:text-center xl:w-full xl:mx-auto"
+        style={{
+          backgroundImage: 'url(/images/bg-cta0.svg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        }}
+      >
+        <h2
+          className={`${outfitSemibold.className} text-[34px] md:text-5xl font-extrabold text-gray-900 mb-8 leading-tight text-left xl:text-center xl:w-[60%] mx-auto`}
         >
-          <FaCheckCircle className="text-primary w-3 h-3 mt-1 mr-3 flex-shrink-0" />
-          <span className="font-medium text-left xl:text-center">{item}</span>
-        </motion.li>
-      ))}
-    </motion.ul>
-  </motion.div>
+          Web maintenance is peace of mind delivered quietly, every day.
+        </h2>
+
+        <div
+          className={`${outfitLight.className} space-y-6 mb-12 max-w-3xl text-slate-800 text-[15px] md:text-[15px] xl:text-[16px] text-left xl:text-center mx-auto`}
+        >
+          <p>
+            Just like a car needs oil changes, your digital presence needs updates, backups, and occasional problem-solving. That’s where Stackria’s <strong>Web Care</strong> solution comes in.
+          </p>
+
+          <p>
+            From plugin updates to uptime monitoring, we handle the routine so your team can stay focused on what matters—running your business.
+          </p>
+        </div>
+
+        <div className="max-w-3xl mx-auto text-left xl:text-center">
+          <h3
+            className={`${outfitSemibold.className} text-2xl md:text-3xl font-semibold text-slate-900 mb-6`}
+          >
+            What We Handle (So You Don’t Have To):
+          </h3>
+
+          <ul className="space-y-4 text-[15px] md:text-[15px] xl:text-[16px]">
+            {[
+              "Core and plugin updates",
+              "Site speed and performance checks",
+              "Broken link monitoring and error resolution",
+              "Backups and basic security sweeps",
+            ].map((item, idx) => (
+              <li
+                key={idx}
+                className={`${outfitLight.className} flex items-start text-gray-800 hover:text-primary transition-colors cursor-pointer justify-start xl:justify-center`}
+              >
+                <FaCheckCircle className="text-primary w-3 h-3 mt-1 mr-3 flex-shrink-0" />
+                <span className="font-medium text-left xl:text-center">{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
 
 

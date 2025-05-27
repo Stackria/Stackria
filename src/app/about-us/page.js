@@ -74,7 +74,7 @@ const page = () => {
             </h1>
 
             <span className={`${outfitLight.className} xl:text-left text-justify text-slate-800 text-[15px] md:text-[15px] xl:text-[16px] xl:w-[70%] 2xl:w-[60%]`}>
-            At Stackria, we don’t just build websites, we engineer <span className='font-bold text-black'>powerful</span>, scalable, and conversion-driven web-based solutions designed to help businesses <span className='font-bold text-black'>thrive</span> in the digital era. 
+            At Stackria, we don&#39;t just build websites, we engineer <span className='font-bold text-black'>powerful</span>, scalable, and conversion-driven web-based solutions designed to help businesses <span className='font-bold text-black'>thrive</span> in the digital era. 
             
             </span>
           </div>
@@ -111,7 +111,7 @@ const page = () => {
                 What We Do
               </h1>
               <p className={`${outfitLight.className} xl:text-left text-left text-slate-800 text-[15px] xl:text-[15px] md:text-[16px] xl:w-[100%]`}>
-              At Stackria, we build fast, secure, and scalable digital experiences designed to captivate users and drive measurable growth. Whether you're validating a new idea, scaling an online store, or refining an established digital presence, we turn goals into solutions—strategic, story-led, and built for long-term impact.
+              At Stackria, we build fast, secure, and scalable digital experiences designed to captivate users and drive measurable growth. Whether you&#39;re validating a new idea, scaling an online store, or refining an established digital presence, we turn goals into solutions—strategic, story-led, and built for long-term impact.
               <br /><br />
 
               Our commitment to excellence, innovation, and collaboration ensures that we deliver exceptional value to our clients, helping them achieve their goals and grow their business.
@@ -123,7 +123,7 @@ const page = () => {
         <section className="flex flex-col xl:px-7 py-10">
           <div >
             <h1 className={`${outfitSemibold.className} text-center text-slate-900 text-[34px] py-10 xl:text-[42px]`}>
-            We're on a mission</h1>
+            We&#39;re on a mission</h1>
           </div>
           <div className='flex flex-col md:flex-row md:flex-wrap lg:flex-row xl:flex-row px-5 justify-between gap-10 '>
             <div className="bg-slate-50 rounded-md py-10 px-5 xl:w-[100%] flex-1 min-w-[250px]">
@@ -131,7 +131,7 @@ const page = () => {
               <h1 className={`${outfitSemibold.className} text-left text-slate-900 text-[34px] `}>
               Long-Term Partnerships & Growth</h1>
               <p className={`${outfitLight.className}  xl:text-left text-left text-slate-800 text-[15px] md:text-[15px] xl:text-[16px]`}>
-              Your success is our success. We don’t just build and leave, we support, maintain, and optimize your platform as your business grows. Stackria is committed to being your long-term digital partner, helping you scale with confidence.
+              Your success is our success. We don&#39;t just build and leave, we support, maintain, and optimize your platform as your business grows. Stackria is committed to being your long-term digital partner, helping you scale with confidence.
               </p>
             </div>
             
@@ -140,7 +140,7 @@ const page = () => {
               <h1 className={`${outfitSemibold.className} text-left text-slate-900 text-[34px] `}>
               User-Centric Design & Functionality</h1>
               <p className={`${outfitLight.className}  xl:text-left text-left text-slate-800 text-[15px] md:text-[15px] xl:text-[16px]`}>
-              Whether you're a startup validating an idea, a growing business expanding your online store, or an established company looking to optimize your web presence, we provide strategic,results-driven solutions. 
+              Whether you&#39;re a startup validating an idea, a growing business expanding your online store, or an established company looking to optimize your web presence, we provide strategic,results-driven solutions. 
               </p>
             </div>
 
@@ -149,7 +149,7 @@ const page = () => {
               <h1 className={`${outfitSemibold.className} text-left text-slate-900 text-[34px] `}>
               Cutting-Edge Strategy Development</h1>
               <p className={`${outfitLight.className}  xl:text-left text-left text-slate-800 text-[15px] md:text-[15px] xl:text-[16px]`}>
-              We believe that every business deserves a unique and cutting-edge digital presence. Our approach is centered on continuous learning, adopting the latest technologies, and delivering forward-thinking solutions that keep you ahead of the competition. 
+              We believe that every business deserves a unique and cutting-edge digital presence. Our approach is centered on continuous learning, adopting the latest technologies and delivering forward-thinking solutions that keep you ahead of the competition. 
               </p>
             </div>
           </div>
@@ -162,7 +162,7 @@ const page = () => {
               Principles We Believe In
             </h2>
             <p className={`${outfitLight.className} text-slate-800 text-left text-[15px] xl:px-20 md:text-[16px] xl:text-[16px] leading-relaxed mb-10 xl:w-[60%] xl:text-center xl:mx-auto`}>
-              At Stackria, we’re not just building platforms, we’re crafting digital foundations rooted in purpose. Our principles guide every decision, every line of code, and every solution we ship.
+              At Stackria, we&#39;re not just building platforms, we&#39;re crafting digital foundations rooted in purpose. Our principles guide every decision, every line of code, and every solution we ship.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left px-10 xl:px-0 ">
@@ -174,7 +174,7 @@ const page = () => {
                     Brand-First Thinking
                   </h3>
                   <p className={`${outfitLight.className} text-slate-700 text-[15px] lg:text-[16px]`}>
-                    We believe your digital presence should echo your brand’s heart, not just its logo. We go deep to align form and function with your voice.
+                    We believe your digital presence should echo your brand&#39;s heart, not just its logo. We go deep to align form and function with your voice.
                   </p>
                 </div>
               </div>
@@ -198,7 +198,7 @@ const page = () => {
                     Performance is Care
                   </h3>
                   <p className={`${outfitLight.className} text-slate-700 text-[15px] lg:text-[16px]`}>
-                    Speed, responsiveness, and scalability aren’t afterthoughts, they’re baked in from day one. Because fast is kind, and future-ready is smart.
+                    Speed, responsiveness, and scalability aren&#39;t afterthoughts, they&#39;re baked in from day one. Because fast is kind, and future-ready is smart.
                   </p>
                 </div>
               </div>
@@ -210,7 +210,7 @@ const page = () => {
                     Long-Term Partnerships
                   </h3>
                   <p className={`${outfitLight.className} text-slate-700 text-[15px] lg:text-[16px]`}>
-                    We don’t vanish after launch. From maintenance to scaling, we’re here when you need us, because growth is a journey, not a handoff.
+                    We don&#39;t vanish after launch. From maintenance to scaling, we&#39;re here when you need us, because growth is a journey, not a handoff.
                   </p>
                 </div>
               </div>
@@ -222,7 +222,7 @@ const page = () => {
                     Storytelling in Every Pixel
                   </h3>
                   <p className={`${outfitLight.className} text-slate-700 text-[15px] lg:text-[16px]`}>
-                    From homepage to product page, we design with a story arc. Because your visitors aren’t just browsing, they’re deciding whether to believe.
+                    From homepage to product page, we design with a story arc. Because your visitors aren&#39;t just browsing, they&#39;re deciding whether to believe.
                   </p>
                 </div>
               </div>
@@ -244,7 +244,7 @@ const page = () => {
             <div className="mt-10">
               <Link href="/contact">
                 <button className={`${outfitSemibold.className} bg-primary text-white rounded px-6 py-3 text-[15px] shadow-lg hover:bg-secondary`}>
-                  Let’s Build With Purpose
+                  Let&#39;s Build With Purpose
                 </button>
               </Link>
             </div>

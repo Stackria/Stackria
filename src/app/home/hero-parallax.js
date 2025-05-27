@@ -33,7 +33,7 @@ export const HeroParallax = ({
   return (
     (<div
       ref={ref}
-      className="h-[150vh] md:h-[170vh] xs:h-[1350px] xl:h-[230vh] 2xl:h-[175vh] Scrn360:h-[170vh] bg-[#0ca9f2da] pt-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]" style={{ backgroundImage: 'url(/images/bg-hero.svg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      className="h-[150vh] xs:h-[1350px] xl:h-[390vh] 2xl:h-[175vh] Scrn360:h-[190vh] bg-[#0ca9f2da] pt-40 overflow-hidden  antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]" style={{ backgroundImage: 'url(/images/bg-hero.svg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <Header />
       <motion.div
         style={{
@@ -78,7 +78,7 @@ export const Header = () => {
 
             {/* Get a quote button */}
             <div className="">
-              <Link href='/contact' className={`${outfitRegular.className} text-[13px] md:text-[15px] xl:text-[16px] rounded-md shadow-md shadow-slate-800 bg-white text-primary px-5 py-3 black mt-10 font-bold hover:bg-secondary hover:text-white `}>GET A QUOTE IN 12 HOURS</Link>
+              <Link href='/contact' className={`${outfitRegular.className} text-[13px] md:text-[15px] xl:text-[16px] rounded-md shadow-md shadow-slate-800 bg-white text-primary px-5 py-3 black mt-10 font-bold hover:bg-secondary hover:text-white `}>Get A Quote In 12 Hours</Link>
             </div>
         </div>)
   );

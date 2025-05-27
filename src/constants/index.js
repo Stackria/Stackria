@@ -1,35 +1,35 @@
-import instagram from '@/assets/instagram.svg';
-import twitter from '@/assets/twitter.svg';
-import linkedin from '@/assets/linkedin.svg';
-import googlebiz from '@/assets/google-business.svg'
-
-
 {/* Footer Link */}
 export const footerLinks = [
     {
         title: "Stackria",
         links: [
             {
+            key: "Who we are",
             title: "Who We Are",
             path: "/about-us",
             },
             {
+            key: "Who we are",
             title: "Contact Us",
             path: "/contact",
             },
             {
+            key: "portfolio",
             title: "Our Work",
             path: "/portfolio",
             },
             {
+            key: "faq",
             title: "FAQs",
             path: "/faqs",
             },
             {
+            key: "Afflliate",
             title: "Affiliate",
             path: "/affiliate",
             },
             {
+                key: "Who we are",
                 title: "Privacy Policy",
                 path: "/privacy"
                 },
@@ -41,19 +41,19 @@ export const footerLinks = [
         links: [
             {
             title: "MERN Development",
-            path: "/solutions/mern-development",
+            path: "/services/mern-development",
             },
             {
                 title: "Custom Software Development",
-                path: "/solutions/custom-software-development",
+                path: "/services/custom-software-development",
                 },
             {
             title: "MVP Development",
-            path: "/mvp-development",
+            path: "/services/mvp-development",
             },
             {
             title: "Search Engine Optimization",
-            path: "/search-engine-optimization",
+            path: "/services/search-engine-optimization",
             },
             
         ]
@@ -64,22 +64,22 @@ export const footerLinks = [
 export const socialIcons = [
     {
         id: "social-media-1",
-        icon: instagram,
+        img: "/images//instagram.svg",
         link: "https://www.instagram.com/stackrialtd",
     },
     {
         id: "social-media-2",
-        icon: twitter,
+        img: "/images//twitter.svg",
         link: "https://www.twitter.com/stackria",
     },
     {
         id: "social-media-3",
-        icon: linkedin,
+        img: "/images//linkedin.svg",
         link: "https://www.linkedin.com/company/stackria",
     },
     {
         id: "social-media-4",
-        icon: googlebiz,
-        link: "https://www.linkedin.com/company/stackria",
+        img: "/images//googlebiz.svg",
+        link: "https://www.googlebiz.com/stackria",
     },
 ]

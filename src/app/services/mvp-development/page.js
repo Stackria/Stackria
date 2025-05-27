@@ -151,14 +151,14 @@ return (
           <h2
             className={`${outfitSemibold.className} text-4xl md:text-5xl font-extrabold text-gray-900 mb-8 leading-tight text-left xl:text-center xl:mx-auto xl:w-[60%]`}
           >
-            Turning your idea into a product shouldn’t feel like a gamble.
+            Turning your idea into a product shouldn&#39;t feel like a gamble.
           </h2>
 
           <div
             className={`${outfitLight.className} space-y-6 mb-12 max-w-3xl text-gray-700 text-[16px] xs:text-[15px] xl:text-[16px] text-left xl:text-center mx-auto`}
           >
             <p>
-              You've got the vision, the problem you're solving, and maybe even some buzz. But before going all-in, you need <strong>proof that your idea works, that users care, and that investors are interested</strong>. That’s where Stackria comes in.
+              You&#39;ve got the vision, the problem you&#39;re solving, and maybe even some buzz. But before going all-in, you need <strong>proof that your idea works, that users care, and that investors are interested</strong>. That&#39;s where Stackria comes in.
             </p>
 
             <p>
@@ -176,22 +176,19 @@ return (
             <p
               className={`${outfitRegular.className} mb-6 text-gray-700 text-[15px] xl:text-[16px]`}
             >
-              An MVP isn’t just a “simple version” of your product. It’s a <strong>strategic tool</strong> to:
+              An MVP isn&#39;t just a “simple version” of your product. It&#39;s a <strong>strategic tool</strong> to:
             </p>
 
-            <ul
-              className="space-y-4"
-              aria-label="List of MVP benefits"
-            >
-              {features.map((feature, idx) => (
+            <ul className="space-y-4" aria-label="List of MVP benefits">
+              {[
+                "Validate your concept with real users",
+                "Attract early adopters and gather feedback",
+                "Reduce time-to-market and development costs",
+                "Present a working demo to investors",
+              ].map((feature, idx) => (
                 <li
                   key={idx}
-                  className={`${outfitLight.className} flex items-start text-gray-800 hover:text-primary transition-colors cursor-pointer justify-start xl:justify-center text-left xl:text-center`}
-                  tabIndex={0}
-                  role="listitem"
-                  onKeyDown={(e) => {
-                    if (e.key === 'Enter') alert(feature);
-                  }}
+                  className={`${outfitLight.className} flex items-start text-gray-800 justify-start xl:justify-center text-left xl:text-center`}
                 >
                   <FaCheckCircle className="text-primary w-3 h-3 mt-1 mr-3 flex-shrink-0" />
                   <span className="text-[15px] xl:text-[16px]">{feature}</span>
@@ -202,10 +199,11 @@ return (
             <p
               className={`${outfitLight.className} mt-10 text-[15px] xl:text-[16px] text-gray-700 text-left xl:text-center`}
             >
-              Whether you’re pitching to investors, entering a new market, or solving a user pain point, <strong>you don’t need the final product. You need a smart, focused start.</strong>
+              Whether you&#39;re pitching to investors, entering a new market, or solving a user pain point, <strong>you don&#39;t need the final product. You need a smart, focused start.</strong>
             </p>
           </div>
         </section>
+
 
 
 
@@ -215,7 +213,7 @@ return (
                 <div class="">
                     <h1  className={`${outfitSemibold.className} text-slate-900 text-center text-[34px] xl:text-[42px] pb-5 font-bold`}>Our MVP Development</h1>
                     <p className={`${outfitLight.className} xl:text-center text-center text-slate-900 text-[16px] md:text-[15px] xl:text-[16px] xl:w-[40%] md:text-justify xl:mx-auto px-10`}>At Stackria We build solutions that center your customers, narrate your brand, and scale with you.
-                    Whether you're launching your startup or evolving your SME, we help you turn ideas into intuitive digital experiences.
+                    Whether you&#39;re launching your startup or evolving your SME, we help you turn ideas into intuitive digital experiences.
                     </p>
                 </div>
                 <div class="">
@@ -231,7 +229,7 @@ return (
                     Why Stackria for MVP Development
                     </h2>
                     <p className={`${outfitLight.className} text-slate-800 text-left text-[15px] xl:px-20 leading-relaxed mb-10 xl:w-[60%] xl:text-center xl:mx-auto`}>
-                    At Stackria, we don’t just code MVPs,  we <span className='font-bold'>partner</span> with startups and businesses to help them validate, evolve, and scale. Here's what makes our approach different:
+                    At Stackria, we don&#39;t just code MVPs,  we <span className='font-bold'>partner</span> with startups and businesses to help them validate, evolve, and scale. Here&#39;s what makes our approach different:
                     </p>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left px-10 xl:px-0">
@@ -290,7 +288,7 @@ return (
                                     Built to Tell a Story
                                 </h3>
                                 <p className={`${outfitLight.className} text-slate-700 text-[14px] lg:text-[16px]`}>
-                                    Built to showcase your vision clearly helping users, partners, and investors quickly grasp your MVP’s value.
+                                    Built to showcase your vision clearly helping users, partners, and investors quickly grasp your MVP&#39;s value.
                                 </p>
                             </div>
                         </div>
@@ -311,7 +309,7 @@ return (
                     <div className="mt-10">
                         <Link href="/contact">
                             <button className={`${outfitSemibold.className} bg-primary text-white rounded px-6 py-3 text-[15px] shadow-lg hover:bg-secondary`}>
-                            Let’s Build Together
+                            Let&#39;s Build Together
                             </button>
                         </Link>
                     </div>

@@ -5,6 +5,8 @@ import Footer from '@/components/footer/Footer';
 import Navbar from '@/components/navBar/Navbar'
 import Head from "next/head";
 
+
+
 export const outfit = localFont({
   src: "./fonts/Outfit-Thin.ttf",
   variable: "--font-outfit",
@@ -42,20 +44,15 @@ export const outfitSemibold = localFont({
   weight: "600",
 });
 
-
-
-// export const metadata = {
-//   title: "Stackria",
-//   description: "Ideas meets tech equals solutions for businesses",
-// };
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
         {/* Add the favicon link here */}
         <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
-        {/* Structured Data */}
+        
+      </Head>
+      {/* Structured Data */}
         <Script
           id="stackria-org-jsonld"
           type="application/ld+json"
@@ -75,7 +72,6 @@ export default function RootLayout({ children }) {
             }),
           }}
         />
-      </Head>
       <body
         className={outfit.className}
       >

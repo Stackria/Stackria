@@ -3,8 +3,6 @@ import Navlink from "@/components/navBar/links/navLink/NavLink"
 import Link from 'next/link';
 import Image from 'next/image';
 import { museo, museoReg, outfitRegular, outfitSemibold } from "@/app/layout";
-import menu from '@/assets/menu.png'
-import close from '@/assets/close.png'
 import { GoArrowUpRight } from "react-icons/go";
 
 const links = [
@@ -43,7 +41,7 @@ const Links = ({scroll}) => {
             
             {/* Default Menu */}
             <nav className=''>
-                <ui className='hidden xl:flex cursor-pointer justify-between text-left'>
+                <li className='hidden xl:flex cursor-pointer justify-between text-left'>
                 {links.map((link) => (
                     <Navlink 
                         item={link} 
@@ -51,14 +49,14 @@ const Links = ({scroll}) => {
                         scroll={scroll}
                     />
                 ))}
-                </ui>
+                </li>
             </nav>
 
             {/* Mobile Menu Toggle*/}
             <div className="flex xl:hidden p-5 ">
                 <Image 
                     className='w-8 h-8 cursor-pointer transition-transform duration-300 ease-in-out' 
-                    src={open ? close : menu} 
+                    src={open ? "images/close.png" : "/images/menu.png"} 
                     width={30} 
                     height={30} 
                     alt='web development agency' 
