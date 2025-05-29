@@ -26,13 +26,13 @@ export const servicesList = [
   {
     title: "Search Engine Optimization",
     details: "Being found online is key to growing your audience. Our SEO strategies focus on understanding your business and customers, optimizing your content and technical setup to improve visibility over time. We aim for steady growth in organic traffic and meaningful search presence.",
-    link: "/sersvices/search-engine-optimization",
+    link: "/services/search-engine-optimization",
     // img: "/images/hero3.png",
   },
   {
     title: "Web Care",
     details: "Your digital tools need ongoing attention to stay effective. Our web care services provide routine updates, security checks, and performance monitoring, so your site or app remains reliable. We take care of the technical details, giving you peace of mind to focus on what matters most—your business.",
-    link: "/service/web-care",
+    link: "/services/web-care",
     // img: "/images/hero3.png",
   },
   

@@ -3,8 +3,6 @@ import Image from 'next/image'
 import React from 'react'
 import Script from 'next/script';
 import { outfitRegular, museoReg, outfitLight, outfitSemibold, museoBold } from "@/app/layout";
-import { styles } from '@/constants/style'
-import imgOne from '@/assets/service-img4.png' // <- Add suitable image to assets
 import Link from 'next/link';
 import CardHover from "@/components/CardHover.jsx"
 import TypewriterEffect from '@/components/ui/typewriter'
@@ -113,7 +111,7 @@ const page = () => {
           <Image 
               alt='stackria web development services'
               className='relative xl:h-full xl:w-full w-full h-full md:-mt-[120px] mx-auto 2xl:-mt-40'
-              src={imgOne}
+              src="/images/service-img4.png"
               width={800}
               height={600}
               priority

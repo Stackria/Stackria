@@ -3,7 +3,6 @@ import React from 'react'
 import Script from 'next/script';
 import { outfitRegular, museoReg, outfitLight, outfitSemibold } from "@/app/layout";
 import {styles} from '@/constants/style'
-import img from '@/assets/service-img1.png'
 import { RiUser5Fill } from "react-icons/ri";
 import { BiSolidBolt } from "react-icons/bi";
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
@@ -83,7 +82,7 @@ const page = () => {
           <div className="xl:w-[50%] lg:w-[50%] w-full h-full md:w-[50%] md:-mt-10">
             <Image alt='about-us'
             className='relative xl:h-full xl:w-full w-full h-full mx-auto xl:-mt-24 2xl:-mt-36'
-            src={img} 
+            src="/images/service-img1.png"
             width={800} 
             height={700} 
             priority/>

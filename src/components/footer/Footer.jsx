@@ -13,7 +13,7 @@ const Footer = () => {
             <div className='w-[150px]'>
               <Image
                 className='w-full h-auto' 
-                src='/logo.png' 
+                src='/images/logo.png' 
                 width={150} 
                 height={150} 
                 priority 

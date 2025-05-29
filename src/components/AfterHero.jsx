@@ -7,7 +7,7 @@ export const AfterHero = () => {
   return (
     <section>
       <div className="xl:w-[70%] px-5 py-10 xl:px-20 xl:py-20 flex flex-col xl:flex-row mx-auto xl:justify-around">
-        <div className="xl:w-[40%]">
+        <div className="xl:w-[40%] md:mt-2">
           {/* Add content or remove this block if not needed */}
           <h1 className={`${styles.heading1}`}>Empowering Your Digital Presence</h1>
         </div>
