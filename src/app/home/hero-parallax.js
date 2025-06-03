@@ -48,7 +48,7 @@ export const Header = () => {
   return (
     (<div
           className="max-w-7xl relative mx-auto py-2 md:py-0 px-2 mt-10 w-full xl:w-[50%] left-0 top-0 text-center xl:px-10 xl:mt-40 z-100">
-            <h1 className={`${outfitSemibold.className} text-[36px] leading-10 md:text-[50px] font-bold text-white dark:text-white md:leading-[70px] md:-mt-40 md:z-100`}>
+            <h1 className={`${outfitSemibold.className} text-[36px] leading-10 md:text-[50px] font-bold text-white dark:text-white md:leading-[70px] md:-mt-0 md:z-100 md:px-10`}>
             Customer-focused Web
             Solutions
             For Startups & Businesses
