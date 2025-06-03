@@ -24,7 +24,7 @@ const Navbar = () => {
     
 
   return (
-    <header className={`${scroll ? "bg-white" : "bg-transparent"} bg-transperant items-center w-full flex fixed z-10 px-5 xl:px-12 h-[70px] xl:h-[80px] 2xl:pt-2`}>
+    <header className={`bg-white items-center w-full flex fixed z-10 px-5 xl:px-12 h-[70px] xl:h-[80px] 2xl:pt-2`}>
         <div className='mx-auto flex justify-between items-center w-full Scrn425:ml-1 Scrn360:pl-1'>
 
               {/* Logo */}
@@ -33,7 +33,7 @@ const Navbar = () => {
                   <Image
                   className='lg:z-100 xl:w-[150px] 2xl:w-[180px] xl:-ml-5 -ml-4 w-[150px] h-auto pointer 2xl:-ml-7 ' 
                   // Change logo to svg
-                  src={scroll ? "/images/logo.png" : "/images/logo-black.png"}
+                  src={"/images/logo.png"}
                   width={150} 
                   height={150} 
                   priority 

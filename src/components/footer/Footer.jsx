@@ -39,6 +39,7 @@ const Footer = () => {
                   alt=''
                   width={22}
                   height={22}
+                  href={social.link}
                     key={social.id}
                     src={social.img}
                   />
