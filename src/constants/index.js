@@ -18,11 +18,11 @@ export const footerLinks = [
             title: "Our Work",
             path: "/portfolio",
             },
-            {
-            key: "faq",
-            title: "FAQs",
-            path: "/faqs",
-            },
+            // {
+            // key: "faq",
+            // title: "FAQs",
+            // path: "/faqs",
+            // },
             {
             key: "Afflliate",
             title: "Affiliate",

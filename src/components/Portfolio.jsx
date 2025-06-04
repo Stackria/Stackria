@@ -22,7 +22,7 @@ export const Portfolio = () => {
               <h1 className={`${outfitRegular.className}  text-slate-900 text-[18px] xl:text-[24px] pb-5`}>{title}</h1>
               
               {/* Details */}
-              <p className={`${outfitRegular.className} text-[15px] xl:text-[16px]  text-slate-700 xl:w-[90%]`}>{details}</p>
+              <p className={`${outfitRegular.className} text-[15px] xl:text-[16px] text-slate-700 lg:w-[70%]`}>{details}</p>
               
               {/* Tech Stack */}
               <div className="leading-10 mt-10">

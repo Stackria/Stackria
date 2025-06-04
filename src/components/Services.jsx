@@ -20,7 +20,7 @@ export const Services = () => {
             <h1 className={`${outfitSemibold.className} text-secondary text-xs text-center `}>OUR EXPERTISE</h1>
             <h3 className={`${outfitSemibold.className}text-black text-center text-[20px] font-bold xl:text-3xl`}>Solutions We Provide:</h3>
         </div>
-        <div className="bg-slate-50 py-5 xl:p-10 mx-auto xl:w-[1200px]">
+        <div className="bg-slate-50 py-5 xl:p-10 mx-auto xl:w-[1200px]" style={{ backgroundImage: 'url(/images/bg-cta0.svg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
           {/* index - position of each solution in the list - helps you know which item was clicked so you can show or hide its details.*/}
       {servicesList.map((service, index) => (
           
@@ -28,7 +28,7 @@ export const Services = () => {
               key={index}>
 
               {/* Service -Solution Dropdown */}
-              <div className="">
+              <div className="" >
                 {/*  when clicked and not previously open it sets toggle to the index of the clicked solution, which opens that particular solution's details. */}
                 {/* */}
                 <div className="flex justify-between cursor" onClick={()=> setToggle(toggle === index ? null : index)}>

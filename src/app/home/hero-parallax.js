@@ -14,12 +14,8 @@ export const HeroParallax = ({ products }) => {
 
   return (
     <div
-      className="h-[50vh] Scrn375:h-[100vh] xl:h-[260vh] 2xl:h-[175vh]  bg-[#0ca9f2da] py-32 overflow-hidden antialiased relative flex flex-col self-auto"
-      style={{
-        backgroundImage: 'url(/images/bg-hero.svg)',
-        backgroundSize: 'cover',
-        backgroundPosition: 'left',
-      }}
+      className="h-[90vh] Scrn375:h-[90vh] md:h-[105vh] lg:h-[125vh] 2xl:h-[115vh]  bg-slate-50 py-32 overflow-hidden antialiased relative flex flex-col self-auto" style={{ backgroundImage: 'url(/images/bg-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}
+      
     >
       <Header />
       {/* <div>
@@ -47,13 +43,13 @@ export const HeroParallax = ({ products }) => {
 export const Header = () => {
   return (
     (<div
-          className="max-w-7xl relative mx-auto py-2 md:py-0 px-2 mt-10 w-full xl:w-[50%] left-0 top-0 text-center xl:px-10 xl:mt-40 z-100">
-            <h1 className={`${outfitSemibold.className} text-[36px] leading-10 md:text-[50px] font-bold text-white dark:text-white md:leading-[70px] md:-mt-0 md:z-100 md:px-10`}>
-            Customer-focused Web
+          className="max-w-7xl relative mx-auto py-2 md:py-0 px-2 -mt-5 w-full lg:pt-10 xl:w-[50%] lg:w-[70%] left-0 top-0 text-center xl:px-10 xl:mt-40 z-100">
+            <h1 className={`${outfitSemibold.className} mt-5 lg:mt-0 text-[36px] leading-10 md:text-[50px] lg-text-[70px] 2xl:text-[70px] 2xl:-mt-20 font-bold text-slate-900 dark:text-white md:leading-[70px] md:-mt-0 md:z-100 md:px-10 lg:-mt-10 Scrn375:mt-5`}>
+            Customer-focused Web 
             Solutions
             For Startups & Businesses
             </h1>
-           <div class="md:w-[50%] mx-auto">
+           <div class=" md:w-[50%] xl:w-full mx-auto">
              <p className={`${outfitLight.className} text-[14px] md:text-[15px] xl:text-[16px] text-secondary dark:text-neutral-200 xl:px-40 px-5 pb-10`}>
             We craft custom web solutions that make your customers the hero, empowering startups and SMEs to thrive by providing the perfect web experience
             </p>
@@ -61,7 +57,7 @@ export const Header = () => {
 
             {/* Get a quote button */}
             <div className="">
-              <Link href='/contact' className={`${outfitRegular.className} text-[14px] md:text-[15px] xl:text-[16px] rounded-md shadow-md shadow-slate-800 bg-white text-primary px-5 py-3 black mt-10 font-bold hover:bg-secondary hover:text-white `}>Get A Quote In 12 Hours</Link>
+              <Link href='/contact' className={`${outfitRegular.className} text-[16px] lg:text-[20px] rounded-lg shadow-md shadow-slate-800 bg-primary text-white px-5 py-3 black mt-10 font-bold hover:bg-secondary hover:text-white `}>Get A Quote In 12 Hours</Link>
             </div>
         </div>)
   );

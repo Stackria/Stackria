@@ -33,18 +33,22 @@ const Footer = () => {
           
           {/* Social Icons  */}
           <div>
-            <div className='flex justify-between gap-2'>
-                {socialIcons.map((social, index) => 
-                  <Image
-                  alt=''
-                  width={22}
-                  height={22}
+            <div className="flex justify-between gap-2">
+              {socialIcons.map((social, index) => (
+                <a
+                  key={social.id}
                   href={social.link}
-                    key={social.id}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
                     src={social.img}
+                    alt="stackria web development services"
+                    width={22}
+                    height={22}
                   />
-                  
-                )}
+                </a>
+              ))}
             </div>
           </div>
         </div>
