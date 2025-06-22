@@ -9,6 +9,7 @@ import {Process} from '@/components/Process'
 import {Testimonials} from '@/components/Testimonials'
 import {WhyChooseUs} from '@/components/WhyChooseUs'
 import {CTA} from '@/components/CTA'
+import {Performance} from '@/components/Performance'
 // import {Industries} from '@/components/Industries'
 
 
@@ -18,8 +19,9 @@ const page = () => {
       <Hero/>
       <AfterHero/>
       <Services/>
-      <Portfolio/>
       <WhyChooseUs/>
+      <Performance/>
+      <Portfolio/>
       <Testimonials/>
       <Process/>
       <CTA/>
