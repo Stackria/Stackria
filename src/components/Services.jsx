@@ -46,7 +46,7 @@ export const Services = () => {
                 {/* Only Show the Active Dropdown */}
                 {/* If toggle === index, the current item opens → shows details (flex)*/}
                 <div className={toggle === index ? "flex mt-2" : 'hidden'}>
-                  <span className={`${styles.paragraphDetails} leading-2 `}>
+                  <span className={`${styles.paragraphDetails} leading-2 tracking-tighter`}>
                     {service.details}
                   </span>
                 </div>
