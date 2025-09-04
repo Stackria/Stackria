@@ -4,10 +4,17 @@ import { outfitRegular, outfitSemibold } from "@/app/layout";
 
 export const Performance = () => {
   return (
+<<<<<<< HEAD
     <section className="bg-white py-20 px-5">
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-6 lg:gap-0 2xl:px-20">
         {/* Left Content */}
         <div className="w-full lg:w-[45%] xl:w-[40%] xl:ml-5">
+=======
+    <section className="bg-white py-20 px-6">
+      <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-6 lg:gap-0 2xl:px-20">
+        {/* Left Content */}
+        <div className="w-full lg:w-[50%] xl:w-[40%] xl:ml-5">
+>>>>>>> b36d111ab7b3f8582124baea3574876f5b08da07
           <div className="text-left ">
             <span className={`${outfitSemibold.className} block text-lg md:text-[12px] text-secondary mb-2`}>
               Performance
@@ -52,7 +59,11 @@ export const Performance = () => {
                 Sub-Second Experiences
               </h3>
               <p className={`${outfitRegular.className} text-sm md:text-base leading-relaxed`}>
+<<<<<<< HEAD
                 Sites we build often load in a manner of seconds, delivering seamless user experiences that convert better.
+=======
+                Sites we build often load in under one second—delivering seamless user experiences that convert better.
+>>>>>>> b36d111ab7b3f8582124baea3574876f5b08da07
               </p>
             </div>
           </div>
@@ -68,9 +79,15 @@ export const Performance = () => {
         </div>
 
         {/* Right Image */}
+<<<<<<< HEAD
         <div className="w-[100vw] lg:w-[55%] xl:w-[60%]">
           <Image
             className="w-[full] h-auto"
+=======
+        <div className="w-full lg:w-[50%] xl:w-[60%]">
+          <Image
+            className="w-full h-auto"
+>>>>>>> b36d111ab7b3f8582124baea3574876f5b08da07
             src="/images/seomock.png"
             width={800}
             height={600}

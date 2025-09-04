@@ -19,8 +19,13 @@ module.exports = {
       'sm': '640px',
       'md': '768px',
       'lg': '1024px',
+<<<<<<< HEAD
       'xl': '1440px',
       '2xl': '2560px',
+=======
+      'xl': '1280px',
+      '2xl': '1440px',
+>>>>>>> b36d111ab7b3f8582124baea3574876f5b08da07
     },
     extend: {
       fontFamily: {

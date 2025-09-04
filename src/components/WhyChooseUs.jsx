@@ -26,18 +26,32 @@ export const WhyChooseUs = () => {
           },
           {
             title: "Engineered for Growth",
+<<<<<<< HEAD
             desc: "We build platforms with tomorrow in mind flexible, scalable, and ready to evolve alongside your business ambitions and market shifts.",
           },
           {
             title: "A Partner in Your Narrative",
             desc: "You’re not just a client, you’re a collaborator. From kickoff to launch (and beyond), we stay close, translating your ideas into digital experiences that matter.",
+=======
+            desc: "We build platforms with tomorrow in mind—flexible, scalable, and ready to evolve alongside your business ambitions and market shifts.",
+          },
+          {
+            title: "A Partner in Your Narrative",
+            desc: "You’re not just a client—you’re a collaborator. From kickoff to launch (and beyond), we stay close, translating your ideas into digital experiences that matter.",
+>>>>>>> b36d111ab7b3f8582124baea3574876f5b08da07
           },
         ].map((item, idx) => (
           <div
             key={idx}
+<<<<<<< HEAD
             className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-xl hover:scale-[1.03] transition-all duration-300 flex flex-col justify-start p-6 min-h-[170px]"
           >
             <FaCheckCircle className="text-primary text-2xl mb-3"/>
+=======
+            className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-xl hover:scale-[1.03] transition-all duration-300 flex flex-col justify-start p-6 min-h-[330px]"
+          >
+            <FaCheckCircle className="text-primary text-2xl mb-3" />
+>>>>>>> b36d111ab7b3f8582124baea3574876f5b08da07
             <h3 className={`${outfitSemibold.className} text-lg md:text-xl text-slate-800 mb-2`}>
               {item.title}
             </h3>
