@@ -39,15 +39,7 @@ export const WhyChooseUs = () => {
             className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-xl hover:scale-[1.03] transition-all duration-300 flex flex-col justify-start p-6 min-h-[170px]"
           >
             <FaCheckCircle className="text-primary text-2xl mb-3"/>
-
             <h3 className={`${outfitSemibold.className} text-lg md:text-[22px] text-slate-800 mb-2`}>
-
-            className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-xl hover:scale-[1.03] transition-all duration-300 flex flex-col justify-start p-6 min-h-[330px]" 
-            </h3>
-            
-            <FaCheckCircle className="text-primary text-2xl mb-3" />
-
-            <h3 className={`${outfitSemibold.className} text-lg md:text-xl text-slate-800 mb-2`}>
               {item.title}
             </h3>
             <p className={`${outfitRegular.className} text-sm md:text-lg text-slate-600 leading-relaxed`}>

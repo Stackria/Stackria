@@ -33,9 +33,9 @@ body {
 .bg-blue-gradient {
   background: linear-gradient(
     144.39deg,
-    #ffffff -278.56%,
-    #6d6d6d -78.47%,
-    #13808c 91.61%
+    #ffffff 0%,      
+    #6d6d6d 25%,    
+    #13808c 92%     
   );
 }
 
@@ -141,7 +141,7 @@ body {
   opacity: 1;
 }
 
-/* From Uiverse.io by kennyotsu */ 
+
 .card {
   /* color used to softly clip top and bottom of the .words container */
   --bg-color: white;

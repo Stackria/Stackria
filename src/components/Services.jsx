@@ -15,7 +15,7 @@ export const Services = () => {
   const [toggle, setToggle] = useState(null)
   return (
     <section>
-      <div className="md:mt-20 py-10 px-5" style={{ backgroundImage: 'url(/images/bg-cta0.svg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className="py-10 px-5" style={{ backgroundImage: 'url(/images/bg-cta0.svg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="py-5 xl:py-10 xl:px-5">
             <h1 className={`${outfitSemibold.className} text-secondary text-xs text-center `}>OUR EXPERTISE</h1>
             <h3 className={`${outfitSemibold.className}text-black text-center text-[20px] md:text-[25px] font-bold xl:text-3xl`}>Solutions We Provide:</h3>

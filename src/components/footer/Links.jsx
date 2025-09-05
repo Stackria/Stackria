@@ -14,10 +14,11 @@ const Links = () => {
                         <h2 className={`${museoReg.className} text-primary text-[26px]`}>{footer.title}</h2>
                         <ul>
                             {footer.links.map((link, index) => 
-                                <li>
+                                <li key={`${footer.key}-${index}`}>
+                                    
                                     <a href={link.path}
                                     className={`${outfitLight.className} text-black text-center xl:text-left text-[15px] xl:text-[16px] leading-7 hover:text-black cursor-pointer`} 
-                                    key={`${footer.key}-${index}`}> {link.title} </a>
+                                    > {link.title} </a>
                                     
                                 </li>
                             )}

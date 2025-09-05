@@ -19,13 +19,8 @@ module.exports = {
       'sm': '640px',
       'md': '768px',
       'lg': '1024px',
-<<<<<<< HEAD
-      'xl': '1440px',
-      '2xl': '2560px',
-=======
       'xl': '1280px',
       '2xl': '1440px',
->>>>>>> b36d111ab7b3f8582124baea3574876f5b08da07
     },
     extend: {
       fontFamily: {
@@ -46,13 +41,14 @@ module.exports = {
 };
 // For Acertainity
 // This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
-function addVariablesForColors({ addBase, theme }: any) {
+function addVariablesForColors({ addBase, theme }) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
   );
- 
+
   addBase({
     ":root": newVars,
   });
 }
+

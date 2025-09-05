@@ -51,7 +51,7 @@ export const Performance = () => {
               <h3 className={`${outfitSemibold.className} text-lg md:text-xl text-gray-900 mb-1`}>
                 Sub-Second Experiences
               </h3>
-              <p className={`${outfitRegular.className} text-sm md:text-base leading-relaxed`}>
+              <p className={`${outfitRegular.className} text-sm md:text-lg leading-relaxed`}>
                 Sites we build often load in a manner of seconds, delivering seamless user experiences that convert better.
 
                 Sites we build often load in under one second—delivering seamless user experiences that convert better.

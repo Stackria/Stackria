@@ -10,7 +10,7 @@ export const Hero = () => {
           className="max-w-7xl relative mx-auto py-2 md:py-0 px-2 -mt-5 w-full lg:pt-10 xl:w-[70%] lg:w-[70%] left-0 top-0 text-center xl:px-10 z-100 Scrn425:px-5">
             <h1 className={`${outfitSemibold.className} tracking-tighter mt-5 md:mt-10 text-[38px] leading-[50px] 2xl:leading-[110px] sm:text-[55px] sm:leading-[50px] sm:p-10 md:text-[69px] lg-text-[80px] xl-text-[90px] 2xl:text-[120px] font-bold text-slate-900 dark:text-white md:leading-[60px] md:z-100 md:px-10 lg:-mt-10 Scrn375:mt-5 Scrn425:text-[50px]`}>
             Customer-focused Digital 
-            <span class="text-primary"> Solutions </span>
+            <span className="text-primary"> Solutions </span>
             For Businesses
             </h1>
             
@@ -19,11 +19,11 @@ export const Hero = () => {
             </p>
 
             {/* Get a quote button */}
-            <div className="">
-              <Link href='/contact' className={`${outfitSemibold.className} inline-block bg-primary text-white text-sm  md:text-base py-3 px-6 rounded-lg shadow-md hover:bg-gray-700 transition`}>Get A Quote In 12 Hours</Link>
+            <div className="md:-mb-12">
+              <Link href='/contact' className={`${outfitSemibold.className} inline-block bg-primary text-white text-sm md:text-[20px] md:text-base py-3 px-6 rounded-lg shadow-md hover:bg-gray-700 transition`}>Get A Quote ASAP</Link>
             </div>
         </div>
-        <div class="2xl:-mt-20 flex-col">
+        <div className="2xl:-mt-20 flex-col">
           <Image 
             className='relative xl:mt-0 xl:h-[100%] xl:w-[50%] lg:w-[60%] w-[100%] h-[100%] mx-auto z-0'
             src='/images/hero-mock.png' 
