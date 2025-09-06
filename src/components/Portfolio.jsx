@@ -19,10 +19,10 @@ export const Portfolio = () => {
             <div className='xl:w-[500px]'>
               
               {/* Heading */}
-              <h1 className={`${outfitRegular.className}  text-slate-900 text-[18px] xl:text-[24px] pb-5`}>{title}</h1>
+              <h1 className={`${outfitRegular.className}  text-slate-900 text-[18px] xl:text-xl font-bold pb-5`}>{title}</h1>
               
               {/* Details */}
-              <p className={`${outfitRegular.className} text-[15px] xl:text-[16px] text-slate-700 lg:w-[70%]`}>{details}</p>
+              <p className={`${outfitRegular.className} text-[15px] md:text-lg text-slate-700 lg:w-[70%]`}>{details}</p>
               
               {/* Tech Stack */}
               <div className="leading-10 mt-10">
@@ -34,10 +34,6 @@ export const Portfolio = () => {
                     <Icon key={i} className="text-primary xl:text-4xl text-4xl" />
                   ))}
                 </div>
-                
-                {/* Button */}
-                {/* <Link href={button.url} className={`${outfitSemibold.className} rounded-md bg-primary px-5 py-2 text-white text-[14px] xl:text-[15px] shadow-lg shadow-blue-500/50 mt-5 font-bold hover:bg-secondary`}>{button.text}
-                </Link> */}
               </div>
             </div>
             

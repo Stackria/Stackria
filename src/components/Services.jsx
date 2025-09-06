@@ -15,10 +15,10 @@ export const Services = () => {
   const [toggle, setToggle] = useState(null)
   return (
     <section>
-      <div className=" py-10 px-5" style={{ backgroundImage: 'url(/images/bg-cta0.svg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+      <div className="md:mt-20 py-10 px-5" style={{ backgroundImage: 'url(/images/bg-cta0.svg)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div className="py-5 xl:py-10 xl:px-5">
             <h1 className={`${outfitSemibold.className} text-secondary text-xs text-center `}>OUR EXPERTISE</h1>
-            <h3 className={`${outfitSemibold.className}text-black text-center text-[20px] font-bold xl:text-3xl`}>Solutions We Provide:</h3>
+            <h3 className={`${outfitSemibold.className}text-black text-center text-[20px] md:text-[25px] font-bold xl:text-3xl`}>Solutions We Provide:</h3>
         </div>
         <div className="bg-slate-50 py-5 xl:p-10 mx-auto xl:w-[1200px]">
           {/* index - position of each solution in the list - helps you know which item was clicked so you can show or hide its details.*/}
@@ -35,7 +35,7 @@ export const Services = () => {
                   <div className="flex items-center">
                     
                     {/* title */}
-                    <Link href={service.link} className={`${outfitRegular.className} py-2 text-[19px] md:text-[16px] xl:text-[25px] text-slate-900`}>{service.title} 
+                    <Link href={service.link} className={`${outfitRegular.className} py-2 text-[19px] md:text-[25px] text-slate-900`}>{service.title} 
                     </Link>
                     <FaArrowUpRightFromSquare className="ml-2 text-black text-[12px] "/>
                   </div>
@@ -46,11 +46,7 @@ export const Services = () => {
                 {/* Only Show the Active Dropdown */}
                 {/* If toggle === index, the current item opens → shows details (flex)*/}
                 <div className={toggle === index ? "flex mt-2" : 'hidden'}>
-<<<<<<< HEAD
                   <span className={`${styles.paragraphDetails} leading-2 tracking-tighter`}>
-=======
-                  <span className={`${styles.paragraphDetails} leading-2 `}>
->>>>>>> b36d111ab7b3f8582124baea3574876f5b08da07
                     {service.details}
                   </span>
                 </div>
@@ -61,8 +57,7 @@ export const Services = () => {
         ))}
         </div>
         <div className=" text-center align-center py-10">
-            <Link href='/services' className={` ${outfitSemibold.className}  rounded-[5px] bg-primary px-5 py-2 text-white text-[15px] mt-5 shadow-lg shadow-blue-500/50 
-            font-bold hover:bg-secondary`}>
+            <Link href='/services' className={` ${outfitSemibold.className}  bg-primary text-white text-sm md:text-[20px] md:text-base py-3 px-6 rounded-lg shadow-md hover:bg-gray-700 transition`}>
                 Discover More Services
             </Link>
         </div>

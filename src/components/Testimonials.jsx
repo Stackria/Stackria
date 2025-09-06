@@ -8,7 +8,7 @@ export const Testimonials = () => {
         <h2 className={`${outfitSemibold.className}text-slate-900 text-[38px] font-bold md:text-[32px] xl:text-[42px] mb-4`}>
           What Our Clients Say
         </h2>
-        <p className={`${outfitRegular.className} text-slate-700 text-[14px] px-2 md:text-base italic leading-relaxed md:px-5 md:text-[14px]`}>
+        <p className={`${outfitRegular.className} text-slate-700 text-[14px] px-2 md:text-lg italic leading-relaxed md:px-5 md:text-[14px]`}>
           &ldquo;Working with Stackria was a game-changer for our business. Their team delivered a
           clean, functional, and modern web-based solution that truly reflects our brand.
           Communication was clear, timelines were met, and the final product exceeded expectations.&ldquo;

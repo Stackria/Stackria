@@ -78,7 +78,7 @@ const Links = ({scroll}) => {
                         ))}
                     </div>
                     <Link href="/contact">
-                        <button className={` ${outfitSemibold.className}  items-center flex rounded-md bg-primary ml-2 text-white px-2 py-2 black font-bold hover:bg-secondary hover:text-white text-[15px]`}><GoArrowUpRight />Get A Quote In 12 Hours
+                        <button className={` ${outfitSemibold.className}  items-center flex rounded-md bg-primary ml-2 text-white px-2 py-0 black font-bold hover:bg-secondary hover:text-white text-[15px]`}><GoArrowUpRight />Get A Quote In 12 Hours
                         </button>
                     </Link>
                 </nav>
