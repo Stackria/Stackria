@@ -19,10 +19,10 @@ export const Portfolio = () => {
             <div className='xl:w-[500px]'>
               
               {/* Heading */}
-              <h1 className={`${outfitRegular.className}  text-slate-900 text-[18px] xl:text-xl font-bold pb-5`}>{title}</h1>
+              <h1 className={`${outfitRegular.className}  text-slate-900 text-[18px] xl:text-xl font-bold pb-5 `}>{title}</h1>
               
               {/* Details */}
-              <p className={`${outfitRegular.className} text-[15px] md:text-lg text-slate-700 lg:w-[70%]`}>{details}</p>
+              <p className={`${outfitRegular.className} text-[15px] md:text-lg text-slate-700 lg:w-[500px]`}>{details}</p>
               
               {/* Tech Stack */}
               <div className="leading-10 mt-10">

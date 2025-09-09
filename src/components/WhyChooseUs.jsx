@@ -42,7 +42,7 @@ export const WhyChooseUs = () => {
             <h3 className={`${outfitSemibold.className} text-lg md:text-[22px] text-slate-800 mb-2`}>
               {item.title}
             </h3>
-            <p className={`${outfitRegular.className} text-sm md:text-lg text-slate-600 leading-relaxed`}>
+            <p className={`${outfitRegular.className} text-sm md:text-lg text-slate-600 leading-relaxed lg:text-lg`}>
               {item.desc}
             </p>
           </div>

@@ -7,7 +7,7 @@ import Image from 'next/image'
 export const AfterHero = () => {
   return (
     <section>
-      <div className="px-5 py-10 xl:px-20 xl:py-20 flex flex-col mx-auto xl:justify-around lg:text-center items-center text-center mt-0 Scrn425:mt-10 md:mt-28 lg:w-[70%]">
+      <div className="px-5 py-10 xl:px-20 xl:py-20 flex flex-col mx-auto xl:justify-around lg:text-center items-center text-center mt-0 Scrn425:mt-10 md:mt-28 lg:-mt-0 lg:w-[70%]">
         <div className="xl:w-[60%]">
           
           <h1 className={`${outfitSemibold.className} text-[36px] md:text-[55px] lg:w-[100%] leading-[55px] text-slate-900 mx-auto text-center`}>Empowering Your Digital Presence</h1>

@@ -71,14 +71,14 @@ const Links = ({scroll}) => {
                 <nav className={`xl:hidden fixed top-[90px] left-0 h-[calc(100vh-100px)] leading-10  py-10 px-5 xl:text-[15px] text-[15px] -mt-5 w-full z-10 bg-white`}>
                     <div className='flex flex-col space-y-4'>
                         {links.map((link) => (
-                            <Navlink 
+                            <Navlink
                                 item={link} 
                                 key={link.title}
                             />
                         ))}
                     </div>
                     <Link href="/contact">
-                        <button className={` ${outfitSemibold.className}  items-center flex rounded-md bg-primary ml-2 text-white px-2 py-0 black font-bold hover:bg-secondary hover:text-white text-[15px]`}><GoArrowUpRight />Get A Quote In 12 Hours
+                        <button className={` ${outfitSemibold.className}  items-center flex rounded-md bg-primary ml-2 text-white px-2 py-0 black font-bold hover:bg-secondary hover:text-white text-[15px]`}><GoArrowUpRight />Get A Quote ASAP
                         </button>
                     </Link>
                 </nav>

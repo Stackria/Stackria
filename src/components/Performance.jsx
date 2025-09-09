@@ -7,7 +7,7 @@ export const Performance = () => {
     <section className="bg-white py-20 px-6">
       <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-6 lg:gap-0 2xl:px-20">
         {/* Left Content */}
-        <div className="w-full lg:w-[50%] xl:w-[40%] xl:ml-5">
+        <div className="w-full lg:w-[45%] xl:w-[40%] xl:ml-5">
           <div className="text-left ">
             <span className={`${outfitSemibold.className} block text-lg md:text-[12px] md:text-center text-secondary mb-2`}>
               Performance
@@ -15,7 +15,7 @@ export const Performance = () => {
             <h2 className={`${outfitSemibold.className} text-2xl md:text-[56px] text-gray-900 mb-4 leading-tight xl:text-[63px]`}>
               Performance That Powers Results
             </h2>
-            <p className={`${outfitRegular.className} text-base md:text-lg text-gray-600 mb-10 leading-relaxed 2xl:w-[90%] md:w-[720px]`}>
+            <p className={`${outfitRegular.className} text-base md:text-lg text-slate-700 mb-10 leading-relaxed 2xl:w-[90%] md:w-[720px] lg:w-[500px] text-justify tracking-tight`}>
               At Stackria, we don’t just build good websites, we engineer fast, responsive experiences built to perform.
               Test your current site with{' '}
               <a
@@ -35,7 +35,7 @@ export const Performance = () => {
               <h3 className={`${outfitSemibold.className} text-lg md:text-xl text-gray-900 mb-1`}>
                 Optimized Load Times
               </h3>
-              <p className={`${outfitRegular.className} text-sm md:text-lg leading-relaxed`}>
+              <p className={`${outfitRegular.className} text-sm md:text-lg leading-relaxed text-justify tracking-tight`}>
                 Better load times mean reduced bounce rates, improved engagement, and increased conversions across your funnel.
               </p>
             </div>
@@ -43,7 +43,7 @@ export const Performance = () => {
               <h3 className={`${outfitSemibold.className} text-lg md:text-xl text-gray-900 mb-1`}>
                 Search-Ready Performance
               </h3>
-              <p className={`${outfitRegular.className} text-sm md:text-lg leading-relaxed`}>
+              <p className={`${outfitRegular.className} text-sm md:text-lg leading-relaxed text-justify tracking-tight`}>
                 Our optimization strategies help improve your SEO and reduce Google Ads costs by boosting your Quality Score.
               </p>
             </div>
@@ -51,7 +51,7 @@ export const Performance = () => {
               <h3 className={`${outfitSemibold.className} text-lg md:text-xl text-gray-900 mb-1`}>
                 Sub-Second Experiences
               </h3>
-              <p className={`${outfitRegular.className} text-sm md:text-lg leading-relaxed`}>
+              <p className={`${outfitRegular.className} text-sm md:text-lg leading-relaxed text-justify tracking-tight`}>
                 Sites we build often load in a manner of seconds, delivering seamless user experiences that convert better.
 
                 Sites we build often load in under one second—delivering seamless user experiences that convert better.
@@ -71,9 +71,9 @@ export const Performance = () => {
         </div>
 
         {/* Right Image */}
-        <div className="w-full lg:w-[50%] xl:w-[60%]">
+        <div className="w-full lg:w-[55%] xl:w-[60%]">
           <Image
-            className="w-full h-auto"
+            className="w-full h-auto object-cover"
             src="/images/seomock.png"
             width={800}
             height={600}

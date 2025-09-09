@@ -5,9 +5,9 @@ import Image from 'next/image';
 
 export const Hero = () => {
   return (
-  <section className="h-[90vh] Scrn375:h-[90vh] Scrn425:h-[90vh] sm:h-[130vh] md:h-[100vh] lg:h-[120vh] xl:h-[90vh] 2xl:h-[90vh] bg-slate-50 py-32 overflow-hidden antialiased relative flex flex-col self-auto" style={{ backgroundImage: 'url(/images/bg-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+  <section className="h-[90vh] Scrn375:h-[90vh] Scrn425:h-[90vh] sm:h-[130vh] md:h-[100vh] lg:h-[100vh] xl:h-[90vh] 2xl:h-[90vh] bg-slate-50 py-32 overflow-hidden antialiased relative flex flex-col self-auto" style={{ backgroundImage: 'url(/images/bg-hero.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
         <div
-          className="max-w-7xl relative mx-auto py-2 md:py-0 px-2 -mt-5 w-full lg:pt-10 xl:w-[70%] lg:w-[70%] left-0 top-0 text-center xl:px-10 z-100 Scrn425:px-5">
+          className="max-w-7xl relative mx-auto py-2 md:py-0 px-2 -mt-5 w-full lg:pt-20 xl:w-[70%] lg:w-[70%] left-0 top-0 text-center xl:px-10 z-100 Scrn425:px-5">
             <h1 className={`${outfitSemibold.className} tracking-tighter mt-5 md:mt-10 text-[38px] leading-[50px] 2xl:leading-[110px] sm:text-[55px] sm:leading-[50px] sm:p-10 md:text-[69px] lg-text-[80px] xl-text-[90px] 2xl:text-[120px] font-bold text-slate-900 dark:text-white md:leading-[60px] md:z-100 md:px-10 lg:-mt-10 Scrn375:mt-5 Scrn425:text-[50px]`}>
             Customer-focused Digital 
             <span className="text-primary"> Solutions </span>

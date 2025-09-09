@@ -51,7 +51,7 @@ const Navbar = () => {
               {/* Get in touch button */}
               <Link href="/contact">
                   <button className={` ${outfitSemibold.className} ${scroll ? "bg-primary" : "bg-black"}
-                    text-white hidden xl:flex rounded-md -mt-2 text-[15px] px-5 py-3 black xl:-mt-2 xl:text-[16px] 2xl:text-[20px] hover:bg-secondary hover:text-white`}>Get A Quote ASA
+                    text-white hidden xl:flex rounded-md -mt-2 text-[15px] px-5 py-3 black xl:-mt-2 xl:text-[16px] 2xl:text-[20px] hover:bg-secondary hover:text-white`}>Get A Quote ASAP
                   </button>
               </Link>
               

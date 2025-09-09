@@ -57,7 +57,7 @@ export const Services = () => {
         ))}
         </div>
         <div className=" text-center align-center py-10">
-            <Link href='/services' className={` ${outfitSemibold.className}  bg-primary text-white text-sm md:text-[20px] md:text-base py-3 px-6 rounded-lg shadow-md hover:bg-gray-700 transition`}>
+            <Link href='/services' className={` ${outfitSemibold.className}  bg-primary text-white text-sm md:text-[20px] md:text-base py-3 px-6 rounded-lg shadow-md hover:bg-gray-700 transition lg:text-lg`}>
                 Discover More Services
             </Link>
         </div>
